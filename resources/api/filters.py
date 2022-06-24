@@ -55,7 +55,7 @@ def filterLobbyMode(mode):     ##Filtro el modo del juego
     elif 'fortkeep_res_duos' in mode:
         return "FORTUNES KEEP DUOS\n"
 
-    elif 'fortkeep_res_solos' in mode:
+    elif 'fortkeep_res_solo' in mode:
         return "FORTUNES KEEP SOLOS\n"
 
     # PLUNDER
