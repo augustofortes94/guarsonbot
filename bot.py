@@ -50,6 +50,8 @@ dp.add_handler(CommandHandler("Comandos", comandos))
 
 dp.add_handler(CommandHandler("Hola", hola))
 
+dp.add_handler(CommandHandler("Lobbys", lobbys))
+
 dp.add_handler(CommandHandler("Stats", stats))
 
 dp.add_handler(CommandHandler("Streamers", streamers))
