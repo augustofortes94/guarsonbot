@@ -229,10 +229,10 @@ def getListLobbys():     #Return a string with a list of stats commands
         + "\n-/LobbyBolsonaro"
         + "\n-/LobbyHormigator"
         + "\n-/LobbyLeko"
-        + "\n-/LobbyLuquitas"
+        #+ "\n-/LobbyLuquitas"
         + "\n-/LobbyMandalorian"
-        + "\n-/LobbyPablo"
-        + "\n-/LobbyRapax"
+        #+ "\n-/LobbyPablo"
+        #+ "\n-/LobbyRapax"
         + "\n-/Matchmaking"
         + "\n-/Tabla")
 
@@ -242,19 +242,20 @@ def getListStats():     #Return a string with a list of stats commands
         + "\n-/Bolsonaro"
         + "\n-/Hormigator"
         + "\n-/Leko"
-        + "\n-/Luquitas"
+        #+ "\n-/Luquitas"
         + "\n-/Mandalorian"
-        + "\n-/Pablo"
-        + "\n-/Rapax"
+        #+ "\n-/Pablo"
+        #+ "\n-/Rapax"
         + "\n\nKD:"
         + "\n-/Berisso1KD"
         + "\n-/BolsonaroKD"
         + "\n-/HormigatorKD"
         + "\n-/LekoKD"
-        + "\n-/LuquitasKD"
+        #+ "\n-/LuquitasKD"
         + "\n-/MandalorianKD"
-        + "\n-/PabloKD"
-        + "\n-/RapaxKD")
+        #+ "\n-/PabloKD"
+        #+ "\n-/RapaxKD"
+        )
 
 def getListStreamers():     #Return a string with streamers list
     return ("\nStreamers:"

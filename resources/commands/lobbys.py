@@ -13,7 +13,7 @@ def lobbyElch000(update, context):
 
 def lobbyHormigator(update, context):
     defineLogs().info(f"El usuario {update.effective_user['username']}, consulto por Lobby Hormigator")
-    update.message.reply_text(getLobbyTotalInfo("psn", "Hormigator1"))
+    update.message.reply_text(getLobbyTotalInfo("battle", "Hormigator%231819"))
 
 def lobbyLeko(update, context):
     defineLogs().info(f"El usuario {update.effective_user['username']}, consulto por Lobby Leko")
