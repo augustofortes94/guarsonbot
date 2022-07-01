@@ -47,7 +47,7 @@ def filterLobbyMode(mode):     ##Filtro el modo del juego
 
     # ISLA FORTUNES KEEP
     elif 'fortkeep_res_quad' in mode:
-        return "FORTUNES KEEP TRIOS\n"
+        return "FORTUNES KEEP CUARTETOS\n"
 
     elif 'fortkeep_res_trios' in mode:
         return "FORTUNES KEEP TRIOS\n"
@@ -112,7 +112,6 @@ def filterLobbyMode(mode):     ##Filtro el modo del juego
 
     elif 'br_buy_back_solo' in mode:
         return "BR TRAER DE VUELTA SOLOS\n"
-
     
     # OTROS
     elif 'br_rebirth_resurgence_mini' in mode:
