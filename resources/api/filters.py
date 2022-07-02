@@ -1,3 +1,6 @@
+import imp
+import requests
+from ..api.guarsonapi import getLobbyFromApi
 #####   FILTERS
 
 def filterKD(kd):       ####Si el kd del jugador es por ejemplo 1.7 le agrego un 0 al final
@@ -13,6 +16,8 @@ def filterKills(kills):     ##Si hace menos de 10 kills sumo un espacio para que
         return "|" + kills + "   "
 
 def filterLobbyMode(mode):     ##Filtro el modo del juego
+    return getLobbyFromApi(mode)
+
     # BR
     if 'br_brquads' in mode:
         return "BR CUARTETOS\n"

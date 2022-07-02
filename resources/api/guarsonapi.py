@@ -39,7 +39,14 @@ def setString(data):
         cadena = cadena + '\n' + data['alternative2']
     return cadena
 
-def getDataFromApi(command):
+def getLobbyFromApi(mode):
+    cookie = login()
+    data = requests.get('https://apiguarson.herokuapp.com/api/mode/' + mode + '/', cookies=cookie).json()
+    if data['message'] == 'Success':
+        return setString(data['mode'][0]['name']) + '\n'
+    return 'MODO DESCONOCIDO\n'
+
+def getWeaponFromApi(command):
     cookie = login()
     data = requests.get('https://apiguarson.herokuapp.com/api/weapons/' + command, cookies=cookie).json()
     if data['message'] == 'Success':

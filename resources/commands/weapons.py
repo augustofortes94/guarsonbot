@@ -1,6 +1,6 @@
 from telegram import *
 from resources.commands.commandsMenu import defineLogs
-from ..api.guarsonapi import getDataFromApi
+from ..api.guarsonapi import getWeaponFromApi
 
 #####   ARMAS   #####
 def ak47(update, context):
@@ -9,43 +9,43 @@ def ak47(update, context):
 
 def ak47cw(update, context):
     defineLogs().info(f"El usuario {update.effective_user['username']}, consulto por AK-47 CW")
-    update.message.reply_text(getDataFromApi('AK47CW'))
+    update.message.reply_text(getWeaponFromApi('AK47CW'))
 
 def ak47mw(update, context):
     defineLogs().info(f"El usuario {update.effective_user['username']}, consulto por AK-47 MW")
-    update.message.reply_text(getDataFromApi('AK47MW'))
+    update.message.reply_text(getWeaponFromApi('AK47MW'))
 
 def ak74u(update, context):
     defineLogs().info(f"El usuario {update.effective_user['username']}, consulto por AK-74u")
-    update.message.reply_text(getDataFromApi('AK74U'))
+    update.message.reply_text(getWeaponFromApi('AK74U'))
 
 def ametralladora(update, context):
     defineLogs().info(f"El usuario {update.effective_user['username']}, consulto por Pistola Ametralladora")
-    update.message.reply_text(getDataFromApi('Ametralladora'))
+    update.message.reply_text(getWeaponFromApi('Ametralladora'))
 
 def amp(update, context):
     defineLogs().info(f"El usuario {update.effective_user['username']}, consulto por AMP 63")
-    update.message.reply_text(getDataFromApi('AMP'))
+    update.message.reply_text(getWeaponFromApi('AMP'))
 
 def an94(update, context):
     defineLogs().info(f"El usuario {update.effective_user['username']}, consulto por AN94")
-    update.message.reply_text(getDataFromApi('AN94'))
+    update.message.reply_text(getWeaponFromApi('AN94'))
 
 def antitanque(update, context):
     defineLogs().info(f"El usuario {update.effective_user['username']}, consulto por Fusil Antitanque Gorer")
-    update.message.reply_text(getDataFromApi('Antitanque'))
+    update.message.reply_text(getWeaponFromApi('Antitanque'))
 
 def armaguerra(update, context):
     defineLogs().info(f"El usuario {update.effective_user['username']}, consulto por Armaguerra 43")
-    update.message.reply_text(getDataFromApi('Armaguerra'))
+    update.message.reply_text(getWeaponFromApi('Armaguerra'))
 
 def as44(update, context):
     defineLogs().info(f"El usuario {update.effective_user['username']}, consulto por AS44")
-    update.message.reply_text(getDataFromApi('AS44'))
+    update.message.reply_text(getWeaponFromApi('AS44'))
 
 def asval(update, context):
     defineLogs().info(f"El usuario {update.effective_user['username']}, consulto por AS-VAL")
-    update.message.reply_text(getDataFromApi('ASVAL'))
+    update.message.reply_text(getWeaponFromApi('ASVAL'))
 
 def aug(update, context):
     defineLogs().info(f"El usuario {update.effective_user['username']}, consulto por AUG")
@@ -53,111 +53,111 @@ def aug(update, context):
 
 def augcw(update, context):
     defineLogs().info(f"El usuario {update.effective_user['username']}, consulto por AUG CW")
-    update.message.reply_text(getDataFromApi('AUGCW'))
+    update.message.reply_text(getWeaponFromApi('AUGCW'))
 
 def augmw(update, context):
     defineLogs().info(f"El usuario {update.effective_user['username']}, consulto por AUG MW")
-    update.message.reply_text(getDataFromApi('AUGMW'))
+    update.message.reply_text(getWeaponFromApi('AUGMW'))
 
 def automata(update, context):
     defineLogs().info(f"El usuario {update.effective_user['username']}, consulto por Automata")
-    update.message.reply_text(getDataFromApi('Automata'))
+    update.message.reply_text(getWeaponFromApi('Automata'))
 
 def ax50(update, context):
     defineLogs().info(f"El usuario {update.effective_user['username']}, consulto por AX-50")
-    update.message.reply_text(getDataFromApi('AX50'))
+    update.message.reply_text(getWeaponFromApi('AX50'))
 
 def ballesta(update, context):
     defineLogs().info(f"El usuario {update.effective_user['username']}, consulto por Ballesta")
-    update.message.reply_text(getDataFromApi('Ballesta'))
+    update.message.reply_text(getWeaponFromApi('Ballesta'))
 
 def bar(update, context):
     defineLogs().info(f"El usuario {update.effective_user['username']}, consulto por BAR")
-    update.message.reply_text(getDataFromApi('BAR'))
+    update.message.reply_text(getWeaponFromApi('BAR'))
 
 def bizon(update, context):
     defineLogs().info(f"El usuario {update.effective_user['username']}, consulto por Bizon")
-    update.message.reply_text(getDataFromApi('Bizon'))
+    update.message.reply_text(getWeaponFromApi('Bizon'))
 
 def blixen(update, context):
     defineLogs().info(f"El usuario {update.effective_user['username']}, consulto por H4 Blixen")
-    update.message.reply_text(getDataFromApi('Blixen'))
+    update.message.reply_text(getWeaponFromApi('Blixen'))
 
 def bren(update, context):
     defineLogs().info(f"El usuario {update.effective_user['username']}, consulto por Bren")
-    update.message.reply_text(getDataFromApi('Bren'))
+    update.message.reply_text(getWeaponFromApi('Bren'))
 
 def bruen(update, context):
     defineLogs().info(f"El usuario {update.effective_user['username']}, consulto por Bruen MK9")
-    update.message.reply_text(getDataFromApi('Bruen'))
+    update.message.reply_text(getWeaponFromApi('Bruen'))
 
 def bullfrog(update, context):
     defineLogs().info(f"El usuario {update.effective_user['username']}, consulto por Bullfrog")
-    update.message.reply_text(getDataFromApi('Bullfrog'))
+    update.message.reply_text(getWeaponFromApi('Bullfrog'))
 
 def c58(update, context):
     defineLogs().info(f"El usuario {update.effective_user['username']}, consulto por C58")
-    update.message.reply_text(getDataFromApi('C58'))
+    update.message.reply_text(getWeaponFromApi('C58'))
 
 def carv2(update, context):
     defineLogs().info(f"El usuario {update.effective_user['username']}, consulto por Carv.2")
-    update.message.reply_text(getDataFromApi('Carv2'))
+    update.message.reply_text(getWeaponFromApi('Carv2'))
 
 def combate(update, context):
     defineLogs().info(f"El usuario {update.effective_user['username']}, consulto por Escopeta de Combate")
-    update.message.reply_text(getDataFromApi('Combate'))
+    update.message.reply_text(getWeaponFromApi('Combate'))
 
 def cooper(update, context):
     defineLogs().info(f"El usuario {update.effective_user['username']}, consulto por Carabina Cooper")
-    update.message.reply_text(getDataFromApi('Cooper'))
+    update.message.reply_text(getWeaponFromApi('Cooper'))
 
 def cr56(update, context):
     defineLogs().info(f"El usuario {update.effective_user['username']}, consulto por CR-56")
-    update.message.reply_text(getDataFromApi('CR56'))
+    update.message.reply_text(getWeaponFromApi('CR56'))
 
 def cx9(update, context):
     defineLogs().info(f"El usuario {update.effective_user['username']}, consulto por CX-9")
-    update.message.reply_text(getDataFromApi('CX9'))
+    update.message.reply_text(getWeaponFromApi('CX9'))
 
 def diamatti(update, context):
     defineLogs().info(f"El usuario {update.effective_user['username']}, consulto por Diamatti")
-    update.message.reply_text(getDataFromApi('Diamatti'))
+    update.message.reply_text(getWeaponFromApi('Diamatti'))
 
 def dmr(update, context):
     defineLogs().info(f"El usuario {update.effective_user['username']}, consulto por DMR")
-    update.message.reply_text(getDataFromApi('DMR'))
+    update.message.reply_text(getWeaponFromApi('DMR'))
 
 def doble(update, context):
     defineLogs().info(f"El usuario {update.effective_user['username']}, consulto por Doble Cañon")
-    update.message.reply_text(getDataFromApi('Doble'))
+    update.message.reply_text(getWeaponFromApi('Doble'))
 
 def dp27(update, context):
     defineLogs().info(f"El usuario {update.effective_user['username']}, consulto por DP27")
-    update.message.reply_text(getDataFromApi('DP27'))
+    update.message.reply_text(getWeaponFromApi('DP27'))
 
 def dragunov(update, context):
     defineLogs().info(f"El usuario {update.effective_user['username']}, consulto por Dragunov")
-    update.message.reply_text(getDataFromApi('Dragunov'))
+    update.message.reply_text(getWeaponFromApi('Dragunov'))
 
 def e725(update, context):
     defineLogs().info(f"El usuario {update.effective_user['username']}, consulto por E725")
-    update.message.reply_text(getDataFromApi('E725'))
+    update.message.reply_text(getWeaponFromApi('E725'))
 
 def ebr14(update, context):
     defineLogs().info(f"El usuario {update.effective_user['username']}, consulto por EBR-14")
-    update.message.reply_text(getDataFromApi('EBR14'))
+    update.message.reply_text(getWeaponFromApi('EBR14'))
 
 def einhorn(update, context):
     defineLogs().info(f"El usuario {update.effective_user['username']}, consulto por Einhorn Rotativa")
-    update.message.reply_text(getDataFromApi('Einhorn'))
+    update.message.reply_text(getWeaponFromApi('Einhorn'))
 
 def em2(update, context):
     defineLogs().info(f"El usuario {update.effective_user['username']}, consulto por EM2")
-    update.message.reply_text(getDataFromApi('EM2'))
+    update.message.reply_text(getWeaponFromApi('EM2'))
 
 def fal(update, context):
     defineLogs().info(f"El usuario {update.effective_user['username']}, consulto por FAL")
-    update.message.reply_text(getDataFromApi('FAL'))
+    update.message.reply_text(getWeaponFromApi('FAL'))
 
 def famas(update, context):
     defineLogs().info(f"El usuario {update.effective_user['username']}, consulto por FAMAS")
@@ -165,75 +165,75 @@ def famas(update, context):
 
 def fara(update, context):
     defineLogs().info(f"El usuario {update.effective_user['username']}, consulto por FARA 83")
-    update.message.reply_text(getDataFromApi('FARA'))
+    update.message.reply_text(getWeaponFromApi('FARA'))
 
 def fennec(update, context):
     defineLogs().info(f"El usuario {update.effective_user['username']}, consulto por Fennec")
-    update.message.reply_text(getDataFromApi('Fennec'))
+    update.message.reply_text(getWeaponFromApi('Fennec'))
 
 def ffar(update, context):
     defineLogs().info(f"El usuario {update.effective_user['username']}, consulto por FFAR1")
-    update.message.reply_text(getDataFromApi('FFAR'))
+    update.message.reply_text(getWeaponFromApi('FFAR'))
 
 def finn(update, context):
     defineLogs().info(f"El usuario {update.effective_user['username']}, consulto por FINN LMG")
-    update.message.reply_text(getDataFromApi('FINN'))
+    update.message.reply_text(getWeaponFromApi('FINN'))
 
 def fr556(update, context):
     defineLogs().info(f"El usuario {update.effective_user['username']}, consulto por FR 5.56")
-    update.message.reply_text(getDataFromApi('FR556'))
+    update.message.reply_text(getWeaponFromApi('FR556'))
 
 def g43(update, context):
     defineLogs().info(f"El usuario {update.effective_user['username']}, consulto por G-43")
-    update.message.reply_text(getDataFromApi('G43'))
+    update.message.reply_text(getWeaponFromApi('G43'))
 
 def gallo(update, context):
     defineLogs().info(f"El usuario {update.effective_user['username']}, consulto por Gallo")
-    update.message.reply_text(getDataFromApi('Gallo'))
+    update.message.reply_text(getWeaponFromApi('Gallo'))
 
 def gracey(update, context):
     defineLogs().info(f"El usuario {update.effective_user['username']}, consulto por Gracey Automatica")
-    update.message.reply_text(getDataFromApi('Gracey'))
+    update.message.reply_text(getWeaponFromApi('Gracey'))
 
 def grau(update, context):
     defineLogs().info(f"El usuario {update.effective_user['username']}, consulto por Grau")
-    update.message.reply_text(getDataFromApi('Grau'))
+    update.message.reply_text(getWeaponFromApi('Grau'))
 
 def grav(update, context):
     defineLogs().info(f"El usuario {update.effective_user['username']}, consulto por Grav")
-    update.message.reply_text(getDataFromApi('Grav'))
+    update.message.reply_text(getWeaponFromApi('Grav'))
 
 def groza(update, context):
     defineLogs().info(f"El usuario {update.effective_user['username']}, consulto por Groza")
-    update.message.reply_text(getDataFromApi('Groza'))
+    update.message.reply_text(getWeaponFromApi('Groza'))
 
 def hauer(update, context):
     defineLogs().info(f"El usuario {update.effective_user['username']}, consulto por Hauer 77")
-    update.message.reply_text(getDataFromApi('Hauer'))
+    update.message.reply_text(getWeaponFromApi('Hauer'))
 
 def hdr(update, context):
     defineLogs().info(f"El usuario {update.effective_user['username']}, consulto por HDR")
-    update.message.reply_text(getDataFromApi('HDR'))
+    update.message.reply_text(getWeaponFromApi('HDR'))
 
 def holger(update, context):
     defineLogs().info(f"El usuario {update.effective_user['username']}, consulto por Holger-26")
-    update.message.reply_text(getDataFromApi('Holger'))
+    update.message.reply_text(getWeaponFromApi('Holger'))
 
 def ironhide(update, context):
     defineLogs().info(f"El usuario {update.effective_user['username']}, consulto por .410 Ironhide")
-    update.message.reply_text(getDataFromApi('Ironhide'))
+    update.message.reply_text(getWeaponFromApi('Ironhide'))
 
 def iso(update, context):
     defineLogs().info(f"El usuario {update.effective_user['username']}, consulto por ISO")
-    update.message.reply_text(getDataFromApi('ISO'))
+    update.message.reply_text(getWeaponFromApi('ISO'))
 
 def itra(update, context):
     defineLogs().info(f"El usuario {update.effective_user['username']}, consulto por ITRA")
-    update.message.reply_text(getDataFromApi('ITRA'))
+    update.message.reply_text(getWeaponFromApi('ITRA'))
 
 def jak12(update, context):
     defineLogs().info(f"El usuario {update.effective_user['username']}, consulto por JAK12")
-    update.message.reply_text(getDataFromApi('JAK12'))
+    update.message.reply_text(getWeaponFromApi('JAK12'))
 
 def kar98(update, context):
     defineLogs().info(f"El usuario {update.effective_user['username']}, consulto por Kar98")
@@ -241,63 +241,63 @@ def kar98(update, context):
 
 def kar98mw(update, context):
     defineLogs().info(f"El usuario {update.effective_user['username']}, consulto por Kar98k MW")
-    update.message.reply_text(getDataFromApi('Kar98MW'))
+    update.message.reply_text(getWeaponFromApi('Kar98MW'))
 
 def kar98vg(update, context):
     defineLogs().info(f"El usuario {update.effective_user['username']}, consulto por Kar98k Vanguard")
-    update.message.reply_text(getDataFromApi('Kar98VG'))
+    update.message.reply_text(getWeaponFromApi('Kar98VG'))
 
 def kgm40(update, context):
     defineLogs().info(f"El usuario {update.effective_user['username']}, consulto por KG M40")
-    update.message.reply_text(getDataFromApi('KGM40'))
+    update.message.reply_text(getWeaponFromApi('KGM40'))
 
 def kilo(update, context):
     defineLogs().info(f"El usuario {update.effective_user['username']}, consulto por Kilo")
-    update.message.reply_text(getDataFromApi('Kilo'))
+    update.message.reply_text(getWeaponFromApi('Kilo'))
 
 def krig(update, context):
     defineLogs().info(f"El usuario {update.effective_user['username']}, consulto por Krig 6")
-    update.message.reply_text(getDataFromApi('Krig'))
+    update.message.reply_text(getWeaponFromApi('Krig'))
 
 def klauser(update, context):
     defineLogs().info(f"El usuario {update.effective_user['username']}, consulto por Klauser")
-    update.message.reply_text(getDataFromApi('Klauser'))
+    update.message.reply_text(getWeaponFromApi('Klauser'))
 
 def ksp(update, context):
     defineLogs().info(f"El usuario {update.effective_user['username']}, consulto por KSP 45")
-    update.message.reply_text(getDataFromApi('KSP'))
+    update.message.reply_text(getWeaponFromApi('KSP'))
 
 def lapa(update, context):
     defineLogs().info(f"El usuario {update.effective_user['username']}, consulto por LAPA")
-    update.message.reply_text(getDataFromApi('LAPA'))
+    update.message.reply_text(getWeaponFromApi('LAPA'))
 
 def lc10(update, context):
     defineLogs().info(f"El usuario {update.effective_user['username']}, consulto por LC-10")
-    update.message.reply_text(getDataFromApi('LC10'))
+    update.message.reply_text(getWeaponFromApi('LC10'))
 
 def m1(update, context):
     defineLogs().info(f"El usuario {update.effective_user['username']}, consulto por M1 Garand")
-    update.message.reply_text(getDataFromApi('M1'))
+    update.message.reply_text(getWeaponFromApi('M1'))
 
 def m13(update, context):
     defineLogs().info(f"El usuario {update.effective_user['username']}, consulto por M13")
-    update.message.reply_text(getDataFromApi('M13'))
+    update.message.reply_text(getWeaponFromApi('M13'))
 
 def m16(update, context):
     defineLogs().info(f"El usuario {update.effective_user['username']}, consulto por M16")
-    update.message.reply_text(getDataFromApi('M16'))
+    update.message.reply_text(getWeaponFromApi('M16'))
 
 def m19(update, context):
     defineLogs().info(f"El usuario {update.effective_user['username']}, consulto por M19")
-    update.message.reply_text(getDataFromApi('M19'))
+    update.message.reply_text(getWeaponFromApi('M19'))
 
 def m1912(update, context):
     defineLogs().info(f"El usuario {update.effective_user['username']}, consulto por M1912")
-    update.message.reply_text(getDataFromApi('M1912'))
+    update.message.reply_text(getWeaponFromApi('M1912'))
 
 def m1916(update, context):
     defineLogs().info(f"El usuario {update.effective_user['username']}, consulto por M1916")
-    update.message.reply_text(getDataFromApi('M1916'))
+    update.message.reply_text(getWeaponFromApi('M1916'))
 
 def m4(update, context):
     defineLogs().info(f"El usuario {update.effective_user['username']}, consulto por M4")
@@ -305,63 +305,63 @@ def m4(update, context):
 
 def m4a1(update, context):
     defineLogs().info(f"El usuario {update.effective_user['username']}, consulto por M4A1")
-    update.message.reply_text(getDataFromApi('M4A1'))
+    update.message.reply_text(getWeaponFromApi('M4A1'))
 
 def m60(update, context):
     defineLogs().info(f"El usuario {update.effective_user['username']}, consulto por M60")
-    update.message.reply_text(getDataFromApi('M60'))
+    update.message.reply_text(getWeaponFromApi('M60'))
 
 def m82(update, context):
     defineLogs().info(f"El usuario {update.effective_user['username']}, consulto por M82")
-    update.message.reply_text(getDataFromApi('M82'))
+    update.message.reply_text(getWeaponFromApi('M82'))
 
 def m91(update, context):
     defineLogs().info(f"El usuario {update.effective_user['username']}, consulto por M91")
-    update.message.reply_text(getDataFromApi('M91'))
+    update.message.reply_text(getWeaponFromApi('M91'))
 
 def mac(update, context):
     defineLogs().info(f"El usuario {update.effective_user['username']}, consulto por MAC-10")
-    update.message.reply_text(getDataFromApi('MAC'))
+    update.message.reply_text(getWeaponFromApi('MAC'))
 
 def magnum(update, context):
     defineLogs().info(f"El usuario {update.effective_user['username']}, consulto por Magnum")
-    update.message.reply_text(getDataFromApi('Magnum'))
+    update.message.reply_text(getWeaponFromApi('Magnum'))
 
 def marco(update, context):
     defineLogs().info(f"El usuario {update.effective_user['username']}, consulto por Marco 5")
-    update.message.reply_text(getDataFromApi('Marco'))
+    update.message.reply_text(getWeaponFromApi('Marco'))
 
 def marshal(update, context):
     defineLogs().info(f"El usuario {update.effective_user['username']}, consulto por Marshal")
-    update.message.reply_text(getDataFromApi('Marshal'))
+    update.message.reply_text(getWeaponFromApi('Marshal'))
 
 def mg34(update, context):
     defineLogs().info(f"El usuario {update.effective_user['username']}, consulto por MG34")
-    update.message.reply_text(getDataFromApi('MG34'))
+    update.message.reply_text(getWeaponFromApi('MG34'))
 
 def mg42(update, context):
     defineLogs().info(f"El usuario {update.effective_user['username']}, consulto por MG 42")
-    update.message.reply_text(getDataFromApi('MG42'))
+    update.message.reply_text(getWeaponFromApi('MG42'))
 
 def mg82(update, context):
     defineLogs().info(f"El usuario {update.effective_user['username']}, consulto por MG 82")
-    update.message.reply_text(getDataFromApi('MG82'))
+    update.message.reply_text(getWeaponFromApi('MG82'))
 
 def milano(update, context):
     defineLogs().info(f"El usuario {update.effective_user['username']}, consulto por Milano")
-    update.message.reply_text(getDataFromApi('Milano'))
+    update.message.reply_text(getWeaponFromApi('Milano'))
 
 def mk2(update, context):
     defineLogs().info(f"El usuario {update.effective_user['username']}, consulto por MK2 Carabina")
-    update.message.reply_text(getDataFromApi('MK2'))
+    update.message.reply_text(getWeaponFromApi('MK2'))
 
 def modelo(update, context):
     defineLogs().info(f"El usuario {update.effective_user['username']}, consulto por Modelo 680")
-    update.message.reply_text(getDataFromApi('Modelo'))
+    update.message.reply_text(getWeaponFromApi('Modelo'))
 
 def mp40(update, context):
     defineLogs().info(f"El usuario {update.effective_user['username']}, consulto por MP-40")
-    update.message.reply_text(getDataFromApi('MP40'))
+    update.message.reply_text(getWeaponFromApi('MP40'))
 
 def mp5(update, context):
     defineLogs().info(f"El usuario {update.effective_user['username']}, consulto por MP5")
@@ -369,39 +369,39 @@ def mp5(update, context):
 
 def mp5cw(update, context):
     defineLogs().info(f"El usuario {update.effective_user['username']}, consulto por MP5 CW")
-    update.message.reply_text(getDataFromApi('MP5CW'))
+    update.message.reply_text(getWeaponFromApi('MP5CW'))
 
 def mp5mw(update, context):
     defineLogs().info(f"El usuario {update.effective_user['username']}, consulto por MP5 MW")
-    update.message.reply_text(getDataFromApi('MP5MW'))
+    update.message.reply_text(getWeaponFromApi('MP5MW'))
 
 def mp7(update, context):
     defineLogs().info(f"El usuario {update.effective_user['username']}, consulto por MP7")
-    update.message.reply_text(getDataFromApi('MP7'))
+    update.message.reply_text(getWeaponFromApi('MP7'))
 
 def nikita(update, context):
     defineLogs().info(f"El usuario {update.effective_user['username']}, consulto por Nikita AVT")
-    update.message.reply_text(getDataFromApi('Nikita'))
+    update.message.reply_text(getWeaponFromApi('Nikita'))
 
 def nz41(update, context):
     defineLogs().info(f"El usuario {update.effective_user['username']}, consulto por NZ-41")
-    update.message.reply_text(getDataFromApi('NZ41'))
+    update.message.reply_text(getWeaponFromApi('NZ41'))
 
 def oden(update, context):
     defineLogs().info(f"El usuario {update.effective_user['username']}, consulto por Oden")
-    update.message.reply_text(getDataFromApi('Oden'))
+    update.message.reply_text(getWeaponFromApi('Oden'))
 
 def origin(update, context):
     defineLogs().info(f"El usuario {update.effective_user['username']}, consulto por Origin")
-    update.message.reply_text(getDataFromApi('Origin'))
+    update.message.reply_text(getWeaponFromApi('Origin'))
 
 def ots9(update, context):
     defineLogs().info(f"El usuario {update.effective_user['username']}, consulto por OTs 9")
-    update.message.reply_text(getDataFromApi('OTS9'))
+    update.message.reply_text(getWeaponFromApi('OTS9'))
 
 def owen(update, context):
     defineLogs().info(f"El usuario {update.effective_user['username']}, consulto por Subfusil Owen")
-    update.message.reply_text(getDataFromApi('Owen'))
+    update.message.reply_text(getWeaponFromApi('Owen'))
 
 def p1911(update, context):
     defineLogs().info(f"El usuario {update.effective_user['username']}, consulto por 1911")
@@ -409,35 +409,35 @@ def p1911(update, context):
 
 def p1911cw(update, context):
     defineLogs().info(f"El usuario {update.effective_user['username']}, consulto por 1911 CW")
-    update.message.reply_text(getDataFromApi('1911CW'))
+    update.message.reply_text(getWeaponFromApi('1911CW'))
 
 def p1911mw(update, context):
     defineLogs().info(f"El usuario {update.effective_user['username']}, consulto por 1911 MW")
-    update.message.reply_text(getDataFromApi('1911MW'))
+    update.message.reply_text(getWeaponFromApi('1911MW'))
 
 def p1911vg(update, context):
     defineLogs().info(f"El usuario {update.effective_user['username']}, consulto por 1911 VG")
-    update.message.reply_text(getDataFromApi('1911VG'))
+    update.message.reply_text(getWeaponFromApi('1911VG'))
 
 def p357(update, context):
     defineLogs().info(f"El usuario {update.effective_user['username']}, consulto por .357")
-    update.message.reply_text(getDataFromApi('P357'))
+    update.message.reply_text(getWeaponFromApi('P357'))
 
 def p50gs(update, context):
     defineLogs().info(f"El usuario {update.effective_user['username']}, consulto por .50 GS")
-    update.message.reply_text(getDataFromApi('50GS'))
+    update.message.reply_text(getWeaponFromApi('50GS'))
 
 def p90(update, context):
     defineLogs().info(f"El usuario {update.effective_user['username']}, consulto por P90")
-    update.message.reply_text(getDataFromApi('P90'))
+    update.message.reply_text(getWeaponFromApi('P90'))
 
 def pelington(update, context):
     defineLogs().info(f"El usuario {update.effective_user['username']}, consulto por Pelington")
-    update.message.reply_text(getDataFromApi('Pelington'))
+    update.message.reply_text(getWeaponFromApi('Pelington'))
 
 def pkm(update, context):
     defineLogs().info(f"El usuario {update.effective_user['username']}, consulto por PKM")
-    update.message.reply_text(getDataFromApi('PKM'))
+    update.message.reply_text(getWeaponFromApi('PKM'))
 
 def ppsh(update, context):
     defineLogs().info(f"El usuario {update.effective_user['username']}, consulto por PPSH")
@@ -445,111 +445,111 @@ def ppsh(update, context):
 
 def ppshcw(update, context):
     defineLogs().info(f"El usuario {update.effective_user['username']}, consulto por PPSH-41 CW")
-    update.message.reply_text(getDataFromApi('PPSHCW'))
+    update.message.reply_text(getWeaponFromApi('PPSHCW'))
 
 def ppshvg(update, context):
     defineLogs().info(f"El usuario {update.effective_user['username']}, consulto por PPSH-41 VG")
-    update.message.reply_text(getDataFromApi('PPSHVG'))
+    update.message.reply_text(getWeaponFromApi('PPSHVG'))
 
 def qbz(update, context):
     defineLogs().info(f"El usuario {update.effective_user['username']}, consulto por QBZ-83")
-    update.message.reply_text(getDataFromApi('QBZ'))
+    update.message.reply_text(getWeaponFromApi('QBZ'))
 
 def r1shadowhunter(update, context):
     defineLogs().info(f"El usuario {update.effective_user['username']}, consulto por R1 Shadowhunter")
-    update.message.reply_text(getDataFromApi('R1'))
+    update.message.reply_text(getWeaponFromApi('R1'))
 
 def r9(update, context):
     defineLogs().info(f"El usuario {update.effective_user['username']}, consulto por R9")
-    update.message.reply_text(getDataFromApi('R9'))
+    update.message.reply_text(getWeaponFromApi('R9'))
 
 def raal(update, context):
     defineLogs().info(f"El usuario {update.effective_user['username']}, consulto por RAAL")
-    update.message.reply_text(getDataFromApi('RAAL'))
+    update.message.reply_text(getWeaponFromApi('RAAL'))
 
 def ram(update, context):
     defineLogs().info(f"El usuario {update.effective_user['username']}, consulto por RAM-7")
-    update.message.reply_text(getDataFromApi('RAM'))
+    update.message.reply_text(getWeaponFromApi('RAM'))
 
 def ratt(update, context):
     defineLogs().info(f"El usuario {update.effective_user['username']}, consulto por RATT")
-    update.message.reply_text(getDataFromApi('RATT'))
+    update.message.reply_text(getWeaponFromApi('RATT'))
 
 def renetti(update, context):
     defineLogs().info(f"El usuario {update.effective_user['username']}, consulto por Renetti")
-    update.message.reply_text(getDataFromApi('Renetti'))
+    update.message.reply_text(getWeaponFromApi('Renetti'))
 
 def rpd(update, context):
     defineLogs().info(f"El usuario {update.effective_user['username']}, consulto por RPD")
-    update.message.reply_text(getDataFromApi('RPD'))
+    update.message.reply_text(getWeaponFromApi('RPD'))
 
 def rytec(update, context):
     defineLogs().info(f"El usuario {update.effective_user['username']}, consulto por Rytec")
-    update.message.reply_text(getDataFromApi('Rytec'))
+    update.message.reply_text(getWeaponFromApi('Rytec'))
 
 def sa87(update, context):
     defineLogs().info(f"El usuario {update.effective_user['username']}, consulto por SA87")
-    update.message.reply_text(getDataFromApi('SA87'))
+    update.message.reply_text(getWeaponFromApi('SA87'))
 
 def scar(update, context):
     defineLogs().info(f"El usuario {update.effective_user['username']}, consulto por Scar-H")
-    update.message.reply_text(getDataFromApi('SCAR'))
+    update.message.reply_text(getWeaponFromApi('SCAR'))
 
 def sks(update, context):
     defineLogs().info(f"El usuario {update.effective_user['username']}, consulto por SKS")
-    update.message.reply_text(getDataFromApi('SKS'))
+    update.message.reply_text(getWeaponFromApi('SKS'))
 
 def spr(update, context):
     defineLogs().info(f"El usuario {update.effective_user['username']}, consulto por SP-R")
-    update.message.reply_text(getDataFromApi('SPR'))
+    update.message.reply_text(getWeaponFromApi('SPR'))
 
 def sten(update, context):
     defineLogs().info(f"El usuario {update.effective_user['username']}, consulto por Sten")
-    update.message.reply_text(getDataFromApi('Sten'))
+    update.message.reply_text(getWeaponFromApi('Sten'))
 
 def stg(update, context):
     defineLogs().info(f"El usuario {update.effective_user['username']}, consulto por STG44")
-    update.message.reply_text(getDataFromApi('STG'))
+    update.message.reply_text(getWeaponFromApi('STG'))
 
 def stoner(update, context):
     defineLogs().info(f"El usuario {update.effective_user['username']}, consulto por Stoner 63")
-    update.message.reply_text(getDataFromApi('Stoner'))
+    update.message.reply_text(getWeaponFromApi('Stoner'))
 
 def streetsweeper(update, context):
     defineLogs().info(f"El usuario {update.effective_user['username']}, consulto por Streetsweeper")
-    update.message.reply_text(getDataFromApi('Street'))
+    update.message.reply_text(getWeaponFromApi('Street'))
 
 def striker(update, context):
     defineLogs().info(f"El usuario {update.effective_user['username']}, consulto por Striker 45")
-    update.message.reply_text(getDataFromApi('Striker'))
+    update.message.reply_text(getWeaponFromApi('Striker'))
 
 def svt(update, context):
     defineLogs().info(f"El usuario {update.effective_user['username']}, consulto por SVT-40")
-    update.message.reply_text(getDataFromApi('SVT'))
+    update.message.reply_text(getWeaponFromApi('SVT'))
 
 def swiss(update, context):
     defineLogs().info(f"El usuario {update.effective_user['username']}, consulto por Swiss K31")
-    update.message.reply_text(getDataFromApi('Swiss'))
+    update.message.reply_text(getWeaponFromApi('Swiss'))
 
 def sykov(update, context):
     defineLogs().info(f"El usuario {update.effective_user['username']}, consulto por Sykov")
-    update.message.reply_text(getDataFromApi('Sykov'))
+    update.message.reply_text(getWeaponFromApi('Sykov'))
 
 def tec9(update, context):
     defineLogs().info(f"El usuario {update.effective_user['username']}, consulto por TEC-9")
-    update.message.reply_text(getDataFromApi('TEC9'))
+    update.message.reply_text(getWeaponFromApi('TEC9'))
 
 def topbreak(update, context):
     defineLogs().info(f"El usuario {update.effective_user['username']}, consulto por Top Break")
-    update.message.reply_text(getDataFromApi('Topbreak'))
+    update.message.reply_text(getWeaponFromApi('Topbreak'))
 
 def treslineas(update, context):
     defineLogs().info(f"El usuario {update.effective_user['username']}, consulto por Fusil de Tres Lineas")
-    update.message.reply_text(getDataFromApi('Treslineas'))
+    update.message.reply_text(getWeaponFromApi('Treslineas'))
 
 def tundra(update, context):
     defineLogs().info(f"El usuario {update.effective_user['username']}, consulto por LW3 - Tundra")
-    update.message.reply_text(getDataFromApi('Tundra'))
+    update.message.reply_text(getWeaponFromApi('Tundra'))
 
 def type(update, context):
     defineLogs().info(f"El usuario {update.effective_user['username']}, consulto por Type")
@@ -557,60 +557,60 @@ def type(update, context):
 
 def type100(update, context):
     defineLogs().info(f"El usuario {update.effective_user['username']}, consulto por Type 100")
-    update.message.reply_text(getDataFromApi('Type100'))
+    update.message.reply_text(getWeaponFromApi('Type100'))
 
 def type11(update, context):
     defineLogs().info(f"El usuario {update.effective_user['username']}, consulto por Type 11")
-    update.message.reply_text(getDataFromApi('Type11'))
+    update.message.reply_text(getWeaponFromApi('Type11'))
 
 def type63(update, context):
     defineLogs().info(f"El usuario {update.effective_user['username']}, consulto por Type 63")
-    update.message.reply_text(getDataFromApi('Type63'))
+    update.message.reply_text(getWeaponFromApi('Type63'))
 
 def type99(update, context):
     defineLogs().info(f"El usuario {update.effective_user['username']}, consulto por Type 99")
-    update.message.reply_text(getDataFromApi('Type99'))
+    update.message.reply_text(getWeaponFromApi('Type99'))
 
 def ugm8(update, context):
     defineLogs().info(f"El usuario {update.effective_user['username']}, consulto por UGM-8")
-    update.message.reply_text(getDataFromApi('UGM8'))
+    update.message.reply_text(getWeaponFromApi('UGM8'))
 
 def ugr(update, context):
     defineLogs().info(f"El usuario {update.effective_user['username']}, consulto por UGR")
-    update.message.reply_text(getDataFromApi('UGR'))
+    update.message.reply_text(getWeaponFromApi('UGR'))
 
 def uzi(update, context):
     defineLogs().info(f"El usuario {update.effective_user['username']}, consulto por Uzi")
-    update.message.reply_text(getDataFromApi('Uzi'))
+    update.message.reply_text(getWeaponFromApi('Uzi'))
 
 def vargo(update, context):
     defineLogs().info(f"El usuario {update.effective_user['username']}, consulto por Vargo 52")
-    update.message.reply_text(getDataFromApi('Vargo'))
+    update.message.reply_text(getWeaponFromApi('Vargo'))
 
 def vlk(update, context):
     defineLogs().info(f"El usuario {update.effective_user['username']}, consulto por Rogue VLK")
-    update.message.reply_text(getDataFromApi('VLK'))
+    update.message.reply_text(getWeaponFromApi('VLK'))
 
 def volks(update, context):
     defineLogs().info(f"El usuario {update.effective_user['username']}, consulto por Volkssturmgewehr")
-    update.message.reply_text(getDataFromApi('Volks'))
+    update.message.reply_text(getWeaponFromApi('Volks'))
 
 def welgun(update, context):
     defineLogs().info(f"El usuario {update.effective_user['username']}, consulto por Welgun")
-    update.message.reply_text(getDataFromApi('Welgun'))
+    update.message.reply_text(getWeaponFromApi('Welgun'))
 
 def whitley(update, context):
     defineLogs().info(f"El usuario {update.effective_user['username']}, consulto por Whitley")
-    update.message.reply_text(getDataFromApi('Whitley'))
+    update.message.reply_text(getWeaponFromApi('Whitley'))
 
 def x16(update, context):
     defineLogs().info(f"El usuario {update.effective_user['username']}, consulto por X16")
-    update.message.reply_text(getDataFromApi('X16'))
+    update.message.reply_text(getWeaponFromApi('X16'))
 
 def xm4(update, context):
     defineLogs().info(f"El usuario {update.effective_user['username']}, consulto por XM4")
-    update.message.reply_text(getDataFromApi('XM4'))
+    update.message.reply_text(getWeaponFromApi('XM4'))
 
 def zrg(update, context):
     defineLogs().info(f"El usuario {update.effective_user['username']}, consulto por ZRG 20 mm")
-    update.message.reply_text(getDataFromApi('ZRG'))
+    update.message.reply_text(getWeaponFromApi('ZRG'))
