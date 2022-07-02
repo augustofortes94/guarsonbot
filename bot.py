@@ -9,6 +9,7 @@ from resources.commands.stats import *
 from resources.commands.streamers import *
 from resources.commands.weapons import *
 
+
 if os.getenv('MODE') == "dev":
     # Acceso local
     def run(updater):

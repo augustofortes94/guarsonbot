@@ -41,9 +41,9 @@ def setString(data):
 
 def getLobbyFromApi(mode):
     cookie = login()
-    data = requests.get('https://apiguarson.herokuapp.com/api/mode/' + mode + '/', cookies=cookie).json()
+    data = requests.get('https://apiguarson.herokuapp.com/api/mode/' + str(mode) + '/', cookies=cookie).json()
     if data['message'] == 'Success':
-        return setString(data['mode'][0]['name']) + '\n'
+        return data['mode'][0]['name'] + '\n'
     return 'MODO DESCONOCIDO\n'
 
 def getWeaponFromApi(command):
