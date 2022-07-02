@@ -262,6 +262,8 @@ dp.add_handler(CommandHandler("MP7", mp7))
 
 dp.add_handler(CommandHandler("Nikita", nikita))
 
+dp.add_handler(CommandHandler("NZ", nz41))
+
 dp.add_handler(CommandHandler("NZ41", nz41))
 
 dp.add_handler(CommandHandler("Oden", oden))
