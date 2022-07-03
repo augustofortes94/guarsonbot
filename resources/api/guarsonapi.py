@@ -3,7 +3,7 @@ import requests
 
 url = 'https://apiguarson.herokuapp.com/'
 
-def login():        ##Login contra apiguarson en heroku
+def login():        # Login contra apiguarson en heroku
     params = {
         'username': os.getenv('apiusername'),
         'password': os.getenv('apipswd'),
@@ -43,7 +43,7 @@ def setString(data):
 
 def getLobbyFromApi(mode):
     cookie = login()
-    data = requests.get(url + 'api/mode/' + str(mode) + '/', cookies=cookie).json()
+    data = requests.get(url + 'api/mode/' + mode[mode.find('/')+1:] + '/', cookies=cookie).json()   # Quito / si el nombre esta compuesto en 2
     try:
         return data['mode'][0]['name'] + '\n'
     except:

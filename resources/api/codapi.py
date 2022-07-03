@@ -5,6 +5,7 @@ from operator import itemgetter
 from collections import OrderedDict
 from resources.api.filters import *
 from resources.api.processData import *
+from .guarsonapi import getLobbyFromApi
 
 # LOGIN
 def login():        # Login contra callofduty.com
@@ -59,8 +60,8 @@ def getLobbyInfo(lobbyId):  # Obtengo toda la informacion del lobby
             return "ERROR TIMEOUT: al obtener la partida en wzstats"
         except:     ##si no obtiene la data de la ultima partida arroja error
             return "ERROR: No se pudo conectar con wzstats.gg."
-        
-        jugadores = filterLobbyMode(lobby["data"]["mode"]) + time.strftime('%d/%m/%Y %H:%M', time.localtime(lobby["data"]["startedAt"] - 10800)) + "hs\n\n-KD---KILLS---NAME\n\n"    ##Obtengo la hora de la partida y le resto 3hs
+
+        jugadores = getLobbyFromApi(lobby["data"]["mode"]) + time.strftime('%d/%m/%Y %H:%M', time.localtime(lobby["data"]["startedAt"] - 10800)) + "hs\n\n-KD---KILLS---NAME\n\n"    ##Obtengo la hora de la partida y le resto 3hs
         data = {}   ##estructura donde guardo la info de cada jugador. Dict
         prom = 0
         y = 0   ##contador

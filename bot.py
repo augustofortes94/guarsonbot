@@ -1,5 +1,7 @@
 import sys
 import telegram
+from dotenv import load_dotenv
+from pathlib import Path
 from telegram.ext import Updater, CommandHandler, MessageHandler, Filters
 from resources.commands.commandsMenu import *
 from resources.commands.bonus import *
@@ -9,6 +11,9 @@ from resources.commands.stats import *
 from resources.commands.streamers import *
 from resources.commands.weapons import *
 
+
+BASE_DIR = Path(__file__).resolve().parent.parent
+load_dotenv()
 
 if os.getenv('MODE') == "dev":
     # Acceso local
