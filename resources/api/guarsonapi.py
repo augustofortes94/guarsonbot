@@ -44,14 +44,15 @@ def setString(data):
 def getLobbyFromApi(mode):
     cookie = login()
     data = requests.get(url + 'api/mode/' + str(mode) + '/', cookies=cookie).json()
-    if data['message'] == 'Success':
+    try:
         return data['mode'][0]['name'] + '\n'
-    return 'MODO DESCONOCIDO\n'
+    except:
+        return 'MODO DESCONOCIDO\n'
 
 def getWeaponFromApi(command):
     cookie = login()
     data = requests.get(url + 'api/weapons/' + command, cookies=cookie).json()
-    if data['message'] == 'Success':
+    if 'Success' in data['message']:
         return setString(data['weapons'][0])
     return 'Arma no encontrada'
     
