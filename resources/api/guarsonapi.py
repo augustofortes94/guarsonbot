@@ -56,6 +56,7 @@ def getLobbyFromApi(mode):
 def getWeaponFromApi(command):
     cookie = login()
     data = requests.get(url + 'api/weapons/' + command, cookies=cookie).json()
-    if 'Success' in data['message']:
+    try:
         return setString(data['weapons'][0])
-    return 'Arma no encontrada'
+    except:
+        return 'Arma no encontrada'
