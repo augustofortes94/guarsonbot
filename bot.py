@@ -1,3 +1,4 @@
+import os
 import sys
 import telegram
 from dotenv import load_dotenv
