@@ -499,7 +499,7 @@ dp.add_handler(CommandHandler("RapaxKD", rapaxkd))
 
 
 # BOTONERA
-# dp.add_handler(CommandHandler("bot", botoneraAdapter))
+dp.add_handler(CommandHandler("bot", botoneraAdapter))
 
 
 # CERTIFICADO
