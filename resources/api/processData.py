@@ -1,42 +1,47 @@
-from resources.api.filters import *
+from resources.api.filters import filterKD
 
-#####   PROCESS JSON DATA
+# PROCESS JSON DATA
 
-def basicInfo(respuesta, name):   #Creo el string con la informacion basica
-    return (name 
-    + ":\n\n-Nombre: " + respuesta["data"]["username"]
-    + "\n-Nivel: " + str(int(respuesta["data"]["level"]))
-    #+ "\n-Prestigio: " + str(int(respuesta["data"]["prestige"]))
-    + "\n-Wins: " + str(int(respuesta["data"]["lifetime"]["mode"]["br"]["properties"]["wins"]))
-    + "\n" + lifetimeKD(respuesta))
+
+def basicInfo(respuesta, name):   # Creo el string con la informacion basica
+    return (name
+            + ":\n\n-Nombre: " + respuesta["data"]["username"]
+            + "\n-Nivel: " + str(int(respuesta["data"]["level"]))
+            + "\n-Wins: " + str(int(respuesta["data"]["lifetime"]["mode"]["br"]["properties"]["wins"]))
+            + "\n" + lifetimeKD(respuesta)
+            )
+
 
 def lifetimeKD(respuesta):
     return ("\n-Kills: " + str(int(respuesta["data"]["lifetime"]["mode"]["br"]["properties"]["kills"]))
-    + "\n-Deaths: " + str(int(respuesta["data"]["lifetime"]["mode"]["br"]["properties"]["deaths"]))
-    + "\n-KD general: " + filterKD(str(round(float(respuesta["data"]["lifetime"]["mode"]["br"]["properties"]["kdRatio"]), 2)))
-    + "\n-KD especifico: " + str(round(float(respuesta["data"]["lifetime"]["mode"]["br"]["properties"]["kdRatio"]), 5)))
+            + "\n-Deaths: " + str(int(respuesta["data"]["lifetime"]["mode"]["br"]["properties"]["deaths"]))
+            + "\n-KD general: " + filterKD(str(round(float(respuesta["data"]["lifetime"]["mode"]["br"]["properties"]["kdRatio"]), 2)))
+            + "\n-KD especifico: " + str(round(float(respuesta["data"]["lifetime"]["mode"]["br"]["properties"]["kdRatio"]), 5))
+            )
 
-def weeklyInfo(respuesta):  #Creo el string con la informacion semanal
+
+def weeklyInfo(respuesta):  # Creo el string con la informacion semanal
     try:
         return (weeklyKD(respuesta)
-        + "\n-Headshot Porcentaje: " + str(int(round(float(respuesta["data"]["weekly"]["all"]["properties"]["headshotPercentage"]), 2)*100)) + "%"
-        #+ "\n-Kills por Partida: " + str(round(float(respuesta["data"]["weekly"]["all"]["properties"]["killsPerGame"]), 2))
-        + weeklyModeKD(respuesta)
-        #+ "\n-Kills en Gulag: " + str(int(respuesta["data"]["weekly"]["all"]["properties"]["gulagKills"]))
-        #+ "\n-Gulags: " + str(int(respuesta["data"]["weekly"]["all"]["properties"]["gulagDeaths"])) + "\n"
-        + "\n-Horas: " + str(int(respuesta["data"]["weekly"]["all"]["properties"]["timePlayed"]/3600)) + "hs"
-        + "\n-Partidas: " + str(int(respuesta["data"]["weekly"]["all"]["properties"]["matchesPlayed"])))
+                + "\n-Headshot Porcentaje: " + str(int(round(float(respuesta["data"]["weekly"]["all"]["properties"]["headshotPercentage"]), 2)*100)) + "%"
+                + weeklyModeKD(respuesta)
+                + "\n-Horas: " + str(int(respuesta["data"]["weekly"]["all"]["properties"]["timePlayed"]/3600)) + "hs"
+                + "\n-Partidas: " + str(int(respuesta["data"]["weekly"]["all"]["properties"]["matchesPlayed"]))
+                )
     except:
         return "\n\nSemanal:\nEl jugador lleva mas de una semana sin jugar"
+
 
 def weeklyKD(respuesta):
     try:
         return ("\n\nSemanal:\n"
-        + "\n-Kills: " + str(int(respuesta["data"]["weekly"]["all"]["properties"]["kills"]))
-        + "\n-Deaths: " + str(int(respuesta["data"]["weekly"]["all"]["properties"]["deaths"]))
-        + "\n-KD: " + str(round(float(respuesta["data"]["weekly"]["all"]["properties"]["kdRatio"]), 2)))
+                + "\n-Kills: " + str(int(respuesta["data"]["weekly"]["all"]["properties"]["kills"]))
+                + "\n-Deaths: " + str(int(respuesta["data"]["weekly"]["all"]["properties"]["deaths"]))
+                + "\n-KD: " + str(round(float(respuesta["data"]["weekly"]["all"]["properties"]["kdRatio"]), 2))
+                )
     except:
         return "\n\nSemanal:\nEl jugador lleva mas de una semana sin jugar"
+
 
 def weeklyModeKD(respuesta):
     kdsByMode = "\n"

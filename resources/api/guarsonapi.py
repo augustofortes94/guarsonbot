@@ -3,6 +3,7 @@ import requests
 
 url = 'https://apiguarson.herokuapp.com/'
 
+
 def login():        # Login contra apiguarson en heroku
     params = {
         'username': os.getenv('apiusername'),
@@ -11,35 +12,37 @@ def login():        # Login contra apiguarson en heroku
     response = requests.post(url + 'api/login/', data=params)
     return response.cookies
 
+
 def setString(data):
     cadena = data['name'] + ':\n\n'
-    if data['muzzle'] != None:
+    if data['muzzle'] is not None:
         cadena = cadena + '-' + data['muzzle'] + '\n'
-    if data['barrel'] != None:
+    if data['barrel'] is not None:
         cadena = cadena + '-' + data['barrel'] + '\n'
-    if data['laser'] != None:
+    if data['laser'] is not None:
         cadena = cadena + '-' + data['laser'] + '\n'
-    if data['optic'] != None:
+    if data['optic'] is not None:
         cadena = cadena + '-' + data['optic'] + '\n'
-    if data['stock'] != None:
+    if data['stock'] is not None:
         cadena = cadena + '-' + data['stock'] + '\n'
-    if data['underbarrel'] != None:
+    if data['underbarrel'] is not None:
         cadena = cadena + '-' + data['underbarrel'] + '\n'
-    if data['magazine'] != None:
+    if data['magazine'] is not None:
         cadena = cadena + '-' + data['magazine'] + '\n'
-    if data['ammunition'] != None:
+    if data['ammunition'] is not None:
         cadena = cadena + '-' + data['ammunition'] + '\n'
-    if data['reargrip'] != None:
+    if data['reargrip'] is not None:
         cadena = cadena + '-' + data['reargrip'] + '\n'
-    if data['perk'] != None:
+    if data['perk'] is not None:
         cadena = cadena + '-' + data['perk'] + '\n'
-    if data['perk2'] != None:
+    if data['perk2'] is not None:
         cadena = cadena + '-' + data['perk2'] + '\n'
-    if data['alternative'] != None:
+    if data['alternative'] is not None:
         cadena = cadena + '\n' + data['alternative'] + '\n'
-    if data['alternative2'] != None:
+    if data['alternative2'] is not None:
         cadena = cadena + '\n' + data['alternative2']
     return cadena
+
 
 def getLobbyFromApi(mode):
     cookie = login()
@@ -49,10 +52,10 @@ def getLobbyFromApi(mode):
     except:
         return 'MODO DESCONOCIDO\n'
 
+
 def getWeaponFromApi(command):
     cookie = login()
     data = requests.get(url + 'api/weapons/' + command, cookies=cookie).json()
     if 'Success' in data['message']:
         return setString(data['weapons'][0])
     return 'Arma no encontrada'
-    

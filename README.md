@@ -1,5 +1,5 @@
 # guarzonebot
-This is a bot programmed for recreational fines
+This is a bot programmed for recreational purposes
 
 
 Comandos para que corra:
