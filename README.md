@@ -1,4 +1,4 @@
-# guarzonebot
+# guarsonbot
 This is a bot programmed for recreational purposes
 
 

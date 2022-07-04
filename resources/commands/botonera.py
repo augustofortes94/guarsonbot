@@ -1,19 +1,20 @@
-from telegram import *
-from resources.api.codapi import *
-from resources.commands.commandsMenu import *
-from resources.commands.bonus import codsignal, conectados
+from telegram import KeyboardButton, ReplyKeyboardMarkup
+from resources.api.codapi import getLobbyTotalInfo
+from resources.commands.commandsMenu import armas, comandos, getListLobbys, getListStats
+from resources.commands.bonus import codsignal
 from resources.commands.commandsMenu import defineLogs
 
 
 # BOTONERA #
-"""
 def botonera(update, context, text):      # Defino y creo los botones del chat
     defineLogs().info(f"El usuario {update.effective_user['username']}, consulto por botonera")
-    buttons = [[KeyboardButton("Armas")], [KeyboardButton("COD Señal")], [KeyboardButton("Comandos")], [KeyboardButton("Lobbys")]] # , [KeyboardButton("Conectados")], [KeyboardButton("Lobbys")], [KeyboardButton("Stats")]]
+    buttons = [[KeyboardButton("Armas")], [KeyboardButton("COD Señal")], [KeyboardButton("Comandos")], [KeyboardButton("Lobbys")]]  # , [KeyboardButton("Conectados")], [KeyboardButton("Lobbys")], [KeyboardButton("Stats")]]
     update.message.reply_text(str(text), reply_markup=ReplyKeyboardMarkup(buttons))
+
 
 def botoneraAdapter(update, context):      # seteo el texto a enviar al crear la botonera
     botonera(update, context, "Botonera activa")
+
 
 def botoneraLobbys(update, context):      # Defino y creo los botones del chat para las lobbys
     defineLogs().info(f"El usuario {update.effective_user['username']}, consulto por Comandos de Lobbys")
@@ -21,12 +22,14 @@ def botoneraLobbys(update, context):      # Defino y creo los botones del chat p
     keyboar.one_time_keyboard = True
     update.message.reply_text(getListLobbys(), reply_markup=keyboar)
 
+
 def botoneraStats(update, context):      # Defino y creo los botones del chat para las lobbys
     defineLogs().info(f"El usuario {update.effective_user['username']}, consulto por Comandos de Stats")
     keyboar = ReplyKeyboardMarkup([[KeyboardButton("Bolsonaro")], [KeyboardButton("Hormigator")], [KeyboardButton("Leko")], [KeyboardButton("Mandalorian")], [KeyboardButton("<--")]])
     keyboar.one_time_keyboard = True
     update.message.reply_text(getListStats(), reply_markup=keyboar)
-"""
+
+
 # MANEJADOR DE MENSAJES #
 def messageHandler(update, context):
     if "Armas" in update.message.text:
@@ -37,7 +40,7 @@ def messageHandler(update, context):
 
     if "Comandos" in update.message.text:
         return comandos(update, context)
-    """
+
     if "Lobbys" in update.message.text:
         return botoneraLobbys(update, context)
 
@@ -63,7 +66,6 @@ def messageHandler(update, context):
 
     if "<--" in update.message.text:
         return botonera(update, context, "back")
-    """
 
     """
     if "Conectados" in update.message.text:
@@ -83,11 +85,11 @@ def messageHandler(update, context):
     if "Hormigator" in update.message.text:
         defineLogs().info(f"El usuario {update.effective_user['username']}, consulto por Hormigator")
         return botonera(update, context, info_Player("psn", "Hormigator1", "Hormigator"))
-    
+
     if "Leko" in update.message.text:
         defineLogs().info(f"El usuario {update.effective_user['username']}, consulto por Leko")
         return botonera(update, context, info_Player("psn", "Aleko22lp", "Leko"))
-    
+
     if "Mandalorian" in update.message.text:
         defineLogs().info(f"El usuario {update.effective_user['username']}, consulto por Mandalorian")
         return botonera(update, context, info_Player("battle", "Mandalorian%2311726", "ElFisgonMorboson"))
@@ -99,11 +101,11 @@ def messageHandler(update, context):
     if "HormigatorKD" in update.message.text:
         defineLogs().info(f"El usuario {update.effective_user['username']}, consulto por Hormigator KD")
         return botonera(update, context, info_Player_kd("psn", "Hormigator1", "Hormigator"))
-    
+
     if "LekoKD" in update.message.text:
         defineLogs().info(f"El usuario {update.effective_user['username']}, consulto por Leko KD")
         return botonera(update, context, info_Player_kd("psn", "Aleko22lp", "Leko"))
-    
+
     if "MandalorianKD" in update.message.text:
         defineLogs().info(f"El usuario {update.effective_user['username']}, consulto por Mandalorian KD")
         return botonera(update, context, info_Player_kd("battle", "Mandalorian%2311726", "ElFisgonMorboson"))

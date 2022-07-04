@@ -1,4 +1,3 @@
-#from telegram import *
 from resources.api.codapi import hormigator_friends
 from resources.commands.commandsMenu import defineLogs
 
