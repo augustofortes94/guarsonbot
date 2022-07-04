@@ -28,10 +28,7 @@ elif os.getenv('MODE') == "prod":
     def run(updater):
         port = int(os.environ.get('PORT', '8443'))
         heroku_app_name = os.environ.get("HEROKU_APP_NAME")
-        updater.start_webhook(listen="0.0.0.0",
-                      port=port,
-                      url_path=os.getenv('TOKEN'),
-                      webhook_url="https://{}.herokuapp.com/{}".format(heroku_app_name, os.getenv('TOKEN')))
+        updater.start_webhook(listen="0.0.0.0", port=port, url_path=os.getenv('TOKEN'), webhook_url="https://{}.herokuapp.com/{}".format(heroku_app_name, os.getenv('TOKEN')))
         print("CORRIENDO PRODUCCION...")
 
 else:
@@ -40,10 +37,10 @@ else:
 
 # Creo el bot con el token
 if __name__ == "__main__":
-    bot = telegram.Bot(token = os.getenv('TOKEN'))
+    bot = telegram.Bot(token=os.getenv('TOKEN'))
 
 # Enlazamos el updater con el bot
-updater = Updater(bot.token, use_context= True)
+updater = Updater(bot.token, use_context=True)
 
 # Creamos un depachador
 dp = updater.dispatcher
