@@ -3,7 +3,7 @@ import datetime
 from telegram import *
 from resources.api.codapi import *
 
-#Defino la info para los logs
+# Defino la info para los logs
 def defineLogs():
     logging.basicConfig(
         level=logging.INFO, format="%(asctime)s - %(name)s - %(levelname)s - %(message)s,"
@@ -16,7 +16,7 @@ logging.basicConfig(
         )
 logger = logging.getLogger()
 
-#####   COMANDOS    #####
+# COMANDOS
 def armas(update, context):
     defineLogs().info(f"El usuario {update.effective_user['username']}, consulto por Comandos de Armas")
     update.message.reply_text("/Comandos para armas:\n\n" + getListArmas())
@@ -53,14 +53,14 @@ def streamers(update, context):
     defineLogs().info(f"El usuario {update.effective_user['username']}, consulto por Comandos de Streamers")
     update.message.reply_text("/Comandos para streamers:\n\n" + getListStreamers())
 
-#####   CERTIFICADO   #####
-def certified(update, context):     #Devuelvo el vencimiento del certificado SSO
+# CERTIFICADO
+def certified(update, context):     # Devuelvo el vencimiento del certificado SSO
     defineLogs().info(f"El usuario {update.effective_user['username']}, consulto por Certificado")
     expire_date = int(os.getenv('sso_expire'))
     update.message.reply_text("Vence el: " + str(datetime.datetime.fromtimestamp(expire_date/1000)))
 
-#####   PRINTS  #####
-def getListArmas():     #Return a string with a list of weapons
+# PRINTS
+def getListArmas():     # Return a string with a list of weapons
     return ("\nFusiles de Asalto:"
         + "\n-/AK47MW"
         + "\n-/AK47CW"
@@ -211,9 +211,10 @@ def getListArmas():     #Return a string with a list of weapons
         + "\n-/Renetti"
         + "\n-/Sykov"
         + "\n-/Topbreak"
-        + "\n-/X16")
+        + "\n-/X16"
+        )
 
-def getListBonus():     #Return a string with a list of stats commands
+def getListBonus():     # Return a string with a list of stats commands
     return ("\n\n-----Bonus-----"
         + "\n-/Alla"
         + "\n-/Cod"
@@ -223,41 +224,41 @@ def getListBonus():     #Return a string with a list of stats commands
         + "\n-/Mancolorian"
         + "\n-/Quaqua")
 
-def getListLobbys():     #Return a string with a list of stats commands
+def getListLobbys():     # Return a string with a list of stats commands
     return ("\n\nLobbys:"
         + "\n-/LobbyBerisso1"
         + "\n-/LobbyBolsonaro"
         + "\n-/LobbyHormigator"
         + "\n-/LobbyLeko"
-        #+ "\n-/LobbyLuquitas"
+        # + "\n-/LobbyLuquitas"
         + "\n-/LobbyMandalorian"
-        #+ "\n-/LobbyPablo"
-        #+ "\n-/LobbyRapax"
+        # + "\n-/LobbyPablo"
+        # + "\n-/LobbyRapax"
         + "\n-/Matchmaking"
         + "\n-/Tabla")
 
-def getListStats():     #Return a string with a list of stats commands
+def getListStats():     # Return a string with a list of stats commands
     return ("\n\nStats:"
         + "\n-/Berisso1"
         + "\n-/Bolsonaro"
         + "\n-/Hormigator"
         + "\n-/Leko"
-        #+ "\n-/Luquitas"
+        # + "\n-/Luquitas"
         + "\n-/Mandalorian"
-        #+ "\n-/Pablo"
-        #+ "\n-/Rapax"
+        # + "\n-/Pablo"
+        # + "\n-/Rapax"
         + "\n\nKD:"
         + "\n-/Berisso1KD"
         + "\n-/BolsonaroKD"
         + "\n-/HormigatorKD"
         + "\n-/LekoKD"
-        #+ "\n-/LuquitasKD"
+        # + "\n-/LuquitasKD"
         + "\n-/MandalorianKD"
-        #+ "\n-/PabloKD"
-        #+ "\n-/RapaxKD"
+        # + "\n-/PabloKD"
+        # + "\n-/RapaxKD"
         )
 
-def getListStreamers():     #Return a string with streamers list
+def getListStreamers():     # Return a string with streamers list
     return ("\nStreamers:"
         + "\n-/Aydan (Loadout de Aydan)"
         + "\n-/LobbyAmir"
@@ -267,4 +268,5 @@ def getListStreamers():     #Return a string with streamers list
         + "\n-/LobbyMirrey"
         + "\n-/LobbySoki"
         + "\n-/LobbyTaison"
-        + "\n-/Mutex (Loadout de Mutex)")
+        + "\n-/Mutex (Loadout de Mutex)"
+        )
