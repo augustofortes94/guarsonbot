@@ -197,11 +197,13 @@ dp.add_handler(CommandHandler("RapaxKD", rapaxkd))
 dp.add_handler(CommandHandler("Certificado", certified))
 
 
+# COMANDOS DINAMICOS
+dp.add_handler(MessageHandler(Filters.regex(r"^/\w+$"), weaponRegex))
+
+
 # MANEJADOR DE MENSAJES SIN "/"
 # dp.add_handler(MessageHandler(Filters.text, messageHandler))
 
-# COMANDOS DINAMICOS
-dp.add_handler(MessageHandler(Filters.regex(r"^/\w+$"), weaponRegex))
 
 # RUN
 run(updater)
