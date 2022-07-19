@@ -198,7 +198,7 @@ dp.add_handler(CommandHandler("Certificado", certified))
 
 
 # MANEJADOR DE MENSAJES SIN "/"
-dp.add_handler(MessageHandler(Filters.text, messageHandler))
+# dp.add_handler(MessageHandler(Filters.text, messageHandler))
 
 # COMANDOS DINAMICOS
 dp.add_handler(MessageHandler(Filters.regex(r"^/\w+$"), weaponRegex))
