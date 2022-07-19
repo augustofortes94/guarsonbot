@@ -2,6 +2,12 @@ from resources.commands.commandsMenu import defineLogs
 from ..api.guarsonapi import getWeaponFromApi
 
 
+def weaponRegex(update, context):
+    mssg = getWeaponFromApi(update['message']['text'][1:])
+    defineLogs().info(f"El usuario {update.effective_user['username']}, consulto por " + update['message']['text'][1:])
+    update.message.reply_text(mssg)
+
+
 # ARMAS
 def ak47(update, context):
     defineLogs().info(f"El usuario {update.effective_user['username']}, consulto por AK-47")
@@ -345,7 +351,7 @@ def lc10(update, context):
 
 def m1(update, context):
     defineLogs().info(f"El usuario {update.effective_user['username']}, consulto por M1 Garand")
-    update.message.reply_text(getWeaponFromApi('M1'))
+    update.message.reply_text(getWeaponFromApi('M1Garand'))
 
 
 def m13(update, context):
