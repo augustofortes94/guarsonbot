@@ -44,6 +44,15 @@ def setString(data):
     return cadena
 
 
+def getListCommands(category):  # Return list commands of a category
+    cookie = login()
+    data = requests.get(url + 'api/weapons/?category=' + category, cookies=cookie).json()
+    list_commands = ''
+    for command in data['weapons']:
+        list_commands = list_commands + '\n-/' + command[0]
+    return list_commands
+
+
 def getLobbyFromApi(mode):
     cookie = login()
     data = requests.get(url + 'api/mode/' + mode[mode.find('/')+1:] + '/', cookies=cookie).json()   # Quito / si el nombre esta compuesto en 2
@@ -55,7 +64,7 @@ def getLobbyFromApi(mode):
 
 def getWeaponFromApi(command):
     cookie = login()
-    data = requests.get(url + 'api/weapons/' + command, cookies=cookie).json()
+    data = requests.get(url + 'api/weapons/?command=' + command, cookies=cookie).json()
     try:
         return setString(data['weapons'][0])
     except:
