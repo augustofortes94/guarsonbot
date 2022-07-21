@@ -1,7 +1,7 @@
 import logging
 import datetime
 import os
-from ..api.guarsonapi import getListCommands
+from ..api.guarsonapi import getListWeaponCommands
 
 
 # Defino la info para los logs
@@ -22,7 +22,7 @@ logger = logging.getLogger()
 # COMANDOS
 def armas(update, context):
     defineLogs().info(f"El usuario {update.effective_user['username']}, consulto por Comandos de Armas")
-    update.message.reply_text("/Comandos para armas:\n\n" + getListArmas())
+    update.message.reply_text("/Comandos para armas:\n\n" + getListWeaponCommands())
 
 
 def comandos(update, context):
@@ -30,7 +30,7 @@ def comandos(update, context):
     update.message.reply_text(
                             "/Hola soy el /bot Guarson, hasta ahora los /Comandos disponibles son los siguientes:\n\n"
                             + "\n-----/Armas-----\n"
-                            + getListArmas()
+                            + getListWeaponCommands()
                             + "\n\n-----/Streamers-----"
                             + getListStreamers()
                             + getListBonus()
@@ -70,24 +70,6 @@ def certified(update, context):     # Devuelvo el vencimiento del certificado SS
 
 
 # PRINTS
-def getListArmas():     # Return a string with a list of weapons
-    return ("\nFusiles de Asalto:"
-            + getListCommands('Fusiles de Asalto')
-            + "\n\nSubfusiles:"
-            + getListCommands('Subfusiles')
-            + "\n\nEscopetas:"
-            + getListCommands('Escopetas')
-            + "\n\nAmetralladoras Ligeras:"
-            + getListCommands('Ametralladoras Ligeras')
-            + "\n\nFusiles Tacticos:"
-            + getListCommands('Fusiles Tacticos')
-            + "\n\nFusiles de Precision:"
-            + getListCommands('Fusiles de Precision')
-            + "\n\nPistolas:"
-            + getListCommands('Pistolas')
-            )
-
-
 def getListBonus():     # Return a string with a list of stats commands
     return ("\n\n-----Bonus-----"
             + "\n-/Alla"

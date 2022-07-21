@@ -44,12 +44,38 @@ def setString(data):
     return cadena
 
 
-def getListCommands(category):  # Return list commands of a category
+def getListWeaponCommands():  # Return list commands of a category
     cookie = login()
-    data = requests.get(url + 'api/weapons/?category=' + category, cookies=cookie).json()
-    list_commands = ''
-    for command in data['weapons']:
-        list_commands = list_commands + '\n-/' + command[0]
+    data = requests.get(url + 'api/categories/', cookies=cookie).json()
+    
+    list_commands = '\nFusiles de Asalto:'
+    for command in data['categories']['Fusiles de Asalto']:
+        list_commands = list_commands + '\n-/' + command['command']
+
+    list_commands = list_commands + '\n\nSubfusiles:'
+    for command in data['categories']['Subfusiles']:
+        list_commands = list_commands + '\n-/' + command['command']
+
+    list_commands = list_commands + '\n\nEscopetas:'
+    for command in data['categories']['Escopetas']:
+        list_commands = list_commands + '\n-/' + command['command']
+
+    list_commands = list_commands + '\n\nAmetralladoras Ligeras:'
+    for command in data['categories']['Ametralladoras Ligeras']:
+        list_commands = list_commands + '\n-/' + command['command']
+
+    list_commands = list_commands + '\n\nFusiles Tacticos:'
+    for command in data['categories']['Fusiles Tacticos']:
+        list_commands = list_commands + '\n-/' + command['command']
+
+    list_commands = list_commands + '\n\nFusiles de Precision:'
+    for command in data['categories']['Fusiles de Precision']:
+        list_commands = list_commands + '\n-/' + command['command']
+
+    list_commands = list_commands + '\n\nPistolas:'
+    for command in data['categories']['Pistolas']:
+        list_commands = list_commands + '\n-/' + command['command']
+
     return list_commands
 
 
