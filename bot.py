@@ -66,8 +66,6 @@ dp.add_handler(CommandHandler("AK47", ak47))
 
 dp.add_handler(CommandHandler("AUG", aug))
 
-dp.add_handler(CommandHandler("Galil", cr56))
-
 dp.add_handler(CommandHandler("M1", m1))
 
 dp.add_handler(CommandHandler("Kar", kar98))
@@ -84,6 +82,7 @@ dp.add_handler(CommandHandler("PPSH", ppsh))
 
 dp.add_handler(CommandHandler("Type", type))
 
+dp.add_handler(CommandHandler("Vargo", vargo))
 
 # STREAMERS
 dp.add_handler(CommandHandler("Aydan", aydan))
