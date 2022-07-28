@@ -56,4 +56,4 @@ def type(update, context):
 
 def vargo(update, context):
     defineLogs().info(f"El usuario {update.effective_user['username']}, consulto por Vargo 52")
-    update.message.reply_text("Vargo:\n\n-Para Vargo 52 de Coldwar /Vargo52\n- Para Vargo-S de Vanguard /VargoS")
+    update.message.reply_text("Vargo:\n\n-Para Vargo 52 de Coldwar /Vargo52\n-Para Vargo-S de Vanguard /VargoS")
