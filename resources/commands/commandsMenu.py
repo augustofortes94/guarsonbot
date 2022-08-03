@@ -58,8 +58,8 @@ def comandos(update, context):
                             + getListCommands('Streamers')
                             + "\n"
                             + getListCommands('Bonus')
-                            + "\n\n-----/Stats-----"
-                            + getListStats()
+                            #+ "\n\n-----/Stats-----"
+                            #+ getListStats()
                             + "\n\n-----/Lobbys-----"
                             + getListCommands('Lobbys')
                             )
