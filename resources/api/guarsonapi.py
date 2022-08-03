@@ -46,7 +46,7 @@ def setString(data):
 
 def getListWeaponCommands():  # Return list commands of a category
     cookie = login()
-    data = requests.get(url + 'api/categories/', cookies=cookie).json()
+    data = requests.get(url + 'api/commands/', cookies=cookie).json()
     
     list_commands = '\nFusiles de Asalto:'
     for command in data['categories']['Fusiles de Asalto']:
