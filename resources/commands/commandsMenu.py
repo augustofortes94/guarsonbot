@@ -2,7 +2,7 @@ import logging
 import datetime
 import os
 import requests
-from ..api.guarsonapi import getListBonusCommands, getListWeaponCommands, getWeaponFromApi, login
+from ..api.guarsonapi import getListCommands, getListWeaponCommands, getWeaponFromApi, login
 from ..api.codapi import getLobbyTotalInfo
 
 
@@ -33,6 +33,11 @@ def commandRegex(update, context):
             update.message.reply_text(getWeaponFromApi(data['command']['name'], cookie))
         elif data['command']['category'] == 'Bonus':
             update.message.reply_text(data['command']['text'].replace('/n', "\n"))
+        elif data['command']['category'] == 'Streamers':
+            if data['command']['category']['text']:
+                update.message.reply_text(data['command']['text'].replace('/n', "\n"))
+            else:
+                update.message.reply_text(getLobbyTotalInfo(data['command']['parameter1'], data['command']['parameter2']))
     except:
         update.message.reply_text('No se encontro el comando')
 
@@ -50,12 +55,12 @@ def comandos(update, context):
                             + "\n-----/Armas-----\n"
                             + getListWeaponCommands()
                             + "\n\n-----/Streamers-----"
-                            + getListStreamers()
-                            + getListBonusCommands()
+                            + getListCommands('Streamers')
+                            + getListCommands('Bonus')
                             + "\n\n-----/Stats-----"
                             + getListStats()
                             + "\n\n-----/Lobbys-----"
-                            + getListLobbys()
+                            + getListCommands('Lobbys')
                             )
 
 
@@ -83,21 +88,8 @@ def streamers(update, context):
 # CERTIFICADO
 def certified(update, context):     # Devuelvo el vencimiento del certificado SSO
     defineLogs().info(f"El usuario {update.effective_user['username']}, consulto por Certificado")
-    expire_date = int(os.getenv('sso_expire'))
+    expire_date = int(os.getenv('SSO_EXPIRE'))
     update.message.reply_text("Vence el: " + str(datetime.datetime.fromtimestamp(expire_date/1000)))
-
-
-# PRINTS
-def getListBonus():     # Return a string with a list of stats commands
-    return ("\n\n-----Bonus-----"
-            + "\n-/Alla"
-            + "\n-/Cod"
-            + "\n-/Conectados"
-            + "\n-/Guarson"
-            + "\n-/Manco"
-            + "\n-/Mancolorian"
-            + "\n-/Quaqua"
-            )
 
 
 def getListLobbys():     # Return a string with a list of stats commands
