@@ -1,15 +1,12 @@
 import os
 import requests
 
-url = 'https://apiguarson.herokuapp.com/'
-
-
 def login():        # Login contra apiguarson en heroku
     params = {
         'username': os.getenv('apiusername'),
         'password': os.getenv('apipswd'),
     }
-    response = requests.post(url + 'api/login/', data=params)
+    response = requests.post(os.getenv('apiurl') + 'api/login/', data=params)
     return response.cookies
 
 
@@ -46,7 +43,7 @@ def setString(data):
 
 def getListWeaponCommands():  # Return list commands of a category
     cookie = login()
-    data = requests.get(url + 'api/commands/', cookies=cookie).json()
+    data = requests.get(os.getenv('apiurl') + 'api/commands/', cookies=cookie).json()
     
     list_commands = '\nFusiles de Asalto:'
     for command in data['categories']['Fusiles de Asalto']:
@@ -81,16 +78,15 @@ def getListWeaponCommands():  # Return list commands of a category
 
 def getLobbyFromApi(mode):
     cookie = login()
-    data = requests.get(url + 'api/mode/' + mode[mode.find('/')+1:] + '/', cookies=cookie).json()   # Quito / si el nombre esta compuesto en 2
+    data = requests.get(os.getenv('apiurl') + 'api/mode/' + mode[mode.find('/')+1:] + '/', cookies=cookie).json()   # Quito / si el nombre esta compuesto en 2
     try:
         return data['mode'][0]['name'] + '\n'
     except:
         return 'MODO DESCONOCIDO\n'
 
 
-def getWeaponFromApi(command):
-    cookie = login()
-    data = requests.get(url + 'api/weapons/?command=' + command, cookies=cookie).json()
+def getWeaponFromApi(command, cookie):
+    data = requests.get(os.getenv('apiurl') + 'api/weapons/?command=' + command, cookies=cookie).json()
     try:
         return setString(data['weapons'][0])
     except:

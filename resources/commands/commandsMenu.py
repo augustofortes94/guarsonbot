@@ -1,7 +1,9 @@
 import logging
 import datetime
 import os
-from ..api.guarsonapi import getListWeaponCommands
+import requests
+from ..api.guarsonapi import getListWeaponCommands, getWeaponFromApi, login
+from ..api.codapi import getLobbyTotalInfo
 
 
 # Defino la info para los logs
@@ -17,6 +19,22 @@ logging.basicConfig(
         level=logging.INFO, format="%(asctime)s - %(name)s - %(levelname)s - %(message)s,"
         )
 logger = logging.getLogger()
+
+
+# COMMAND HANDLER
+def commandRegex(update, context):
+    defineLogs().info(f"El usuario {update.effective_user['username']}, consulto por " + update['message']['text'][1:])
+    cookie = login()
+    data = requests.get(os.getenv('apiurl') + 'api/commands/?command=' + update['message']['text'][1:], cookies=cookie).json()
+    try:
+        if data['command']['category'] == 'Lobbys':
+            update.message.reply_text(getLobbyTotalInfo(data['command']['parameter1'], data['command']['parameter2']))
+        elif 'usiles' in data['command']['category'] or 'Escopeta' in data['command']['category'] or 'Pistolas' in data['command']['category'] or 'Ametralladoras Ligeras' in data['command']['category']:
+            update.message.reply_text(getWeaponFromApi(data['command']['name'], cookie))
+        elif data['command']['category'] == 'Bonus':
+            update.message.reply_text(data['command']['text'].replace('/n', "\n"))
+    except:
+        update.message.reply_text('No se encontro el comando')
 
 
 # COMANDOS

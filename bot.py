@@ -105,10 +105,6 @@ dp.add_handler(CommandHandler("Mutex", mutex))
 
 
 # BONUS
-dp.add_handler(CommandHandler("Alla", alla))
-
-dp.add_handler(CommandHandler("Api", api))
-
 dp.add_handler(CommandHandler("BotConchadetumadre", botconchatumadre))
 
 dp.add_handler(CommandHandler("BotConchatumadre", botconchatumadre))
@@ -122,16 +118,6 @@ dp.add_handler(CommandHandler("BotRapido", botrapido))
 dp.add_handler(CommandHandler("Cod", codsignal))
 
 dp.add_handler(CommandHandler("Fortnite", fortnite))
-
-dp.add_handler(CommandHandler("Guarson", guarson))
-
-dp.add_handler(CommandHandler("Manco", manco))
-
-dp.add_handler(CommandHandler("Mancolorian", mancolorian))
-
-dp.add_handler(CommandHandler("Matchmaking", matchmaking))
-
-dp.add_handler(CommandHandler("Quaqua", quaqua))
 
 dp.add_handler(CommandHandler("Tabla", tableColour))
 
@@ -154,22 +140,6 @@ dp.add_handler(CommandHandler("HormigatorKD", hormigatorkd))
 dp.add_handler(CommandHandler("Leko", leko))
 
 dp.add_handler(CommandHandler("LekoKD", lekokd))
-
-dp.add_handler(CommandHandler("LobbyBerisso1", lobbyElch000))
-
-dp.add_handler(CommandHandler("LobbyBolsonaro", lobbyBolsonaro))
-
-dp.add_handler(CommandHandler("LobbyHormigator", lobbyHormigator))
-
-dp.add_handler(CommandHandler("LobbyLeko", lobbyLeko))
-
-dp.add_handler(CommandHandler("LobbyLuquitas", lobbyLuquitas))
-
-dp.add_handler(CommandHandler("LobbyMandalorian", lobbyMandalorian))
-
-dp.add_handler(CommandHandler("LobbyPablo", lobbyPablo))
-
-dp.add_handler(CommandHandler("LobbyRapax", lobbyRapax))
 
 dp.add_handler(CommandHandler("Luquitas", luquitas))
 
@@ -197,7 +167,7 @@ dp.add_handler(CommandHandler("Certificado", certified))
 
 
 # COMANDOS DINAMICOS
-dp.add_handler(MessageHandler(Filters.regex(r"^/\w+$"), weaponRegex))
+dp.add_handler(MessageHandler(Filters.regex(r"^/\w+$"), commandRegex))
 
 
 # MANEJADOR DE MENSAJES SIN "/"
