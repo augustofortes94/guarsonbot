@@ -72,17 +72,17 @@ def hola(update, context):
 
 def lobbys(update, context):
     defineLogs().info(f"El usuario {update.effective_user['username']}, consulto por Comandos de Lobbys")
-    update.message.reply_text("/Comandos para Lobbys:\n\n" + getListLobbys())
+    update.message.reply_text("/Comandos para Lobbys:\n\n" + getListCommands('Lobbys'))
 
 
 def stats(update, context):
     defineLogs().info(f"El usuario {update.effective_user['username']}, consulto por Comandos de Estadisticas")
-    update.message.reply_text("/Comandos para estadisticas:\n\n" + getListStats() + getListLobbys())
+    update.message.reply_text("/Comandos para estadisticas:\n\n" + getListStats() + getListCommands('Lobbys'))
 
 
 def streamers(update, context):
     defineLogs().info(f"El usuario {update.effective_user['username']}, consulto por Comandos de Streamers")
-    update.message.reply_text("/Comandos para streamers:\n\n" + getListStreamers())
+    update.message.reply_text("/Comandos para streamers:\n\n" + getListCommands('Streamers'))
 
 
 # CERTIFICADO
@@ -90,22 +90,7 @@ def certified(update, context):     # Devuelvo el vencimiento del certificado SS
     defineLogs().info(f"El usuario {update.effective_user['username']}, consulto por Certificado")
     expire_date = int(os.getenv('SSO_EXPIRE'))
     update.message.reply_text("Vence el: " + str(datetime.datetime.fromtimestamp(expire_date/1000)))
-
-
-def getListLobbys():     # Return a string with a list of stats commands
-    return ("\n\nLobbys:"
-            + "\n-/LobbyBerisso1"
-            + "\n-/LobbyBolsonaro"
-            + "\n-/LobbyHormigator"
-            + "\n-/LobbyLeko"
-            # + "\n-/LobbyLuquitas"
-            + "\n-/LobbyMandalorian"
-            # + "\n-/LobbyPablo"
-            # + "\n-/LobbyRapax"
-            + "\n-/Matchmaking"
-            + "\n-/Tabla"
-            )
-
+    
 
 def getListStats():     # Return a string with a list of stats commands
     return ("\n\nStats:"
@@ -126,18 +111,4 @@ def getListStats():     # Return a string with a list of stats commands
             + "\n-/MandalorianKD"
             # + "\n-/PabloKD"
             # + "\n-/RapaxKD"
-            )
-
-
-def getListStreamers():     # Return a string with streamers list
-    return ("\nStreamers:"
-            + "\n-/Aydan (Loadout de Aydan)"
-            + "\n-/LobbyAmir"
-            + "\n-/LobbyAydan"
-            + "\n-/LobbyFlexz"
-            + "\n-/LobbyIron"
-            + "\n-/LobbyMirrey"
-            + "\n-/LobbySoki"
-            + "\n-/LobbyTaison"
-            + "\n-/Mutex (Loadout de Mutex)"
             )
