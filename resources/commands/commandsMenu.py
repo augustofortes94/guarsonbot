@@ -56,6 +56,7 @@ def comandos(update, context):
                             + getListWeaponCommands()
                             + "\n\n-----/Streamers-----"
                             + getListCommands('Streamers')
+                            + "\n"
                             + getListCommands('Bonus')
                             + "\n\n-----/Stats-----"
                             + getListStats()
