@@ -1,8 +1,9 @@
 from telegram import KeyboardButton, ReplyKeyboardMarkup
 from resources.api.codapi import getLobbyTotalInfo
-from resources.commands.commandsMenu import armas, comandos, getListLobbys, getListStats
+from resources.commands.commandsMenu import armas, comandos, getListStats
 from resources.commands.bonus import codsignal
 from resources.commands.commandsMenu import defineLogs
+from ..api.guarsonapi import getListCommands
 
 
 # BOTONERA #
@@ -20,7 +21,7 @@ def botoneraLobbys(update, context):      # Defino y creo los botones del chat p
     defineLogs().info(f"El usuario {update.effective_user['username']}, consulto por Comandos de Lobbys")
     keyboar = ReplyKeyboardMarkup([[KeyboardButton("LobbyBolsonaro")], [KeyboardButton("LobbyHormigator")], [KeyboardButton("LobbyMandalorian")], [KeyboardButton("<--")]])
     keyboar.one_time_keyboard = True
-    update.message.reply_text(getListLobbys(), reply_markup=keyboar)
+    update.message.reply_text(getListCommands('Lobbys'), reply_markup=keyboar)
 
 
 def botoneraStats(update, context):      # Defino y creo los botones del chat para las lobbys
