@@ -50,31 +50,31 @@ def getListWeaponCommands():  # Return list commands of a category
     
     list_commands = '\nFusiles de Asalto:'
     for command in data['categories']['Fusiles de Asalto']:
-        list_commands = list_commands + '\n-/' + command['command']
+        list_commands = list_commands + '\n-/' + command['name']
 
     list_commands = list_commands + '\n\nSubfusiles:'
     for command in data['categories']['Subfusiles']:
-        list_commands = list_commands + '\n-/' + command['command']
+        list_commands = list_commands + '\n-/' + command['name']
 
     list_commands = list_commands + '\n\nEscopetas:'
     for command in data['categories']['Escopetas']:
-        list_commands = list_commands + '\n-/' + command['command']
+        list_commands = list_commands + '\n-/' + command['name']
 
     list_commands = list_commands + '\n\nAmetralladoras Ligeras:'
     for command in data['categories']['Ametralladoras Ligeras']:
-        list_commands = list_commands + '\n-/' + command['command']
+        list_commands = list_commands + '\n-/' + command['name']
 
     list_commands = list_commands + '\n\nFusiles Tacticos:'
     for command in data['categories']['Fusiles Tacticos']:
-        list_commands = list_commands + '\n-/' + command['command']
+        list_commands = list_commands + '\n-/' + command['name']
 
     list_commands = list_commands + '\n\nFusiles de Precision:'
     for command in data['categories']['Fusiles de Precision']:
-        list_commands = list_commands + '\n-/' + command['command']
+        list_commands = list_commands + '\n-/' + command['name']
 
     list_commands = list_commands + '\n\nPistolas:'
     for command in data['categories']['Pistolas']:
-        list_commands = list_commands + '\n-/' + command['command']
+        list_commands = list_commands + '\n-/' + command['name']
 
     return list_commands
 
