@@ -34,7 +34,7 @@ def commandRegex(update, context):
         elif data['command']['category'] == 'Bonus':
             update.message.reply_text(data['command']['text'].replace('/n', "\n"))
         elif data['command']['category'] == 'Streamers':
-            if data['command']['category']['text']:
+            if data['command']['category']['text'] is not None:
                 update.message.reply_text(data['command']['text'].replace('/n', "\n"))
             else:
                 update.message.reply_text(getLobbyTotalInfo(data['command']['parameter1'], data['command']['parameter2']))
