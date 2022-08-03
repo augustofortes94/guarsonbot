@@ -84,26 +84,6 @@ dp.add_handler(CommandHandler("Type", type))
 
 dp.add_handler(CommandHandler("Vargo", vargo))
 
-# STREAMERS
-dp.add_handler(CommandHandler("Aydan", aydan))
-
-dp.add_handler(CommandHandler("LobbyAmir", lobbyAmir))
-
-dp.add_handler(CommandHandler("LobbyAydan", lobbyAydan))
-
-dp.add_handler(CommandHandler("LobbyFlexz", lobbyFlexz))
-
-dp.add_handler(CommandHandler("LobbyIron", lobbyIron))
-
-dp.add_handler(CommandHandler("LobbyMirrey", lobbyMirrey))
-
-dp.add_handler(CommandHandler("LobbySoki", lobbySoki))
-
-dp.add_handler(CommandHandler("LobbyTaison", lobbyTaison))
-
-dp.add_handler(CommandHandler("Mutex", mutex))
-
-
 # BONUS
 dp.add_handler(CommandHandler("BotConchadetumadre", botconchatumadre))
 
