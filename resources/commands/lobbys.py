@@ -1,12 +1,16 @@
 from resources.api.codapi import getLobbyTotalInfo
 from resources.api.filters import lobbyColourTable
 from resources.commands.commandsMenu import defineLogs
+from resources.api.guarsonapi import login
+import requests
 
 
 # Lobbys
 def lobbyBolsonaro(update, context):
     defineLogs().info(f"El usuario {update.effective_user['username']}, consulto por Lobby Bolsonaro")
-    update.message.reply_text(getLobbyTotalInfo("psn", "agu_q1988"))
+    cookie = login()
+    data = requests.get('https://apiguarson.herokuapp.com/api/weapons/?command=LobbyBolsonaro', cookies=cookie).json()
+    update.message.reply_text(getLobbyTotalInfo(data['command']['parameter1'], data['command']['parameter2']))
 
 
 def lobbyElch000(update, context):
