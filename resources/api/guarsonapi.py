@@ -41,6 +41,15 @@ def setString(data):
     return cadena
 
 
+def getListBonusCommands():  # Return list commands of a category
+    cookie = login()
+    data = requests.get(os.getenv('apiurl') + 'api/commands/', cookies=cookie).json()
+    bonus = '\nBonus:'
+    for command in data['categories']['Bonus']:
+        bonus = bonus + '\n-/' + command['name']
+    return bonus
+
+
 def getListWeaponCommands():  # Return list commands of a category
     cookie = login()
     data = requests.get(os.getenv('apiurl') + 'api/commands/', cookies=cookie).json()

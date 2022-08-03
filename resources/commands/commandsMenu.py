@@ -2,7 +2,7 @@ import logging
 import datetime
 import os
 import requests
-from ..api.guarsonapi import getListWeaponCommands, getWeaponFromApi, login
+from ..api.guarsonapi import getListBonusCommands, getListWeaponCommands, getWeaponFromApi, login
 from ..api.codapi import getLobbyTotalInfo
 
 
@@ -51,7 +51,7 @@ def comandos(update, context):
                             + getListWeaponCommands()
                             + "\n\n-----/Streamers-----"
                             + getListStreamers()
-                            + getListBonus()
+                            + getListBonusCommands()
                             + "\n\n-----/Stats-----"
                             + getListStats()
                             + "\n\n-----/Lobbys-----"
