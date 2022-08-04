@@ -2,16 +2,17 @@ import os
 import requests
 
 
-params = {
-        'username': os.getenv('apiusername'),
-        'password': os.getenv('apipswd'),
-    }
-
-cookie = requests.post(os.getenv('apiurl') + 'api/login/', data=params).cookies
+session = requests.Session()
 
 
-def getCookie():
-    return cookie
+def getCookie():    # Singleton of cookie
+    if not session.cookies:
+        params = {
+                'username': os.getenv('apiusername'),
+                'password': os.getenv('apipswd'),
+            }
+        session.post(os.getenv('apiurl') + 'api/login/', data=params)
+    return session.cookies
 
 
 """def login():        # Login contra apiguarson en heroku
@@ -55,7 +56,7 @@ def setString(data):
 
 
 def getListCommands(category):  # Return list commands of a category
-    data = requests.get(os.getenv('apiurl') + 'api/commands/', cookies=cookie).json()
+    data = requests.get(os.getenv('apiurl') + 'api/commands/', cookies=getCookie()).json()
     mssg = '\n' + category + ':'
     for command in data['categories'][category]:
         mssg = mssg + '\n-/' + command['name']
@@ -63,7 +64,7 @@ def getListCommands(category):  # Return list commands of a category
 
 
 def getListWeaponCommands():  # Return list commands of a category
-    data = requests.get(os.getenv('apiurl') + 'api/commands/', cookies=cookie).json()
+    data = requests.get(os.getenv('apiurl') + 'api/commands/', cookies=getCookie()).json()
     
     list_commands = '\nFusiles de Asalto:'
     for command in data['categories']['Fusiles de Asalto']:
@@ -97,7 +98,7 @@ def getListWeaponCommands():  # Return list commands of a category
 
 
 def getLobbyFromApi(mode):
-    data = requests.get(os.getenv('apiurl') + 'api/mode/' + mode[mode.find('/')+1:] + '/', cookies=cookie).json()   # Quito / si el nombre esta compuesto en 2
+    data = requests.get(os.getenv('apiurl') + 'api/mode/' + mode[mode.find('/')+1:] + '/', cookies=getCookie()).json()   # Quito / si el nombre esta compuesto en 2
     try:
         return data['mode'][0]['name'] + '\n'
     except:
@@ -105,7 +106,7 @@ def getLobbyFromApi(mode):
 
 
 def getWeaponFromApi(command, cookie):
-    data = requests.get(os.getenv('apiurl') + 'api/weapons/?command=' + command, cookies=cookie).json()
+    data = requests.get(os.getenv('apiurl') + 'api/weapons/?command=' + command, cookies=getCookie()).json()
     try:
         return setString(data['weapons'][0])
     except:

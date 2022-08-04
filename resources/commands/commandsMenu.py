@@ -30,7 +30,7 @@ def commandRegex(update, context):
         if data['command']['category'] == 'Lobbys':
             update.message.reply_text(getLobbyTotalInfo(data['command']['parameter1'], data['command']['parameter2']))
         elif 'usiles' in data['command']['category'] or 'Escopeta' in data['command']['category'] or 'Pistolas' in data['command']['category'] or 'Ametralladoras Ligeras' in data['command']['category']:
-            update.message.reply_text(getWeaponFromApi(data['command']['name'], cookie))
+            update.message.reply_text(getWeaponFromApi(data['command']['name']))
         elif data['command']['category'] == 'Bonus':
             update.message.reply_text(data['command']['text'].replace('/n', "\n"))
         elif data['command']['category'] == 'Streamers':
