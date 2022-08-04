@@ -105,7 +105,7 @@ def getLobbyFromApi(mode):
         return 'MODO DESCONOCIDO\n'
 
 
-def getWeaponFromApi(command, cookie):
+def getWeaponFromApi(command):
     data = requests.get(os.getenv('apiurl') + 'api/weapons/?command=' + command, cookies=getCookie()).json()
     try:
         return setString(data['weapons'][0])
