@@ -7,6 +7,9 @@ from resources.api.processData import basicInfo, lifetimeKD, weeklyInfo, weeklyK
 from .guarsonapi import getLobbyFromApi
 
 
+lastLobbyID = ''
+lastLobby = ''
+
 # LOGIN
 def login():        # Login contra callofduty.com
     """
@@ -46,7 +49,7 @@ def getLobbyIdWZStats(platform, user):  # Obtengo el ID de la ultima lobby desde
 
 
 def getLobbyInfo(lobbyId):  # Obtengo toda la informacion del lobby
-    if lobbyId == "ERROR: no se pudo obtener el ID de la partida desde 'my.callofduty.com'":
+    if "ERROR" in lobbyId:
         return lobbyId
     else:
         try:    # Intentar obtener la data de la ultima partida
@@ -78,11 +81,16 @@ def getLobbyInfo(lobbyId):  # Obtengo toda la informacion del lobby
         for key, value in OrderedDict(sorted(data.items(), key=itemgetter(1), reverse=True)).items():   # Itero por todos los jugadores
             jugadores = jugadores + value   # Guardo su info en string
 
-        return verifyLarge(jugadores + "\n" + str(y) + " Jugadores\n" + "Promedio KD Lobby: " + filterKD(str(round((prom/(y-sinkd)), 2))) + "\n" + lobbyColour(round((prom/(y-sinkd)), 3)))   # Saco el promedio de todos los que tienen kd
+        lastLobbyID = lobbyId
+        lastLobby = verifyLarge(jugadores + "\n" + str(y) + " Jugadores\n" + "Promedio KD Lobby: " + filterKD(str(round((prom/(y-sinkd)), 2))) + "\n" + lobbyColour(round((prom/(y-sinkd)), 3)))   # Saco el promedio de todos los que tienen kd
+        return lastLobby
 
 
 def getLobbyTotalInfo(platform, name):  # Al metodo que obtiene toda la informacion le paso el resultado del metodo que obtiene el ID de la lobby
-    return getLobbyInfo(getLobbyIdWZStats(platform, name))
+    lobbyID = getLobbyIdWZStats(platform, name)
+    if lastLobbyID == lobbyID:  # Si el ID de la lobby es el mismo que consulte antes, devuelvo el mismo resultado que antes y ahorro una consulta
+        return lastLobby
+    return getLobbyInfo(lobbyID)
     """
     cookie = login()
     if cookie == "ERROR: 'Not permitted: not authenticated'\nCertificado vencido":
