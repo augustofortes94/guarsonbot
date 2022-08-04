@@ -9,7 +9,6 @@ from resources.commands.bonus import *
 from resources.commands.botonera import *
 from resources.commands.lobbys import *
 from resources.commands.stats import *
-from resources.commands.streamers import *
 from resources.commands.weapons import *
 
 

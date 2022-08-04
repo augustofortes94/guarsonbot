@@ -2,7 +2,7 @@ import logging
 import datetime
 import os
 import requests
-from ..api.guarsonapi import getListCommands, getListWeaponCommands, getWeaponFromApi, login
+from ..api.guarsonapi import getListCommands, getListWeaponCommands, getWeaponFromApi, getCookie
 from ..api.codapi import getLobbyTotalInfo
 
 
@@ -24,7 +24,7 @@ logger = logging.getLogger()
 # COMMAND HANDLER
 def commandRegex(update, context):
     defineLogs().info(f"El usuario {update.effective_user['username']}, consulto por " + update['message']['text'][1:])
-    cookie = login()
+    cookie = getCookie()
     data = requests.get(os.getenv('apiurl') + 'api/commands/?command=' + update['message']['text'][1:], cookies=cookie).json()
     try:
         if data['command']['category'] == 'Lobbys':

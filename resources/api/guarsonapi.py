@@ -1,13 +1,26 @@
 import os
 import requests
 
-def login():        # Login contra apiguarson en heroku
+
+params = {
+        'username': os.getenv('apiusername'),
+        'password': os.getenv('apipswd'),
+    }
+
+cookie = requests.post(os.getenv('apiurl') + 'api/login/', data=params).cookies
+
+
+def getCookie():
+    return cookie
+
+
+"""def login():        # Login contra apiguarson en heroku
     params = {
         'username': os.getenv('apiusername'),
         'password': os.getenv('apipswd'),
     }
     response = requests.post(os.getenv('apiurl') + 'api/login/', data=params)
-    return response.cookies
+    return response.cookies"""
 
 
 def setString(data):
@@ -42,7 +55,6 @@ def setString(data):
 
 
 def getListCommands(category):  # Return list commands of a category
-    cookie = login()
     data = requests.get(os.getenv('apiurl') + 'api/commands/', cookies=cookie).json()
     mssg = '\n' + category + ':'
     for command in data['categories'][category]:
@@ -51,7 +63,6 @@ def getListCommands(category):  # Return list commands of a category
 
 
 def getListWeaponCommands():  # Return list commands of a category
-    cookie = login()
     data = requests.get(os.getenv('apiurl') + 'api/commands/', cookies=cookie).json()
     
     list_commands = '\nFusiles de Asalto:'
@@ -86,7 +97,6 @@ def getListWeaponCommands():  # Return list commands of a category
 
 
 def getLobbyFromApi(mode):
-    cookie = login()
     data = requests.get(os.getenv('apiurl') + 'api/mode/' + mode[mode.find('/')+1:] + '/', cookies=cookie).json()   # Quito / si el nombre esta compuesto en 2
     try:
         return data['mode'][0]['name'] + '\n'
