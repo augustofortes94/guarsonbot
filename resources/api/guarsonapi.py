@@ -6,12 +6,12 @@ session = requests.Session()
 
 
 def getCookie():    # Singleton of cookie
-    if not session.cookies:
-        params = {
-                'username': os.getenv('apiusername'),
-                'password': os.getenv('apipswd'),
-            }
-        session.post(os.getenv('apiurl') + 'api/login/', data=params)
+    #if not session.cookies:
+    params = {
+            'username': os.getenv('apiusername'),
+            'password': os.getenv('apipswd'),
+        }
+    session.post(os.getenv('apiurl') + 'api/login/', data=params)
     return session.cookies
 
 
