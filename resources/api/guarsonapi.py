@@ -1,17 +1,31 @@
 import os
 import requests
+import base64
+import json
+import time
 
 
 session = requests.Session()
 
 
-def getCookie():    # Singleton of cookie
-    #if not session.cookies:
+def login():
     params = {
-            'username': os.getenv('apiusername'),
-            'password': os.getenv('apipswd'),
-        }
+                'username': os.getenv('apiusername'),
+                'password': os.getenv('apipswd'),
+            }
     session.post(os.getenv('apiurl') + 'api/login/', data=params)
+    return session.cookies
+    
+
+
+def getCookie():    # Singleton of cookie
+    try:
+        token_payload = json.loads(base64.b64decode(session.cookies['jwt'].split('.')[1]).decode("utf-8"))
+        if token_payload['exp'] < time.time():  # if cookie expired
+            return login()
+    except:
+        if not session.cookies:
+            return login()
     return session.cookies
 
 
