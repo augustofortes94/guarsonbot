@@ -116,7 +116,7 @@ def getLobbyFromApi(mode):
     try:
         return data['mode'][0]['name'] + '\n'
     except:
-        return 'MODO DESCONOCIDO\n'
+        return 'MODO DESCONOCIDO\n' + mode +'\n'
 
 
 def getWeaponFromApi(command):
