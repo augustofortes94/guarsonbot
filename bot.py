@@ -96,6 +96,8 @@ dp.add_handler(CommandHandler("BotRapido", botrapido))
 
 dp.add_handler(CommandHandler("Cod", codsignal))
 
+dp.add_handler(CommandHandler("Dolar", dolar))
+
 dp.add_handler(CommandHandler("Fortnite", fortnite))
 
 dp.add_handler(CommandHandler("Tabla", tableColour))

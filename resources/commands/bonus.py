@@ -1,4 +1,4 @@
-from resources.api.codapi import hormigator_friends
+from resources.api.codapi import get_value_dolar, hormigator_friends
 from resources.commands.commandsMenu import defineLogs
 
 
@@ -21,6 +21,11 @@ def codsignal(update, context):
 def conectados(update, context):
     defineLogs().info(f"El usuario {update.effective_user['username']}, consulto por Conectados")
     context.bot.send_message(chat_id=update.effective_chat.id, text=hormigator_friends())
+
+
+def dolar(update, context):
+    defineLogs().info(f"El usuario {update.effective_user['username']}, consulto por Dolar")
+    context.bot.send_message(chat_id=update.effective_chat.id, text=get_value_dolar())
 
 
 # Documentacion https://docs.python-telegram-bot.org/en/stable/telegram.bot.html#telegram.Bot
