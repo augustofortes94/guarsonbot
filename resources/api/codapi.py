@@ -156,7 +156,7 @@ def hormigator_friends():   # Hago login y accedo a la informacion de los amigos
 def get_value_dolar():
     response = requests.get('https://www.dolarsi.com/api/api.php?type=valoresprincipales', timeout=30).json()
     return ("Dolar hoy: \n\n"
-        + response[0]['casa']['nombre'] + ": " + response[0]['casa']['venta'] + "\n"
-        + response[6]['casa']['nombre'] + ": " + response[6]['casa']['venta'] + "\n"
-        + response[1]['casa']['nombre'] + ": " + response[1]['casa']['venta']
+        + response[0]['casa']['nombre'] + ": " + response[0]['casa']['compra'] + " | " + response[0]['casa']['venta'] + "\n"
+        + response[6]['casa']['nombre'] + ": " + response[6]['casa']['compra'] + " | " + response[6]['casa']['venta'] + "\n"
+        + response[1]['casa']['nombre'] + ": " + response[1]['casa']['compra'] + " | " + response[1]['casa']['venta']
         )
