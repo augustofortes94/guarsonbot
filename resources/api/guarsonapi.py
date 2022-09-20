@@ -1,8 +1,6 @@
 import os
 import requests
 
-
-session = requests.Session()
 access_token = ""
 
 
@@ -16,7 +14,7 @@ def getToken():
                     'client_secret': os.getenv('SECRET_ID')
                 }
         # Get Oauth2 token
-        access_token = session.post(os.getenv('apiurl') + 'o/token/', data=params).json()['access_token']
+        access_token = requests.post(os.getenv('apiurl') + 'o/token/', data=params).json()['access_token']
     return access_token
 
 
