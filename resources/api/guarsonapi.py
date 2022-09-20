@@ -17,7 +17,6 @@ def login():
     return session.cookies
     
 
-
 def getCookie():    # Singleton of cookie
     try:
         token_payload = json.loads(base64.b64decode(session.cookies['jwt'].split('.')[1]).decode("utf-8"))
@@ -27,15 +26,6 @@ def getCookie():    # Singleton of cookie
         if not session.cookies:
             return login()
     return session.cookies
-
-
-"""def login():        # Login contra apiguarson en heroku
-    params = {
-        'username': os.getenv('apiusername'),
-        'password': os.getenv('apipswd'),
-    }
-    response = requests.post(os.getenv('apiurl') + 'api/login/', data=params)
-    return response.cookies"""
 
 
 def setString(data):
