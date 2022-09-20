@@ -2,7 +2,7 @@ import logging
 import datetime
 import os
 import requests
-from ..api.guarsonapi import getListCommands, getListWeaponCommands, getWeaponFromApi, getCookie
+from ..api.guarsonapi import getListCommands, getListWeaponCommands, getWeaponFromApi, getToken
 from ..api.codapi import getLobbyTotalInfo
 
 
@@ -23,13 +23,15 @@ logger = logging.getLogger()
 # COMMAND HANDLER
 def commandRegex(update, context):
     defineLogs().info(f"El usuario {update.effective_user['username']}, consulto por " + update['message']['text'][1:])
-    data = requests.get(os.getenv('apiurl') + 'api/commands/?command=' + update['message']['text'][1:], cookies=getCookie()).json()
+    # Consulto para obtener la categoria del comando asi se que endpoint consultar para el contenido del comando (MEJORABLE)
+    headers = {'Authorization': 'Bearer ' + getToken()}
+    data = requests.get(os.getenv('apiurl') + 'api/commands/?command=' + update['message']['text'][1:], headers=headers).json()
     mssg = context.bot.send_message
     try:
         if data['command']['category'] == 'Lobbys':
             mssg(chat_id=update.effective_chat.id, text=getLobbyTotalInfo(data['command']['parameter1'], data['command']['parameter2']))
         elif 'usiles' in data['command']['category'] or 'Escopeta' in data['command']['category'] or 'Pistolas' in data['command']['category'] or 'Ametralladoras Ligeras' in data['command']['category']:
-            mssg(chat_id=update.effective_chat.id, text=getWeaponFromApi(data['command']['name']))
+            mssg(chat_id=update.effective_chat.id, text=getWeaponFromApi(data['command']['name'], headers))
         elif data['command']['category'] == 'Bonus':
             mssg(chat_id=update.effective_chat.id, text=data['command']['text'].replace('/n', "\n"))
         elif data['command']['category'] == 'Streamers':
