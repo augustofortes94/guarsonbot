@@ -15,6 +15,8 @@ from resources.commands.weapons import *
 BASE_DIR = Path(__file__).resolve().parent.parent
 load_dotenv()
 
+telegram_token = os.getenv('TELEGRAM_TOKEN')
+
 if os.getenv('MODE') == "dev":
     # Acceso local
     def run(updater):
@@ -27,7 +29,7 @@ elif os.getenv('MODE') == "prod":
     def run(updater):
         port = int(os.environ.get('PORT', '8443'))
         heroku_app_name = os.environ.get("HEROKU_APP_NAME")
-        updater.start_webhook(listen="0.0.0.0", port=port, url_path=os.getenv('TOKEN'), webhook_url="https://{}.herokuapp.com/{}".format(heroku_app_name, os.getenv('TOKEN')))
+        updater.start_webhook(listen="0.0.0.0", port=port, url_path=telegram_token, webhook_url="https://{}.herokuapp.com/{}".format(heroku_app_name, telegram_token))
         print("CORRIENDO PRODUCCION...")
 
 else:
@@ -36,7 +38,7 @@ else:
 
 # Creo el bot con el token
 if __name__ == "__main__":
-    bot = telegram.Bot(token=os.getenv('TOKEN'))
+    bot = telegram.Bot(token=telegram_token)
 
 # Enlazamos el updater con el bot
 updater = Updater(bot.token, use_context=True)
