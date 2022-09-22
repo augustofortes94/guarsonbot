@@ -28,8 +28,8 @@ elif os.getenv('MODE') == "prod":
     # Acceso HEROKU (produccion)
     def run(updater):
         port = int(os.environ.get('PORT', '8443'))
-        heroku_app_name = os.environ.get("HEROKU_APP_NAME")
-        updater.start_webhook(listen="0.0.0.0", port=port, url_path=telegram_token, webhook_url="https://{}.herokuapp.com/{}".format(heroku_app_name, telegram_token))
+        host_url = os.environ.get("HOST_URL")
+        updater.start_webhook(listen="0.0.0.0", port=port, url_path=telegram_token, webhook_url= host_url + telegram_token)
         print("CORRIENDO PRODUCCION...")
 
 else:
