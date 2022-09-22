@@ -1,31 +1,21 @@
 import os
 import requests
-import base64
-import json
-import time
+
+access_token = ""
 
 
-session = requests.Session()
-
-
-def login():
-    params = {
-                'username': os.getenv('apiusername'),
-                'password': os.getenv('apipswd'),
-            }
-    session.post(os.getenv('apiurl') + 'api/login/', data=params)
-    return session.cookies
-    
-
-def getCookie():    # Singleton of cookie
-    try:
-        token_payload = json.loads(base64.b64decode(session.cookies['jwt'].split('.')[1]).decode("utf-8"))
-        if token_payload['exp'] < time.time():  # if cookie expired
-            return login()
-    except:
-        if not session.cookies:
-            return login()
-    return session.cookies
+def getToken():
+    global access_token
+    if not access_token:
+        params = {  'grant_type': 'password',
+                    'username': os.getenv('apiusername'),
+                    'password': os.getenv('apipswd'),
+                    'client_id': os.getenv('CLIENT_ID'),
+                    'client_secret': os.getenv('SECRET_ID')
+                }
+        # Get Oauth2 token
+        access_token = requests.post(os.getenv('apiurl') + 'o/token/', data=params).json()['access_token']
+    return access_token
 
 
 def setString(data):
@@ -60,7 +50,8 @@ def setString(data):
 
 
 def getListCommands(category):  # Return list commands of a category
-    data = requests.get(os.getenv('apiurl') + 'api/commands/', cookies=getCookie()).json()
+    headers = {'Authorization': 'Bearer ' + getToken()}
+    data = requests.get(os.getenv('apiurl') + 'api/commands/', headers=headers).json()
     mssg = '\n' + category + ':'
     for command in data['categories'][category]:
         mssg = mssg + '\n-/' + command['name']
@@ -68,7 +59,8 @@ def getListCommands(category):  # Return list commands of a category
 
 
 def getListWeaponCommands():  # Return list commands of a category
-    data = requests.get(os.getenv('apiurl') + 'api/commands/', cookies=getCookie()).json()
+    headers = {'Authorization': 'Bearer ' + getToken()}
+    data = requests.get(os.getenv('apiurl') + 'api/commands/', headers=headers).json()
     
     list_commands = '\nFusiles de Asalto:'
     for command in data['categories']['Fusiles de Asalto']:
@@ -102,15 +94,16 @@ def getListWeaponCommands():  # Return list commands of a category
 
 
 def getLobbyFromApi(mode):
-    data = requests.get(os.getenv('apiurl') + 'api/mode/' + mode[mode.find('/')+1:] + '/', cookies=getCookie()).json()   # Quito / si el nombre esta compuesto en 2
+    headers = {'Authorization': 'Bearer ' + getToken()}
+    data = requests.get(os.getenv('apiurl') + 'api/mode/' + mode[mode.find('/')+1:] + '/', headers=headers).json()   # Quito / si el nombre esta compuesto en 2
     try:
         return data['mode'][0]['name'] + '\n'
     except:
         return 'MODO DESCONOCIDO\n' + mode +'\n'
 
 
-def getWeaponFromApi(command):
-    data = requests.get(os.getenv('apiurl') + 'api/weapons/?command=' + command, cookies=getCookie()).json()
+def getWeaponFromApi(command, headers):
+    data = requests.get(os.getenv('apiurl') + 'api/weapons/?command=' + command, headers=headers).json()
     try:
         return setString(data['weapons'][0])
     except:
