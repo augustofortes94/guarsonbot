@@ -60,6 +60,12 @@ def armas(update, context):
                                                                     + '\n-/C58'
                                                                     + '\n-/Cooper'
                                                                     + '\n-/CR56'
+                                                                    + '\n-/EM2'
+                                                                    + '\n-/EX1'
+                                                                    + '\n-/FAL'
+                                                                    + '\n-/FARA'
+                                                                    + '\n-/FFAR'
+                                                                    + '\n-/FR556'
                                                                     + '\n-/'
 
                                                                     + '\n\nSubfusiles:'
@@ -69,17 +75,21 @@ def armas(update, context):
                                                                     + '\n-/Blixen'
                                                                     + '\n-/Bullfrog'
                                                                     + '\n-/CX9'
+                                                                    + '\n-/Fennec'
                                                                     + '\n-/'
 
                                                                     + '\n\nEscopetas:'
                                                                     + '\n-/Combate'
                                                                     + '\n-/Doble'
+                                                                    + '\n-/E725'
+                                                                    + '\n-/Einhorn'
                                                                     + '\n-/'
 
                                                                     + '\n\nAmetralladoras Ligeras:'
                                                                     + '\n-/Bren'
                                                                     + '\n-/Bruen'
                                                                     + '\n-/DP27'
+                                                                    + '\n-/FINN'
                                                                     + '\n-/'
 
                                                                     + '\n\nFusiles Tacticos:'
@@ -88,11 +98,14 @@ def armas(update, context):
                                                                     + '\n-/Ballesta'
                                                                     + '\n-/Carv2'
                                                                     + '\n-/DMR'
+                                                                    + '\n-/EBR14'
                                                                     + '\n-/'
 
                                                                     + '\n\nFusiles de Precision:'
                                                                     + '\n-/Antitanque'
                                                                     + '\n-/AX50'
+                                                                    + '\n-/Dragunov'
+                                                                    + '\n-/'
 
                                                                     + '\n\nPistolas:'
                                                                     + '\n-/1911CW'
@@ -104,7 +117,7 @@ def armas(update, context):
                                                                     + '\n-/Diamatti'
                                                                     + '\n-/')
 
-
+"""
 def comandos(update, context):
     defineLogs().info(f"El usuario {update.effective_user['username']}, consulto por Comandos")
     context.bot.send_message(chat_id=update.effective_chat.id, text=
@@ -119,8 +132,23 @@ def comandos(update, context):
                                                                     #+ getListStats()
                                                                     + "\n\n-----/Lobbys-----"
                                                                     + getListCommands('Lobbys')
-                                                                    )
+                                                                    )"""
 
+def comandos(update, context):
+    defineLogs().info(f"El usuario {update.effective_user['username']}, consulto por Comandos")
+    context.bot.send_message(chat_id=update.effective_chat.id, text=
+                                                                    "/Hola soy el /bot Guarson, hasta ahora los /Comandos disponibles son los siguientes:\n\n"
+                                                                    + "\n-----/Armas-----\n"
+                                                                    + armas()
+                                                                    + "\n\n-----/Streamers-----"
+                                                                    #+ getListCommands('Streamers')
+                                                                    + "\n"
+                                                                    #+ getListCommands('Bonus')
+                                                                    #+ "\n\n-----/Stats-----"
+                                                                    #+ getListStats()
+                                                                    + "\n\n-----/Lobbys-----"
+                                                                    #+ getListCommands('Lobbys')
+                                                                    )
 
 def hola(update, context):
     defineLogs().info(f"El usuario {update.effective_user['username']}, consulto por Hola")

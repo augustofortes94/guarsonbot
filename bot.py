@@ -223,6 +223,37 @@ dp.add_handler(CommandHandler("Doble", doble))
 
 dp.add_handler(CommandHandler("DP27", dp27))
 
+dp.add_handler(CommandHandler("Dragunov", dragunov))
+
+dp.add_handler(CommandHandler("E725", e725))
+
+dp.add_handler(CommandHandler("EBR14", ebr14))
+
+dp.add_handler(CommandHandler("Einhorn", einhorn))
+
+dp.add_handler(CommandHandler("EM2", em2))
+
+dp.add_handler(CommandHandler("EX1", ex1))
+
+dp.add_handler(CommandHandler("FAL", fal))
+
+dp.add_handler(CommandHandler("FARA", fara))
+
+dp.add_handler(CommandHandler("Fennec", fennec))
+
+dp.add_handler(CommandHandler("FFAR", ffar))
+
+dp.add_handler(CommandHandler("FFAR1", ffar))
+
+dp.add_handler(CommandHandler("FINN", finn))
+
+dp.add_handler(CommandHandler("FR556", fr556))
+
+
+
+
+
+
 
 dp.add_handler(CommandHandler("1911CW", p1911cw))
 

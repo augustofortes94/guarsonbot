@@ -418,6 +418,126 @@ def dp27(update, context):
                                                                     + "\n-Ventaja 1 Incansable"
                                                                     + "\n-Ventaja 2 Totalmente Cargado")
 
+def dragunov(update, context):
+    defineLogs().info(f"El usuario {update.effective_user['username']}, consulto por Dragunov")
+    context.bot.send_message(chat_id=update.effective_chat.id, text="Dragunov:\n"
+                                                                    + "\n-Silenciador Monolitico"
+                                                                    + "\n-Cañon Ampliado de 660 mm"
+                                                                    + "\n-Laser Tactico"
+                                                                    + "\n-Culata FTAC Cazador-Explorador"
+                                                                    + "\n-Municion Cargador de 20 balas")
+
+def e725(update, context):
+    defineLogs().info(f"El usuario {update.effective_user['username']}, consulto por E725")
+    context.bot.send_message(chat_id=update.effective_chat.id, text="725:\n"
+                                                                    + "\n-Silenciador Monolitico"
+                                                                    + "\n-Cañon Tempus de Competencia"
+                                                                    + "\n-Laser Tactico"
+                                                                    + "\n-Culata Recortada"
+                                                                    + "\n-Municion Cartuchos de Balas")
+
+def ebr14(update, context):
+    defineLogs().info(f"El usuario {update.effective_user['username']}, consulto por EBR14")
+    context.bot.send_message(chat_id=update.effective_chat.id, text="EBR-14:\n"
+                                                                    + "\n-Silenciador Monolitico"
+                                                                    + "\n-Cañon Forge TAC de Precision de 55.9 cm"
+                                                                    + "\n-Mira x3 VLK"
+                                                                    + "\n-Acople Frontal de Comando"
+                                                                    + "\n-Municion de 20 balas")
+
+def einhorn(update, context):
+    defineLogs().info(f"El usuario {update.effective_user['username']}, consulto por Einhorn")
+    context.bot.send_message(chat_id=update.effective_chat.id, text="Einhorn Rotativa:\n"
+                                                                    + "\n-Estrangulador Completo para M97"
+                                                                    + "\n-Cañon Klauser de 560 mm Rapido"
+                                                                    + "\n-Mira G16 x 2.5"
+                                                                    + "\n-Culata VDD Hunter"
+                                                                    + "\n-Acople Empuñadura de Pistola para SMLE"
+                                                                    + "\n-Cargador Cilindro de Calibre 16 con 12 Proyectiles"
+                                                                    + "\n-Municion Perdigones y Postas"
+                                                                    + "\n-Empuñadura Trasera de Tela"
+                                                                    + "\n-Ventaja 1 Prestidigitacion"
+                                                                    + "\n-Ventaja 2 Rapido")
+
+def em2(update, context):
+    defineLogs().info(f"El usuario {update.effective_user['username']}, consulto por EM2")
+    context.bot.send_message(chat_id=update.effective_chat.id, text="EM2:\n"
+                                                                    + "\n-Silenciador Agency"
+                                                                    + "\n-Cañon Fuerza Operativa de 65.5 cm"
+                                                                    + "\n-Mira Axial Arms x3"
+                                                                    + "\n-Acople Empuñadura de Operador de Campo"
+                                                                    + "\n-Municion Stanag de 50 balas"
+                                                                    + "\n\nAlternativa Subfusil: reemplazar Silenciador Agency por Silenciador, mira por Mira LED Microflex, cañon por Culata Raider y Municion de 40 balas")
+
+def ex1(update, context):
+    defineLogs().info(f"El usuario {update.effective_user['username']}, consulto por EX1")
+    context.bot.send_message(chat_id=update.effective_chat.id, text="EX1:\n"
+                                                                    + "\n-Amplificador de Bobina"
+                                                                    + "\n-Cañon SD Grat Instantaneo"
+                                                                    + "\n-Mira G16 x 2,5"
+                                                                    + "\n-Culata Ancla AC-Titanium"
+                                                                    + "\n-Acople Tope de Mano de Iones"
+                                                                    + "\n-Cargador Bateria de Carga Rapida Actual PWN"
+                                                                    + "\n-Empuñadura Trasera de Polimero"
+                                                                    + "\n-Ventaja 1 Observador"
+                                                                    + "\n-Ventaja 2 Disponible")
+
+def fal(update, context):
+    defineLogs().info(f"El usuario {update.effective_user['username']}, consulto por FAL")
+    context.bot.send_message(chat_id=update.effective_chat.id, text="FN FAL:\n"
+                                                                    + "\n-Silenciador Monolitico"
+                                                                    + "\n-Cañon XRK de Tirador"
+                                                                    + "\n-Mira Reflex IG Mini"
+                                                                    + "\n-Acople Frontal de Comando"
+                                                                    + "\n-Municion de 30 balas"
+                                                                    + "\n\nAlternativa: reemplazar mira reflex IG por x3 VLK")
+
+def fara(update, context):
+    defineLogs().info(f"El usuario {update.effective_user['username']}, consulto por FARA")
+    context.bot.send_message(chat_id=update.effective_chat.id, text="FARA 83:\n"
+                                                                    + "\n-Silenciador GRU"
+                                                                    + "\n-Cañon Spetsnaz RPK de 47.5 cm"
+                                                                    + "\n-Mira Axial Arms x3"
+                                                                    + "\n-Acople Empuñadura Spetsnaz"
+                                                                    + "\n-Municion Spetsnaz de 50 balas")
+
+def fennec(update, context):
+    defineLogs().info(f"El usuario {update.effective_user['username']}, consulto por Fennec")
+    context.bot.send_message(chat_id=update.effective_chat.id, text="Fennec:\n"
+                                                                    + "\n-Cañon ZLR Deadfall de 45.7 cm"
+                                                                    + "\n-Laser Tactico"
+                                                                    + "\n-Acople Empuñadura Frontal de Comando"
+                                                                    + "\n-Municion Tambor de 40 balas"
+                                                                    + "\n-Empuñadura Trasera Adhesivo Engomado")
+
+def ffar(update, context):
+    defineLogs().info(f"El usuario {update.effective_user['username']}, consulto por FFAR")
+    context.bot.send_message(chat_id=update.effective_chat.id, text="FFAR1:\n"
+                                                                    + "\n-Silenciador Agency"
+                                                                    + "\n-Cañon Fuerza Operativa de 40.6 cm"
+                                                                    + "\n-Acople Empuñadura de Operador de Campo"
+                                                                    + "\n-Municion Stanag de 50 balas"
+                                                                    + "\n-Empuñadura Trasera Vendaje de Serpiente")
+
+def finn(update, context):
+    defineLogs().info(f"El usuario {update.effective_user['username']}, consulto por FINN")
+    context.bot.send_message(chat_id=update.effective_chat.id, text="FINN LMG:\n"
+                                                                    + "\n-Silenciador Monolitico"
+                                                                    + "\n-Cañon XRK Longshot Adverso"
+                                                                    + "\n-Laser Tactico"
+                                                                    + "\n-Mira x3 VLK"
+                                                                    + "\n-Acople Frontal de Comando"
+                                                                    + "\n\nAlternativa: reemplazar mira por Municion Cintas de 75 balas 5.56 CT para movilidad")
+
+def fr556(update, context):
+    defineLogs().info(f"El usuario {update.effective_user['username']}, consulto por FR556")
+    context.bot.send_message(chat_id=update.effective_chat.id, text="FR 5.56:\n"
+                                                                    + "\n-Silenciador Monolitico"
+                                                                    + "\n-Cañon FR de Francotirador de 62 cm"
+                                                                    + "\n-Mira x3 VLK"
+                                                                    + "\n-Acople Frontal de Comando"
+                                                                    + "\n-Municion de 50 balas")
+
 
 def demas(update, context):
     defineLogs().info(f"El usuario {update.effective_user['username']}, consulto por ")
