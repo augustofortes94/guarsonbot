@@ -287,8 +287,136 @@ def bren(update, context):
                                                                     + "\n-Ventaja 1 Empuñadura Segura"
                                                                     + "\n-Ventaja 2 Totalmente Cargado")
 
+def bruen(update, context):
+    defineLogs().info(f"El usuario {update.effective_user['username']}, consulto por Bruen")
+    context.bot.send_message(chat_id=update.effective_chat.id, text="Bruen MK9:\n"
+                                                                    + "\n-Silenciador Monolitico"
+                                                                    + "\n-Cañon XRK Summit de 68.1 cm"
+                                                                    + "\n-Mira x3 VLK"
+                                                                    + "\n-Acople Empuñadura Frontal de Comando"
+                                                                    + "\n-Municion de 60 balas")
 
+def bullfrog(update, context):
+    defineLogs().info(f"El usuario {update.effective_user['username']}, consulto por Bullfrog")
+    context.bot.send_message(chat_id=update.effective_chat.id, text="Bullfrog:\n"
+                                                                    + "\n-Silenciador Gru"
+                                                                    + "\n-Cañon Fuerza Operativa de 18.7 cm"
+                                                                    + "\n-Culata PKM Spetsnaz"
+                                                                    + "\n-Acople Empuñadura Spetsnaz"
+                                                                    + "\n-Empuñadura Trasera Vendaje de Serpiente"
+                                                                    + "\n\n(Viene con 50 balas)"
+                                                                    + "\n\nPara Bullfrog de Modern Warfare preguntar por /Bizon")
 
+def c58(update, context):
+    defineLogs().info(f"El usuario {update.effective_user['username']}, consulto por C58")
+    context.bot.send_message(chat_id=update.effective_chat.id, text="C58:\n"
+                                                                    + "\n-Silenciador Agency"
+                                                                    + "\n-Cañon Fuerza Operativa de 47 cm"
+                                                                    + "\n-Mira Axial x3"
+                                                                    + "\n-Acople Empuñadura de Agente de Campo"
+                                                                    + "\n-Municion Tambor de 45 balas")
+
+def carv2(update, context):
+    defineLogs().info(f"El usuario {update.effective_user['username']}, consulto por Carv2")
+    context.bot.send_message(chat_id=update.effective_chat.id, text="Carv2:\n"
+                                                                    + "\n-Silenciador Agency"
+                                                                    + "\n-Cañon 52.8 cm de Equipo de Asalto"
+                                                                    + "\n-Mira Axial Arms x3"
+                                                                    + "\n-Acople Empuñadura Frontal de Agente de Campo"
+                                                                    + "\n-Municion Tambor de 45 balas")
+
+def combate(update, context):
+    defineLogs().info(f"El usuario {update.effective_user['username']}, consulto por Combate")
+    context.bot.send_message(chat_id=update.effective_chat.id, text="Escopeta de Combate:\n"
+                                                                    + "\n-Boca de Cañon Estrangulador Completo para M97"
+                                                                    + "\n-Cañon Chariot de 40.64 cm Corto"
+                                                                    + "\n-Mira Reflector Slate"
+                                                                    + "\n-Culata CGC 3M Ajustable"
+                                                                    + "\n-Acople Armazon Mk. VI"
+                                                                    + "\n-Cargador Tubo del Calibre 12 con 5 Cartuchos"
+                                                                    + "\n-Municion Perdigones y Postas"
+                                                                    + "\n-Empuñadura Trasera de Tela"
+                                                                    + "\n-Ventaja 1 Vital"
+                                                                    + "\n-Ventaja 2 Totalmente Cargado")
+
+def cooper(update, context):
+    defineLogs().info(f"El usuario {update.effective_user['username']}, consulto por Cooper")
+    context.bot.send_message(chat_id=update.effective_chat.id, text="Carabina Cooper:\n"
+                                                                    + "\n-Silenciador MX"
+                                                                    + "\n-Cañon Cooper de 55.9 cm Personalizado"
+                                                                    + "\n-Mira PU para SVT-40 (x3-6)"
+                                                                    + "\n-Culata Acolchado Personalizado"
+                                                                    + "\n-Acople M1930 Guerrillero en Angulo"
+                                                                    + "\n-Tambores de 9 mm con 60 Proyectiles"
+                                                                    + "\n-Municion Incendiaria"
+                                                                    + "\n-Empuñadura Trasera Punteada"
+                                                                    + "\n-Ventaja 1 Vital"
+                                                                    + "\n-Ventaja 2 Totalmente Cargado")
+
+def cr56(update, context):
+    defineLogs().info(f"El usuario {update.effective_user['username']}, consulto por CR56")
+    context.bot.send_message(chat_id=update.effective_chat.id, text="CR-56 Amax:\n"
+                                                                    + "\n-Silenciador Monolitico"
+                                                                    + "\n-Cañon XRK Zodiac S440"
+                                                                    + "\n-Mira x3 VLK"
+                                                                    + "\n-Acople Frontal de Ranger"
+                                                                    + "\n-Municion de 45 balas")
+
+def cx9(update, context):
+    defineLogs().info(f"El usuario {update.effective_user['username']}, consulto por CX9")
+    context.bot.send_message(chat_id=update.effective_chat.id, text="CX9:\n"
+                                                                    + "\n-Cañon CX-38S"
+                                                                    + "\n-Laser Tactico"
+                                                                    + "\n-Acople Frontal de Comando"
+                                                                    + "\n-Municion Tambor de 50 balas"
+                                                                    + "\n-Empuñadura Trasera CX-9 Tac")
+
+def diamatti(update, context):
+    defineLogs().info(f"El usuario {update.effective_user['username']}, consulto por Diamatti")
+    context.bot.send_message(chat_id=update.effective_chat.id, text="Diamatti:\n"
+                                                                    + "\n-Silenciador Agency"
+                                                                    + "\n-Cañon Fuerza Operativa de 18.3 cm"
+                                                                    + "\n-Laser Mira Laser SWAT de 5 mW"
+                                                                    + "\n-Municion Cargador Rapido Salvo de 30 balas"
+                                                                    + "\n-Empuñadura Trasera Vendaje de Serpiente"
+                                                                    + "\n\nAlternativa: Reemplazar Empuñadura Trasera Vendaje de Serpiente por Culata a dos Manos")
+
+def dmr(update, context):
+    defineLogs().info(f"El usuario {update.effective_user['username']}, consulto por DMR")
+    context.bot.send_message(chat_id=update.effective_chat.id, text="DMR:\n"
+                                                                    + "\n-Silenciador Agency"
+                                                                    + "\n-Cañon Fuerza Operativa de 52.8 cm"
+                                                                    + "\n-Mira Axial Arms x3"
+                                                                    + "\n-Acople Empuñadura Frontal de Agente de Campo"
+                                                                    + "\n-Municion Stanag de 40 balas")
+
+def doble(update, context):
+    defineLogs().info(f"El usuario {update.effective_user['username']}, consulto por Doble")
+    context.bot.send_message(chat_id=update.effective_chat.id, text="Doble Cañon:\n"
+                                                                    + "\n-Estrangulador Completo para M97"
+                                                                    + "\n-Cañon Recortada"
+                                                                    + "\n-Mira Reflector Slate"
+                                                                    + "\n-Culata Eliminada"
+                                                                    + "\n-Acople Empuñadura de Pistola para SMLA"
+                                                                    + "\n-Cargador Algo Doble"
+                                                                    + "\n-Municion Punta Hueca"
+                                                                    + "\n-Empuñadura Trasera de Tela"
+                                                                    + "\n-Ventaja 1 Vital"
+                                                                    + "\n-Ventaja 2 Rapido")
+
+def dp27(update, context):
+    defineLogs().info(f"El usuario {update.effective_user['username']}, consulto por DP27")
+    context.bot.send_message(chat_id=update.effective_chat.id, text="DP27:\n"
+                                                                    + "\n-Silenciador MX"
+                                                                    + "\n-Cañon Kovalevskaya de 680 mm B02D"
+                                                                    + "\n-Mira PU para SVT-40 (x3-6)"
+                                                                    + "\n-Culata ZAC S3 TAK"
+                                                                    + "\n-Acople Tope de Mano para el M1941"
+                                                                    + "\n-Cargadores de Ruleta de Calibre 30-06 con 81 Proyectiles"
+                                                                    + "\n-Municion Incendiaria"
+                                                                    + "\n-Empuñadura Trasera de Goma"
+                                                                    + "\n-Ventaja 1 Incansable"
+                                                                    + "\n-Ventaja 2 Totalmente Cargado")
 
 
 def demas(update, context):
@@ -313,12 +441,6 @@ def vanguard(update, context):
                                                                     + "\n-"
                                                                     + "\n-"
                                                                     + "\n-")
-
-
-
-
-
-
 
 
 

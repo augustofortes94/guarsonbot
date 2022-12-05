@@ -199,7 +199,29 @@ dp.add_handler(CommandHandler("BP50", bp50))
 
 dp.add_handler(CommandHandler("Bren", bren))
 
+dp.add_handler(CommandHandler("Bruen", bruen))
 
+dp.add_handler(CommandHandler("Bullfrog", bullfrog))
+
+dp.add_handler(CommandHandler("C58", c58))
+
+dp.add_handler(CommandHandler("Carv2", carv2))
+
+dp.add_handler(CommandHandler("Combate", combate))
+
+dp.add_handler(CommandHandler("Cooper", cooper))
+
+dp.add_handler(CommandHandler("CR56", cr56))
+
+dp.add_handler(CommandHandler("CX9", cx9))
+
+dp.add_handler(CommandHandler("Diamatti", diamatti))
+
+dp.add_handler(CommandHandler("DMR", dmr))
+
+dp.add_handler(CommandHandler("Doble", doble))
+
+dp.add_handler(CommandHandler("DP27", dp27))
 
 
 dp.add_handler(CommandHandler("1911CW", p1911cw))

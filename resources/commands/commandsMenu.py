@@ -57,24 +57,38 @@ def armas(update, context):
                                                                     + '\n-/Automata'
                                                                     + '\n-/BAR'
                                                                     + '\n-/BP50'
+                                                                    + '\n-/C58'
+                                                                    + '\n-/Cooper'
+                                                                    + '\n-/CR56'
+                                                                    + '\n-/'
 
                                                                     + '\n\nSubfusiles:'
                                                                     + '\n-/AK74U'
                                                                     + '\n-/Armaguerra'
                                                                     + '\n-/Bizon'
                                                                     + '\n-/Blixen'
+                                                                    + '\n-/Bullfrog'
+                                                                    + '\n-/CX9'
                                                                     + '\n-/'
 
                                                                     + '\n\nEscopetas:'
+                                                                    + '\n-/Combate'
+                                                                    + '\n-/Doble'
                                                                     + '\n-/'
 
                                                                     + '\n\nAmetralladoras Ligeras:'
                                                                     + '\n-/Bren'
+                                                                    + '\n-/Bruen'
+                                                                    + '\n-/DP27'
+                                                                    + '\n-/'
 
                                                                     + '\n\nFusiles Tacticos:'
                                                                     + '\n-/AUGCW'
                                                                     + '\n-/AUGMW'
                                                                     + '\n-/Ballesta'
+                                                                    + '\n-/Carv2'
+                                                                    + '\n-/DMR'
+                                                                    + '\n-/'
 
                                                                     + '\n\nFusiles de Precision:'
                                                                     + '\n-/Antitanque'
@@ -87,6 +101,7 @@ def armas(update, context):
                                                                     + '\n-/50GS'
                                                                     + '\n-/Ametralladora'
                                                                     + '\n-/AMP'
+                                                                    + '\n-/Diamatti'
                                                                     + '\n-/')
 
 
