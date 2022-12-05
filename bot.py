@@ -157,5 +157,31 @@ dp.add_handler(MessageHandler(Filters.regex(r"^/\w+$"), commandRegex))
 # dp.add_handler(MessageHandler(Filters.text, messageHandler))
 
 
+# HARDCODE WEAPONS
+
+dp.add_handler(CommandHandler("AK47CW", ak47cw))
+
+dp.add_handler(CommandHandler("AK47MW", ak47mw))
+
+dp.add_handler(CommandHandler("AK74U", ak74u))
+
+dp.add_handler(CommandHandler("Ametralladora", ametralladora))
+
+dp.add_handler(CommandHandler("AMP", amp))
+
+dp.add_handler(CommandHandler("AN94", an94))
+
+dp.add_handler(CommandHandler("Antitanque", antitanque))
+
+dp.add_handler(CommandHandler("Armaguerra", armaguerra))
+
+dp.add_handler(CommandHandler("1911CW", p1911cw))
+
+dp.add_handler(CommandHandler("1911MW", p1911mw))
+
+dp.add_handler(CommandHandler("1911VG", p1911vg))
+
+dp.add_handler(CommandHandler("50GS", p50gs))
+
 # RUN
 run(updater)

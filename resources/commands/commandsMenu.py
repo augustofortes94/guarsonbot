@@ -46,7 +46,41 @@ def commandRegex(update, context):
 # COMANDOS
 def armas(update, context):
     defineLogs().info(f"El usuario {update.effective_user['username']}, consulto por Comandos de Armas")
-    context.bot.send_message(chat_id=update.effective_chat.id, text="/Comandos para armas:\n\n" + getListWeaponCommands())
+    #context.bot.send_message(chat_id=update.effective_chat.id, text="/Comandos para armas:\n\n" + getListWeaponCommands())
+    context.bot.send_message(chat_id=update.effective_chat.id, text="/Comandos para armas:\n\n"
+                                                                    + '\nFusiles de Asalto:'
+                                                                    + '\n-/AK47CW'
+                                                                    + '\n-/AK47MW'
+                                                                    + '\n-/AN94'
+                                                                    + '\n-/'
+
+                                                                    + '\n\nSubfusiles:'
+                                                                    + '\n-/AK74U'
+                                                                    + '\n-/Armaguerra'
+                                                                    + '\n-/'
+                                                                    + '\n-/'
+
+                                                                    + '\n\nEscopetas:'
+                                                                    + '\n-/'
+
+                                                                    + '\n\nAmetralladoras Ligeras:'
+                                                                    + '\n-/'
+
+                                                                    + '\n\nFusiles Tacticos:'
+                                                                    + '\n-/'
+
+                                                                    + '\n\nFusiles de Precision:'
+                                                                    + '\n-/Antitanque'
+                                                                    + '\n-/'
+
+                                                                    + '\n\nPistolas:'
+                                                                    + '\n-/1911CW'
+                                                                    + '\n-/1911MW'
+                                                                    + '\n-/1911VG'
+                                                                    + '\n-/50GS'
+                                                                    + '\n-/Ametralladora'
+                                                                    + '\n-/AMP'
+                                                                    + '\n-/')
 
 
 def comandos(update, context):
