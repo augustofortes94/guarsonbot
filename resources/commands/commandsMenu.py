@@ -52,26 +52,33 @@ def armas(update, context):
                                                                     + '\n-/AK47CW'
                                                                     + '\n-/AK47MW'
                                                                     + '\n-/AN94'
-                                                                    + '\n-/'
+                                                                    + '\n-/AS44'
+                                                                    + '\n-/ASVAL'
+                                                                    + '\n-/Automata'
+                                                                    + '\n-/BAR'
+                                                                    + '\n-/BP50'
 
                                                                     + '\n\nSubfusiles:'
                                                                     + '\n-/AK74U'
                                                                     + '\n-/Armaguerra'
-                                                                    + '\n-/'
+                                                                    + '\n-/Bizon'
+                                                                    + '\n-/Blixen'
                                                                     + '\n-/'
 
                                                                     + '\n\nEscopetas:'
                                                                     + '\n-/'
 
                                                                     + '\n\nAmetralladoras Ligeras:'
-                                                                    + '\n-/'
+                                                                    + '\n-/Bren'
 
                                                                     + '\n\nFusiles Tacticos:'
-                                                                    + '\n-/'
+                                                                    + '\n-/AUGCW'
+                                                                    + '\n-/AUGMW'
+                                                                    + '\n-/Ballesta'
 
                                                                     + '\n\nFusiles de Precision:'
                                                                     + '\n-/Antitanque'
-                                                                    + '\n-/'
+                                                                    + '\n-/AX50'
 
                                                                     + '\n\nPistolas:'
                                                                     + '\n-/1911CW'

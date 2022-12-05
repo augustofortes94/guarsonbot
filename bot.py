@@ -175,6 +175,33 @@ dp.add_handler(CommandHandler("Antitanque", antitanque))
 
 dp.add_handler(CommandHandler("Armaguerra", armaguerra))
 
+dp.add_handler(CommandHandler("AS44", as44))
+
+dp.add_handler(CommandHandler("ASVAL", asval))
+
+dp.add_handler(CommandHandler("AUGCW", augcw))
+
+dp.add_handler(CommandHandler("AUGMW", augmw))
+
+dp.add_handler(CommandHandler("Automata", automata))
+
+dp.add_handler(CommandHandler("AX50", ax50))
+
+dp.add_handler(CommandHandler("Ballesta", ballesta))
+
+dp.add_handler(CommandHandler("BAR", bar))
+
+dp.add_handler(CommandHandler("Bizon", bizon))
+
+dp.add_handler(CommandHandler("Blixen", blixen))
+
+dp.add_handler(CommandHandler("BP50", bp50))
+
+dp.add_handler(CommandHandler("Bren", bren))
+
+
+
+
 dp.add_handler(CommandHandler("1911CW", p1911cw))
 
 dp.add_handler(CommandHandler("1911MW", p1911mw))
