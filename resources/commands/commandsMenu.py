@@ -66,6 +66,10 @@ def armas(update, context):
                                                                     + '\n-/FARA'
                                                                     + '\n-/FFAR'
                                                                     + '\n-/FR556'
+                                                                    + '\n-/Grau'
+                                                                    + '\n-/Grav'
+                                                                    + '\n-/Groza'
+                                                                    + '\n-/ITRA'
                                                                     + '\n-/'
 
                                                                     + '\n\nSubfusiles:'
@@ -76,6 +80,7 @@ def armas(update, context):
                                                                     + '\n-/Bullfrog'
                                                                     + '\n-/CX9'
                                                                     + '\n-/Fennec'
+                                                                    + '\n-/ISO'
                                                                     + '\n-/'
 
                                                                     + '\n\nEscopetas:'
@@ -83,6 +88,10 @@ def armas(update, context):
                                                                     + '\n-/Doble'
                                                                     + '\n-/E725'
                                                                     + '\n-/Einhorn'
+                                                                    + '\n-/Gallo'
+                                                                    + '\n-/Gracey'
+                                                                    + '\n-/Hauer'
+                                                                    + '\n-/Ironhide'
                                                                     + '\n-/'
 
                                                                     + '\n\nAmetralladoras Ligeras:'
@@ -90,6 +99,7 @@ def armas(update, context):
                                                                     + '\n-/Bruen'
                                                                     + '\n-/DP27'
                                                                     + '\n-/FINN'
+                                                                    + '\n-/Holger'
                                                                     + '\n-/'
 
                                                                     + '\n\nFusiles Tacticos:'
@@ -99,12 +109,14 @@ def armas(update, context):
                                                                     + '\n-/Carv2'
                                                                     + '\n-/DMR'
                                                                     + '\n-/EBR14'
+                                                                    + '\n-/G43'
                                                                     + '\n-/'
 
                                                                     + '\n\nFusiles de Precision:'
                                                                     + '\n-/Antitanque'
                                                                     + '\n-/AX50'
                                                                     + '\n-/Dragunov'
+                                                                    + '\n-/HDR'
                                                                     + '\n-/'
 
                                                                     + '\n\nPistolas:'

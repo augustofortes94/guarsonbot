@@ -249,7 +249,29 @@ dp.add_handler(CommandHandler("FINN", finn))
 
 dp.add_handler(CommandHandler("FR556", fr556))
 
+dp.add_handler(CommandHandler("G43", g43))
 
+dp.add_handler(CommandHandler("Gallo", gallo))
+
+dp.add_handler(CommandHandler("Gracey", gracey))
+
+dp.add_handler(CommandHandler("Grau", grau))
+
+dp.add_handler(CommandHandler("Grav", grav))
+
+dp.add_handler(CommandHandler("Groza", groza))
+
+dp.add_handler(CommandHandler("Hauer", hauer))
+
+dp.add_handler(CommandHandler("HDR", hdr))
+
+dp.add_handler(CommandHandler("Holger", holger))
+
+dp.add_handler(CommandHandler("Ironhide", ironhide))
+
+dp.add_handler(CommandHandler("ISO", iso))
+
+dp.add_handler(CommandHandler("ITRA", itra))
 
 
 

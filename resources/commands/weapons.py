@@ -538,6 +538,134 @@ def fr556(update, context):
                                                                     + "\n-Acople Frontal de Comando"
                                                                     + "\n-Municion de 50 balas")
 
+def g43(update, context):
+    defineLogs().info(f"El usuario {update.effective_user['username']}, consulto por G43")
+    context.bot.send_message(chat_id=update.effective_chat.id, text="G-43:\n"
+                                                                    + "\n-Silenciador MX"
+                                                                    + "\n-Cañon Wyvern de Rafagas"
+                                                                    + "\n-Mira PU para SVT-40 (x3-6)"
+                                                                    + "\n-Culata Fitzherbert Reforzada"
+                                                                    + "\n-Acople Tope de Mano para el M1941"
+                                                                    + "\n-Cargador Tambores de 8 mm Klauser con 20 Proyectiles"
+                                                                    + "\n-Municion Incendiaria"
+                                                                    + "\n-Empuñadura Trasera de Goma"
+                                                                    + "\n-Ventaja 1 Empuñadura Segura"
+                                                                    + "\n-Ventaja 2 Totalmente Cargado"
+                                                                    + "\n\nAlternativa: Reemplazar el cañon por Cañon ZP de 770 mm de Precision")
+
+def gallo(update, context):
+    defineLogs().info(f"El usuario {update.effective_user['username']}, consulto por Gallo")
+    context.bot.send_message(chat_id=update.effective_chat.id, text="Gallo SA12:\n"
+                                                                    + "\n-Estrangulador Agency"
+                                                                    + "\n-Cañon Reforzado Pesado de 54.3 cm"
+                                                                    + "\n-Culata Maraton"
+                                                                    + "\n-Municion Tambor Stanag de 12 balas"
+                                                                    + "\n-Empuñadura Trasera de Serpiente")
+
+def gracey(update, context):
+    defineLogs().info(f"El usuario {update.effective_user['username']}, consulto por Gracey")
+    context.bot.send_message(chat_id=update.effective_chat.id, text="Gracey Automatica:\n"
+                                                                    + "\n-Boca de Cañon Estrangulador Completo para M97"
+                                                                    + "\n-Cañon CGC de 55.88 cm Rapido"
+                                                                    + "\n-Mira G16 x 2.5"
+                                                                    + "\n-Culata Chariot Deportiva"
+                                                                    + "\n-Acople Empuñadura de Pistola para SMLE"
+                                                                    + "\n-Tambores de Calibre 12 con 10 Cartuchos"
+                                                                    + "\n-Municion Perdigones y Postas"
+                                                                    + "\n-Empuñadura Trasera de Tela"
+                                                                    + "\n-Ventaja 1 Arrollador"
+                                                                    + "\n-Ventaja 2 Totalmente Cargado")
+
+def grau(update, context):
+    defineLogs().info(f"El usuario {update.effective_user['username']}, consulto por Grau")
+    context.bot.send_message(chat_id=update.effective_chat.id, text="Grau:\n"
+                                                                    + "\n-Silenciador Monolitico"
+                                                                    + "\n-Cañon Tempus Arcangel de 67.1 cm"
+                                                                    + "\n-Mira x3 VLK"
+                                                                    + "\n-Acople Frontal de Comando"
+                                                                    + "\n-Municion de 60 balas"
+                                                                    + "\n\nAlternativa: reemplazar Mira por Laser Tactico")
+
+def grav(update, context):
+    defineLogs().info(f"El usuario {update.effective_user['username']}, consulto por Grav")
+    context.bot.send_message(chat_id=update.effective_chat.id, text="Grav:\n"
+                                                                    + "\n-Silenciador Agency"
+                                                                    + "\n-Cañon Fuerza Operativa de 54.10 cm"
+                                                                    + "\n-Mira Axial Arms x3"
+                                                                    + "\n-Acople Empuñadura de Operador de Campo"
+                                                                    + "\n-Municion de 50 balas")
+
+def groza(update, context):
+    defineLogs().info(f"El usuario {update.effective_user['username']}, consulto por Groza")
+    context.bot.send_message(chat_id=update.effective_chat.id, text="Groza:\n"
+                                                                    + "\n-Silenciador GRU"
+                                                                    + "\n-Cañon Grado Militar CMV de 42 cm"
+                                                                    + "\n-Culata Almohadilla de la KGB"
+                                                                    + "\n-Acople Empuñadura Rapida Spetsnaz"
+                                                                    + "\n-Municion Tambor Spetsnaz de 60 balas"
+                                                                    + "\n\nAlternativa: Cambiar Culata por Mira Axial Arms x3")
+
+def hauer(update, context):
+    defineLogs().info(f"El usuario {update.effective_user['username']}, consulto por Hauer")
+    context.bot.send_message(chat_id=update.effective_chat.id, text="Hauer 77:\n"
+                                                                    + "\n-Boca de Cañon Estrangulador Agency"
+                                                                    + "\n-Cañon Fuerza Operativa de 40.6 cm"
+                                                                    + "\n-Laser Identificador de Objetivos FOE"
+                                                                    + "\n-Culata sin Culata"
+                                                                    + "\n-Municion Tubo de 7 balas")
+
+def hdr(update, context):
+    defineLogs().info(f"El usuario {update.effective_user['username']}, consulto por HDR")
+    context.bot.send_message(chat_id=update.effective_chat.id, text="HDR:\n"
+                                                                    + "\n-Silenciador Monolitico"
+                                                                    + "\n-Cañon HDR Pro de 68.3 cm"
+                                                                    + "\n-Laser Tactico"
+                                                                    + "\n-Mira Optica con Zoom Variable"
+                                                                    + "\n-Culata FTAC Campeon"
+                                                                    + "\n\nAlternativa: reemplazar Laser Tactico por Municion de 7 u 9 balas")
+
+def holger(update, context):
+    defineLogs().info(f"El usuario {update.effective_user['username']}, consulto por Holger")
+    context.bot.send_message(chat_id=update.effective_chat.id, text="Holger-26:\n"
+                                                                    + "\n-Silenciador Monolitico"
+                                                                    + "\n-Laser Tactico"
+                                                                    + "\n-Mira x3 VLK"
+                                                                    + "\n-Acople Frontal de Comando"
+                                                                    + "\n-Empuñadura Trasera Adhesivo Punteado")
+
+def ironhide(update, context):
+    defineLogs().info(f"El usuario {update.effective_user['username']}, consulto por Ironhide")
+    context.bot.send_message(chat_id=update.effective_chat.id, text=".410 Ironhide:\n"
+                                                                    + "\n-Boca de Cañon Estrangulador Agency"
+                                                                    + "\n-Cañon Forjado a Mano de 43.43 cm"
+                                                                    + "\n-Culata Maraton"
+                                                                    + "\n-Municion Tubo Stanag de 8 proyectiles"
+                                                                    + "\n-Empuñadura Trasera Vendaje de Serpiente")
+
+def iso(update, context):
+    defineLogs().info(f"El usuario {update.effective_user['username']}, consulto por ISO")
+    context.bot.send_message(chat_id=update.effective_chat.id, text="ISO:\n"
+                                                                    + "\n-Cañon FSS Nightshade"
+                                                                    + "\n-Laser Tactico"
+                                                                    + "\n-Culata Plegable ISO"
+                                                                    + "\n-Acople Frontal de Comando"
+                                                                    + "\n-Municion Tambor de 50 balas")
+
+def itra(update, context):
+    defineLogs().info(f"El usuario {update.effective_user['username']}, consulto por ITRA")
+    context.bot.send_message(chat_id=update.effective_chat.id, text="ITRA de Rafagas:\n"
+                                                                    + "\n-Silenciador MX"
+                                                                    + "\n-Cañon Perfetto de 140 mm Rapido"
+                                                                    + "\n-Mira PU para SVT-40 (x3-6)"
+                                                                    + "\n-Culata Empuñadura Acolchada Perfetto"
+                                                                    + "\n-Acople Tope de Mano para el M1941"
+                                                                    + "\n-Cargador Tambores de 8 mm Klauser con 32 Proyectiles"
+                                                                    + "\n-Municion Incendiaria"
+                                                                    + "\n-Empuñadura Trasera de Goma"
+                                                                    + "\n-Ventaja 1 Vital"
+                                                                    + "\n-Ventaja 2 Totalmente Cargado")
+
+
 
 def demas(update, context):
     defineLogs().info(f"El usuario {update.effective_user['username']}, consulto por ")
