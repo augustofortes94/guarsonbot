@@ -665,6 +665,134 @@ def itra(update, context):
                                                                     + "\n-Ventaja 1 Vital"
                                                                     + "\n-Ventaja 2 Totalmente Cargado")
 
+def jak12(update, context):
+    defineLogs().info(f"El usuario {update.effective_user['username']}, consulto por JAK12")
+    context.bot.send_message(chat_id=update.effective_chat.id, text="JAK12:\n"
+                                                                    + "\n-Boca de Cañon Forge TAC Merodeador"
+                                                                    + "\n-Cañon ZLR J-2800 Influx"
+                                                                    + "\n-Laser de 5 mW"
+                                                                    + "\n-Acople Frontal de Mercenario"
+                                                                    + "\n-Municion Aliento de Dragon de 8 Cartuchos")
+
+def kar98mw(update, context):
+    defineLogs().info(f"El usuario {update.effective_user['username']}, consulto por Kar98MW")
+    context.bot.send_message(chat_id=update.effective_chat.id, text="Kar98k (Modern Warfare):\n"
+                                                                    + "\n-Silenciador Monolitico"
+                                                                    + "\n-Cañon Singuard Personalizado de 63.8 cm"
+                                                                    + "\n-Mira Optica con Zoom Variable"
+                                                                    + "\n-Empuñadura Trasera Adhesivo Punteado"
+                                                                    + "\n-Ventaja Prestidigitacion"
+                                                                    + "\n\nAlternativa: reemplazar Ventaja Prestidigitacion por Laser Tactico y Mira Zoom Variable por Mira de Francotirador"
+                                                                    + "\n\nPara Kar98k de Vanguard /Kar98VG")
+
+def kar98vg(update, context):
+    defineLogs().info(f"El usuario {update.effective_user['username']}, consulto por Kar98VG")
+    context.bot.send_message(chat_id=update.effective_chat.id, text="Kar98k (Vanguard):\n"
+                                                                    + "\n-Silenciador SD"
+                                                                    + "\n-Cañon VDD de 660 mm 05HE"
+                                                                    + "\n-Culata VDD 98"
+                                                                    + "\n-Acople Empuñadura Delantera Pesada"
+                                                                    + "\n-Cargadores Rapidos de 8 mm Klauser con 5 Proyectiles"
+                                                                    + "\n-Municion Alargada"
+                                                                    + "\n-Empuñadura Trasera con Cinta"
+                                                                    + "\n-Ventaja 1 Velo"
+                                                                    + "\n-Ventaja 2 Totalmente Cargado"
+                                                                    + "\n\nPara Kar98k de Modern Warfare /Kar98MW")
+
+def kgm40(update, context):
+    defineLogs().info(f"El usuario {update.effective_user['username']}, consulto por KGM40")
+    context.bot.send_message(chat_id=update.effective_chat.id, text="KG M40:\n"
+                                                                    + "\n-Silenciador MX"
+                                                                    + "\n-Cañon Reisdorf de 720 mm Cubierta"
+                                                                    + "\n-Mira PU para SVT-40 (x3-6)"
+                                                                    + "\n-Culata VDD 22G Acolchada"
+                                                                    + "\n-Acople M1930 Guerrillero en Angulo"
+                                                                    + "\n-Cargador Tambores Calibre 30-06 con 60 Proyectiles"
+                                                                    + "\n-Municion Incendiaria"
+                                                                    + "\n-Empuñadura Trasera Granulada"
+                                                                    + "\n-Ventaja 1 Vital"
+                                                                    + "\n-Ventaja 2 Totalmente Cargado")
+
+def kilo(update, context):
+    defineLogs().info(f"El usuario {update.effective_user['username']}, consulto por Kilo")
+    context.bot.send_message(chat_id=update.effective_chat.id, text="Kilo:\n"
+                                                                    + "\n-Silenciador Monolitico"
+                                                                    + "\n-Cañon Singuard Arms de Merodeador de 50.3 cm"
+                                                                    + "\n-Mira x3 VLK"
+                                                                    + "\n-Acople Frontal de Comando"
+                                                                    + "\n-Municion de 60 balas")
+
+def klauser(update, context):
+    defineLogs().info(f"El usuario {update.effective_user['username']}, consulto por Klauser")
+    context.bot.send_message(chat_id=update.effective_chat.id, text="Klauser:\n"
+                                                                    + "\n-Silenciador M1929"
+                                                                    + "\n-Cañon Fitzherbert de 200 mm BL"
+                                                                    + "\n-Mira Reflector Slate"
+                                                                    + "\n-Sistema del Gatillo Accion Rapida"
+                                                                    + "\n-Cargadores del Calibre 45 ACP con 12 Proyectiles"
+                                                                    + "\n-Municion Incendiaria"
+                                                                    + "\n-Empuñadura de Tela"
+                                                                    + "\n-Ventaja 1 Prestidigitacion"
+                                                                    + "\n-Ventaja 2 Rapido")
+
+def krig(update, context):
+    defineLogs().info(f"El usuario {update.effective_user['username']}, consulto por Krig")
+    context.bot.send_message(chat_id=update.effective_chat.id, text="Krig 6:\n"
+                                                                    + "\n-Silenciador Agency"
+                                                                    + "\n-Cañon CMV Militar de 38.1 cm"
+                                                                    + "\n-Mira Axial Arms x3"
+                                                                    + "\n-Acople Empuñadura de Agente de Campo"
+                                                                    + "\n-Municion Stanag de 60 balas")
+
+def ksp(update, context):
+    defineLogs().info(f"El usuario {update.effective_user['username']}, consulto por KSP")
+    context.bot.send_message(chat_id=update.effective_chat.id, text="KSP 45:\n"
+                                                                    + "\n-Silenciador Agency"
+                                                                    + "\n-Cañon Fuerza Operativa de 40.6 cm"
+                                                                    + "\n-Mira LED Microflex"
+                                                                    + "\n-Acople Empuñadura Frontal de Agente de Campo"
+                                                                    + "\n-Municion Stanag de 48 balas")
+
+def lapa(update, context):
+    defineLogs().info(f"El usuario {update.effective_user['username']}, consulto por LAPA")
+    context.bot.send_message(chat_id=update.effective_chat.id, text="LAPA:\n"
+                                                                    + "\n-Silenciador Agency"
+                                                                    + "\n-Cañon Estriado de 20 cm"
+                                                                    + "\n-Mira LED Microflex"
+                                                                    + "\n-Municion Stanag de 50 balas"
+                                                                    + "\n-Empuñadura Trasera Vendaje de Serpiente")
+
+def lc10(update, context):
+    defineLogs().info(f"El usuario {update.effective_user['username']}, consulto por LC10")
+    context.bot.send_message(chat_id=update.effective_chat.id, text="LC-10:\n"
+                                                                    + "\n-Silenciador Agency"
+                                                                    + "\n-Cañon Reforzado Pesado de 30.2 cm"
+                                                                    + "\n-Acople Empuñadura de Agente de Campo"
+                                                                    + "\n-Municion Stanag de 55 balas"
+                                                                    + "\n-Empuñadura Trasera de la Jungla SASR")
+
+def lienna(update, context):
+    defineLogs().info(f"El usuario {update.effective_user['username']}, consulto por Lienna")
+    context.bot.send_message(chat_id=update.effective_chat.id, text="Lienna 57:\n"
+                                                                    + "\n-Silenciador Mx"
+                                                                    + "\n-Cañon Frei de 432 mm Cubierto"
+                                                                    + "\n-Mira PU para SVT-40 (x3-6)"
+                                                                    + "\n-Culata Baumann GMK-2"
+                                                                    + "\n-Empuñadura Delantera para Carver"
+                                                                    + "\n-Cargadores de 8 mm Klauser con 50 Proyectiles"
+                                                                    + "\n-Municion Alargada"
+                                                                    + "\n-Empuñadura Trasera de Polimero"
+                                                                    + "\n-Ventaja 1 Empuñadura Segura"
+                                                                    + "\n-Ventaja 2 Totalmente Cargado")
+
+def m13(update, context):
+    defineLogs().info(f"El usuario {update.effective_user['username']}, consulto por M13")
+    context.bot.send_message(chat_id=update.effective_chat.id, text="M13:\n"
+                                                                    + "\n-Silenciador Monolitico"
+                                                                    + "\n-Cañon Tempus de Tirador"
+                                                                    + "\n-Mira x3 VLK"
+                                                                    + "\n-Acople Frontal de Comando"
+                                                                    + "\n-Municion de 60 balas")
 
 
 def demas(update, context):

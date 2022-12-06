@@ -273,7 +273,29 @@ dp.add_handler(CommandHandler("ISO", iso))
 
 dp.add_handler(CommandHandler("ITRA", itra))
 
+dp.add_handler(CommandHandler("JAK12", jak12))
 
+dp.add_handler(CommandHandler("Kar98MW", kar98mw))
+
+dp.add_handler(CommandHandler("Kar98VG", kar98vg))
+
+dp.add_handler(CommandHandler("KGM40", kgm40))
+
+dp.add_handler(CommandHandler("Kilo", kilo))
+
+dp.add_handler(CommandHandler("Klauser", klauser))
+
+dp.add_handler(CommandHandler("Krig", krig))
+
+dp.add_handler(CommandHandler("KSP", ksp))
+
+dp.add_handler(CommandHandler("LAPA", lapa))
+
+dp.add_handler(CommandHandler("LC10", lc10))
+
+dp.add_handler(CommandHandler("Lienna", lienna))
+
+dp.add_handler(CommandHandler("M13", m13))
 
 
 

@@ -70,6 +70,10 @@ def armas(update, context):
                                                                     + '\n-/Grav'
                                                                     + '\n-/Groza'
                                                                     + '\n-/ITRA'
+                                                                    + '\n-/KGM40'
+                                                                    + '\n-/Kilo'
+                                                                    + '\n-/Krig'
+                                                                    + '\n-/M13'
                                                                     + '\n-/'
 
                                                                     + '\n\nSubfusiles:'
@@ -81,6 +85,9 @@ def armas(update, context):
                                                                     + '\n-/CX9'
                                                                     + '\n-/Fennec'
                                                                     + '\n-/ISO'
+                                                                    + '\n-/KSP'
+                                                                    + '\n-/LAPA'
+                                                                    + '\n-/LC10'
                                                                     + '\n-/'
 
                                                                     + '\n\nEscopetas:'
@@ -92,6 +99,7 @@ def armas(update, context):
                                                                     + '\n-/Gracey'
                                                                     + '\n-/Hauer'
                                                                     + '\n-/Ironhide'
+                                                                    + '\n-/JAK12'
                                                                     + '\n-/'
 
                                                                     + '\n\nAmetralladoras Ligeras:'
@@ -100,6 +108,7 @@ def armas(update, context):
                                                                     + '\n-/DP27'
                                                                     + '\n-/FINN'
                                                                     + '\n-/Holger'
+                                                                    + '\n-/Lienna'
                                                                     + '\n-/'
 
                                                                     + '\n\nFusiles Tacticos:'
@@ -110,6 +119,7 @@ def armas(update, context):
                                                                     + '\n-/DMR'
                                                                     + '\n-/EBR14'
                                                                     + '\n-/G43'
+                                                                    + '\n-/Kar98MW'
                                                                     + '\n-/'
 
                                                                     + '\n\nFusiles de Precision:'
@@ -117,6 +127,7 @@ def armas(update, context):
                                                                     + '\n-/AX50'
                                                                     + '\n-/Dragunov'
                                                                     + '\n-/HDR'
+                                                                    + '\n-/Kar98VG'
                                                                     + '\n-/'
 
                                                                     + '\n\nPistolas:'
@@ -127,6 +138,7 @@ def armas(update, context):
                                                                     + '\n-/Ametralladora'
                                                                     + '\n-/AMP'
                                                                     + '\n-/Diamatti'
+                                                                    + '\n-/Klauser'
                                                                     + '\n-/')
 
 """
