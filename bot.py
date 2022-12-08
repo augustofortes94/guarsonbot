@@ -67,7 +67,7 @@ dp.add_handler(CommandHandler("AK47", ak47))
 
 dp.add_handler(CommandHandler("AUG", aug))
 
-dp.add_handler(CommandHandler("M1", m1))
+dp.add_handler(CommandHandler("M1", m1garand))
 
 dp.add_handler(CommandHandler("Kar", kar98))
 
@@ -297,6 +297,29 @@ dp.add_handler(CommandHandler("Lienna", lienna))
 
 dp.add_handler(CommandHandler("M13", m13))
 
+dp.add_handler(CommandHandler("M16", m16))
+
+dp.add_handler(CommandHandler("M19", m19))
+
+dp.add_handler(CommandHandler("M1912", m1912))
+
+dp.add_handler(CommandHandler("M1916", m1916))
+
+dp.add_handler(CommandHandler("M1Garand", m1garand))
+
+dp.add_handler(CommandHandler("M4A1", m4a1))
+
+dp.add_handler(CommandHandler("M60", m60))
+
+dp.add_handler(CommandHandler("M82", m82))
+
+dp.add_handler(CommandHandler("M91", m91))
+
+dp.add_handler(CommandHandler("MAC", mac))
+
+dp.add_handler(CommandHandler("Magnum", magnum))
+
+dp.add_handler(CommandHandler("Marco", marco))
 
 
 dp.add_handler(CommandHandler("1911CW", p1911cw))

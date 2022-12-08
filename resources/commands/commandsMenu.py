@@ -74,6 +74,7 @@ def armas(update, context):
                                                                     + '\n-/Kilo'
                                                                     + '\n-/Krig'
                                                                     + '\n-/M13'
+                                                                    + '\n-/M4A1'
                                                                     + '\n-/'
 
                                                                     + '\n\nSubfusiles:'
@@ -88,6 +89,9 @@ def armas(update, context):
                                                                     + '\n-/KSP'
                                                                     + '\n-/LAPA'
                                                                     + '\n-/LC10'
+                                                                    + '\n-/M1912'
+                                                                    + '\n-/MAC'
+                                                                    + '\n-/Marco'
                                                                     + '\n-/'
 
                                                                     + '\n\nEscopetas:'
@@ -109,6 +113,8 @@ def armas(update, context):
                                                                     + '\n-/FINN'
                                                                     + '\n-/Holger'
                                                                     + '\n-/Lienna'
+                                                                    + '\n-/M60'
+                                                                    + '\n-/M91'
                                                                     + '\n-/'
 
                                                                     + '\n\nFusiles Tacticos:'
@@ -120,6 +126,9 @@ def armas(update, context):
                                                                     + '\n-/EBR14'
                                                                     + '\n-/G43'
                                                                     + '\n-/Kar98MW'
+                                                                    + '\n-/M16'
+                                                                    + '\n-/M1916'
+                                                                    + '\n-/M1Garand'
                                                                     + '\n-/'
 
                                                                     + '\n\nFusiles de Precision:'
@@ -128,6 +137,7 @@ def armas(update, context):
                                                                     + '\n-/Dragunov'
                                                                     + '\n-/HDR'
                                                                     + '\n-/Kar98VG'
+                                                                    + '\n-/M82'
                                                                     + '\n-/'
 
                                                                     + '\n\nPistolas:'
@@ -139,6 +149,8 @@ def armas(update, context):
                                                                     + '\n-/AMP'
                                                                     + '\n-/Diamatti'
                                                                     + '\n-/Klauser'
+                                                                    + '\n-/M19'
+                                                                    + '\n-/Magnum'
                                                                     + '\n-/')
 
 """

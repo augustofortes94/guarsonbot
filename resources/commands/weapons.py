@@ -794,6 +794,140 @@ def m13(update, context):
                                                                     + "\n-Acople Frontal de Comando"
                                                                     + "\n-Municion de 60 balas")
 
+def m16(update, context):
+    defineLogs().info(f"El usuario {update.effective_user['username']}, consulto por M16")
+    context.bot.send_message(chat_id=update.effective_chat.id, text="M16:\n"
+                                                                    + "\n-Silenciador Agency"
+                                                                    + "\n-Cañon Calibre de 52 cm de Competencia"
+                                                                    + "\n-Mira Axial Arms x3"
+                                                                    + "\n-Acople Empuñadura Frontal de Agente de Comando"
+                                                                    + "\n-Municion Stanag de 60 balas")
+
+def m19(update, context):
+    defineLogs().info(f"El usuario {update.effective_user['username']}, consulto por M19")
+    context.bot.send_message(chat_id=update.effective_chat.id, text="M19:\n"
+                                                                    + "\n-Cañon XRK V Ampliado"
+                                                                    + "\n-Laser de 5 mW"
+                                                                    + "\n-Sistema de Gatillo Ligero"
+                                                                    + "\n-Municion de 32 balas"
+                                                                    + "\n-Ventaja Duales"
+                                                                    + "\n\nAlternativa: Reemplazar Ventaja Duales por Totalmente Cargado y Laser de 5 mW por Silenciador Monolitico")
+
+def m1912(update, context):
+    defineLogs().info(f"El usuario {update.effective_user['username']}, consulto por M1912")
+    context.bot.send_message(chat_id=update.effective_chat.id, text="M1912:\n"
+                                                                    + "\n-Silenciador M1929"
+                                                                    + "\n-Cañon Chariot de 6.35 cm Rapido"
+                                                                    + "\n-Mira Reflector Slate"
+                                                                    + "\n-Culata Ragdoll T2 Support"
+                                                                    + "\n-Acople Empuñadura Delantera para Carver"
+                                                                    + "\n-Cargador Tambores de 8 mm Kurz con 50 Proyectiles"
+                                                                    + "\n-Municion Punta Hueca"
+                                                                    + "\n-Empuñadura Trasera de Polimero"
+                                                                    + "\n-Ventaja 1 Rapido"
+                                                                    + "\n-Ventaja 2 Rapido")
+
+def m1916(update, context):
+    defineLogs().info(f"El usuario {update.effective_user['username']}, consulto por M1916")
+    context.bot.send_message(chat_id=update.effective_chat.id, text="M1916:\n"
+                                                                    + "\n-Silenciador MX"
+                                                                    + "\n-Cañon ZP 762 mm de Precision"
+                                                                    + "\n-Mira PU para SVT-40 (x3-6)"
+                                                                    + "\n-Culata Fitzherbert Reforzada"
+                                                                    + "\n-Acople Tope de Mano para el M1941"
+                                                                    + "\n-Cargadores de 6.5 mm Sakura con 20 Proyectiles"
+                                                                    + "\n-Municion Incendiaria"
+                                                                    + "\n-Empuñadura Trasera con Cinta"
+                                                                    + "\n-Ventaja 1 Vital"
+                                                                    + "\n-Ventaja 2 Totalmente Cargado")
+
+def m1garand(update, context):
+    defineLogs().info(f"El usuario {update.effective_user['username']}, consulto por M1Garand")
+    context.bot.send_message(chat_id=update.effective_chat.id, text="M1 Garand:\n"
+                                                                    + "\n-Silenciador MX"
+                                                                    + "\n-Cañon Cooper de 63.5 cm Personalizada"
+                                                                    + "\n-Mira PU para SVT-40 (x3-6)"
+                                                                    + "\n-Culata Cooper Ajustable"
+                                                                    + "\n-Acople Tope de Mano para el M1941"
+                                                                    + "\n-Tambores del Calibre 30-06 con 20 Proyectiles"
+                                                                    + "\n-Municion Incendiaria"
+                                                                    + "\n-Empuñadura Trasera de Goma"
+                                                                    + "\n-Ventaja 1 Vital"
+                                                                    + "\n-Ventaja 2 Totalmente Cargado")
+
+def m4a1(update, context):
+    defineLogs().info(f"El usuario {update.effective_user['username']}, consulto por M4A1")
+    context.bot.send_message(chat_id=update.effective_chat.id, text="M4A1 (Modern Warfare):\n"
+                                                                    + "\n-Silenciador Monolitico"
+                                                                    + "\n-Cañon M16 Granadero de serie"
+                                                                    + "\n-Mira x3 VLK"
+                                                                    + "\n-Acople Frontal de Comando"
+                                                                    + "\n-Municion de 60 balas"
+                                                                    + "\n\nAlternativa: reemplazar mira x3 VLK por Laser Tactico"
+                                                                    + "\n\nPara M4 de ColdWar preguntar por /XM4")
+
+def m60(update, context):
+    defineLogs().info(f"El usuario {update.effective_user['username']}, consulto por M60")
+    context.bot.send_message(chat_id=update.effective_chat.id, text="M60:\n"
+                                                                    + "\n-Silenciador Agency"
+                                                                    + "\n-Cañon Calibre 57.9 de Competencia"
+                                                                    + "\n-Mira Axial Arms x3"
+                                                                    + "\n-Acople Empuñadura Frontal de Operador de Campo"
+                                                                    + "\n-Empuñadura Trasera Vendaje de Serpiente")
+
+def m82(update, context):
+    defineLogs().info(f"El usuario {update.effective_user['username']}, consulto por M82")
+    context.bot.send_message(chat_id=update.effective_chat.id, text="M82:\n"
+                                                                    + "\n-Silenciador Cubierto"
+                                                                    + "\n-Cañon Combate de Reconocimiento de 57.4 cm"
+                                                                    + "\n-Laser Mira Laser de SWAT 5mW"
+                                                                    + "\n-Acople Empuñadura Frontal"
+                                                                    + "\n-Municion Cargador Aceler de 7 balas")
+
+def m91(update, context):
+    defineLogs().info(f"El usuario {update.effective_user['username']}, consulto por M91")
+    context.bot.send_message(chat_id=update.effective_chat.id, text="M91:\n"
+                                                                    + "\n-Silenciador Monolitico"
+                                                                    + "\n-Cañon Fuerzas Espaciales M91"
+                                                                    + "\n-Laser Tactico"
+                                                                    + "\n-Mira x3 VLK"
+                                                                    + "\n-Acople Frontal de Comando")
+
+def mac(update, context):
+    defineLogs().info(f"El usuario {update.effective_user['username']}, consulto por MAC")
+    context.bot.send_message(chat_id=update.effective_chat.id, text="MAC-10:\n"
+                                                                    + "\n-Silenciador Agency"
+                                                                    + "\n-Cañon Fuerza Operativa de 15 cm"
+                                                                    + "\n-Acople Empuñadura de Operador de Campo"
+                                                                    + "\n-Municion Tambor Stanag de 53 balas"
+                                                                    + "\n-Empuñadura Trasera de Serpiente"
+                                                                    + "\n\nAlternativa: reemplazar Empuñadura Trasera por Culata de Alambre y la Municion Stanag por cargador rapido (para disparo de la cadera)")
+
+def magnum(update, context):
+    defineLogs().info(f"El usuario {update.effective_user['username']}, consulto por Magnum")
+    context.bot.send_message(chat_id=update.effective_chat.id, text="Magnum:\n"
+                                                                    + "\n-Silenciador Agency"
+                                                                    + "\n-Cañon 11.9 cm de Cañon Corto Estrecho"
+                                                                    + "\n-Laser de Avistamiento Ember"
+                                                                    + "\n-Culata Duales"
+                                                                    + "\n-Municion Cargador Rapido de 12 balas Stanag")
+
+def marco(update, context):
+    defineLogs().info(f"El usuario {update.effective_user['username']}, consulto por Marco")
+    context.bot.send_message(chat_id=update.effective_chat.id, text="Marco 5:\n"
+                                                                    + "\n-Amplificador de Retroceso"
+                                                                    + "\n-Cañon Perfecto Lesto de 355 mm"
+                                                                    + "\n-Mira Reflect Slate"
+                                                                    + "\n-Culata Imerito FR"
+                                                                    + "\n-Acople Armazon Mk. VI"
+                                                                    + "\n-Cargador Nambu con 64 Proyectiles"
+                                                                    + "\n-Municion Subsonica"
+                                                                    + "\n-Empuñadura Trasera con Cinta"
+                                                                    + "\n-Ventaja 1 Arrollador"
+                                                                    + "\n-Ventaja 2 Rapido"
+                                                                    + "\n\nAlternativa Duales: reemplazar -Cañon Botti de 285 mm Personalizado, -Mira G16 x 2,5, -Culata Botti HF Plegable, -Empuñadura Trasera con Brea de Pino, -Ventaja 1 Duales")
+
+
 
 def demas(update, context):
     defineLogs().info(f"El usuario {update.effective_user['username']}, consulto por ")
