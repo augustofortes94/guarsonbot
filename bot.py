@@ -321,6 +321,30 @@ dp.add_handler(CommandHandler("Magnum", magnum))
 
 dp.add_handler(CommandHandler("Marco", marco))
 
+dp.add_handler(CommandHandler("Marshal", marshal))
+
+dp.add_handler(CommandHandler("MG34", mg34))
+
+dp.add_handler(CommandHandler("MG42", mg42))
+
+dp.add_handler(CommandHandler("MG82", mg82))
+
+dp.add_handler(CommandHandler("Milano", milano))
+
+dp.add_handler(CommandHandler("MK2", mk2))
+
+dp.add_handler(CommandHandler("Modelo", modelo))
+
+dp.add_handler(CommandHandler("MP40", mp40))
+
+dp.add_handler(CommandHandler("MP5CW", mp5cw))
+
+dp.add_handler(CommandHandler("MP5MW", mp5mw))
+
+dp.add_handler(CommandHandler("MP7", mp7))
+
+dp.add_handler(CommandHandler("Nikita", nikita))
+
 
 dp.add_handler(CommandHandler("1911CW", p1911cw))
 
