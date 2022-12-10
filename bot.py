@@ -345,6 +345,17 @@ dp.add_handler(CommandHandler("MP7", mp7))
 
 dp.add_handler(CommandHandler("Nikita", nikita))
 
+dp.add_handler(CommandHandler("NZ41", nz41))
+
+dp.add_handler(CommandHandler("Oden", oden))
+
+dp.add_handler(CommandHandler("Origin", origin))
+
+dp.add_handler(CommandHandler("OTS", ots))
+
+dp.add_handler(CommandHandler("OTS9", ots))
+
+dp.add_handler(CommandHandler("Owen", owen))
 
 dp.add_handler(CommandHandler("1911CW", p1911cw))
 
@@ -352,7 +363,22 @@ dp.add_handler(CommandHandler("1911MW", p1911mw))
 
 dp.add_handler(CommandHandler("1911VG", p1911vg))
 
+dp.add_handler(CommandHandler("P357", p357))
+
 dp.add_handler(CommandHandler("50GS", p50gs))
+
+dp.add_handler(CommandHandler("P90", p90))
+
+dp.add_handler(CommandHandler("Pelington", pelington))
+
+dp.add_handler(CommandHandler("PKM", pkm))
+
+dp.add_handler(CommandHandler("PPSHCW", ppshcw))
+
+dp.add_handler(CommandHandler("PPSHVG", ppshvg))
+
+dp.add_handler(CommandHandler("QBZ", qbz))
+
 
 # RUN
 run(updater)

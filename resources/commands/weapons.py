@@ -1053,6 +1053,171 @@ def nikita(update, context):
                                                                     + "\n-Ventaja 1 Perfeccionista"
                                                                     + "\n-Ventaja 2 Totalmente Cargado")
 
+def nz41(update, context):
+    defineLogs().info(f"El usuario {update.effective_user['username']}, consulto por NZ41")
+    context.bot.send_message(chat_id=update.effective_chat.id, text="NZ-41:\n"
+                                                                    + "\n-Silenciador MX"
+                                                                    + "\n-Cañon Orbweaver de 360 mm BC"
+                                                                    + "\n-Mira PU para SVT-40 (x3-6)"
+                                                                    + "\n-Culata Orbweaver E Pack"
+                                                                    + "\n-Acople M1930 Guerrillero en Angulo"
+                                                                    + "\n-Cargador de 6.5 mm Sakura con 50 Proyectiles"
+                                                                    + "\n-Municion Incendiaria"
+                                                                    + "\n-Empuñadura Trasera de Sombreada"
+                                                                    + "\n-Ventaja 1 Refuerzo"
+                                                                    + "\n-Ventaja 2 Totalmente Cargado")
+
+def oden(update, context):
+    defineLogs().info(f"El usuario {update.effective_user['username']}, consulto por Oden")
+    context.bot.send_message(chat_id=update.effective_chat.id, text="Oden:\n"
+                                                                    + "\n-Silenciador Monolitico"
+                                                                    + "\n-Cañon Oden Estandar de 810mm"
+                                                                    + "\n-Mira x3 VLK"
+                                                                    + "\n-Acople Frontal de Comando"
+                                                                    + "\n-Municion de 30 balas")
+
+def origin(update, context):
+    defineLogs().info(f"El usuario {update.effective_user['username']}, consulto por Origin")
+    context.bot.send_message(chat_id=update.effective_chat.id, text="Origin 12:\n"
+                                                                    + "\n-Silenciador Monolitico"
+                                                                    + "\n-Cañon Forge TAC Precision"
+                                                                    + "\n-Laser de 5 mW"
+                                                                    + "\n-Culata sin Culata"
+                                                                    + "\n-Municion de 12 balas")
+
+def ots(update, context):
+    defineLogs().info(f"El usuario {update.effective_user['username']}, consulto por OTS9")
+    context.bot.send_message(chat_id=update.effective_chat.id, text="OTs 9:\n"
+                                                                    + "\n-Silenciador Agency"
+                                                                    + "\n-Cañon Fuerza Operativa de 20.57 cm"
+                                                                    + "\n-Culata de Armazon KGB"
+                                                                    + "\n-Municion Spetsnaz de 40 balas"
+                                                                    + "\n-Empuñadura Trasera Vendaje de Serpiente")
+
+def owen(update, context):
+    defineLogs().info(f"El usuario {update.effective_user['username']}, consulto por Owen")
+    context.bot.send_message(chat_id=update.effective_chat.id, text="Subfusil Owen:\n"
+                                                                    + "\n-Silenciador M1929"
+                                                                    + "\n-Cañon Gawain de 188 mm Cubierto"
+                                                                    + "\n-Mira Reflector Slate"
+                                                                    + "\n-Culata LOR Plegable"
+                                                                    + "\n-Acople Empuñadura Delantera para Carver"
+                                                                    + "\n-Cargador Tambores de 7.62 mm Gorenko con 72 Proyectiles"
+                                                                    + "\n-Municion Punta Hueca"
+                                                                    + "\n-Empuñadura Trasera de Polimero"
+                                                                    + "\n-Ventaja 1 Rapido"
+                                                                    + "\n-Ventaja 2 Rapido")
+
+def p1911cw(update, context):
+    defineLogs().info(f"El usuario {update.effective_user['username']}, consulto por P1911CW")
+    context.bot.send_message(chat_id=update.effective_chat.id, text="1911 (ColdWar):\n"
+                                                                    + "\n-Silenciador Agency"
+                                                                    + "\n-Cañon Fuerza Operativa de 16.6 cm"
+                                                                    + "\n-Laser Foco de Equipo de Tigre"
+                                                                    + "\n-Municion de 12 balas"
+                                                                    + "\n-Empuñadura Trasera de Serpiente"
+                                                                    + "\n\nAlternativa: Para 1911 de Modern Warfare preguntar por /1911MW Para 1911 de Vanguard preguntar por /1911VG")
+
+def p1911mw(update, context):
+    defineLogs().info(f"El usuario {update.effective_user['username']}, consulto por P1911MW")
+    context.bot.send_message(chat_id=update.effective_chat.id, text="1911 (Modern Warfare):\n"
+                                                                    + "\n-Cañon 1911 Acechador"
+                                                                    + "\n-Laser de 5 mW"
+                                                                    + "\n-Sistema de Gatillo Ligero"
+                                                                    + "\n-Municion de 15 balas"
+                                                                    + "\n-Ventaja Duales"
+                                                                    + "\n\nAlternativa: ara 1911 de ColdWar preguntar por /1911CW Para 1911 de Vanguard preguntar por /1911VG")
+
+def p1911vg(update, context):
+    defineLogs().info(f"El usuario {update.effective_user['username']}, consulto por P1911VG")
+    context.bot.send_message(chat_id=update.effective_chat.id, text="1911 (Vanguard):\n"
+                                                                    + "\n-Boca de Cañon Estabilizador F8"
+                                                                    + "\n-Cañon Cooper de 16.51 cm"
+                                                                    + "\n-Mira G16 x 2.5"
+                                                                    + "\n-Sistema del Gatillo Ligero"
+                                                                    + "\n-Cargadores de Calibre 45 ACP con 18 Proyectiles"
+                                                                    + "\n-Municion Incendiaria"
+                                                                    + "\n-Empuñadura con Brea de Pino"
+                                                                    + "\n-Ventaja 1 Duales"
+                                                                    + "\n-Ventaja 2 Totalmente Cargado"
+                                                                    + "\n\nAlternativa: Para 1911 de ColdWar preguntar por /1911CW Para 1911 de Modern Warfare preguntar por /1911MW")
+
+def p357(update, context):
+    defineLogs().info(f"El usuario {update.effective_user['username']}, consulto por P357")
+    context.bot.send_message(chat_id=update.effective_chat.id, text=".357:\n"
+                                                                    + "\n-Cañon Silverfield Ordnance cal. 357"
+                                                                    + "\n-Laser de 5 mW"
+                                                                    + "\n-Sistema de Gatillo Ligero"
+                                                                    + "\n-Municion Disparo de Perdigones"
+                                                                    + "\n-Ventaja Duales")
+
+def p50gs(update, context):
+    defineLogs().info(f"El usuario {update.effective_user['username']}, consulto por P50GS")
+    context.bot.send_message(chat_id=update.effective_chat.id, text=".50 GS:\n"
+                                                                    + "\n-Cañon Forge TAC ampliado"
+                                                                    + "\n-Laser de 5 mW"
+                                                                    + "\n-Sistema de Gatillo Ligero"
+                                                                    + "\n-Municion de 13 balas"
+                                                                    + "\n-Ventaja Duales")
+
+def p90(update, context):
+    defineLogs().info(f"El usuario {update.effective_user['username']}, consulto por P90")
+    context.bot.send_message(chat_id=update.effective_chat.id, text="P90:\n"
+                                                                    + "\n-Silenciador Monolitico"
+                                                                    + "\n-Laser Tactico"
+                                                                    + "\n-Culata Correa Moderna"
+                                                                    + "\n-Acople Adhesivo Granulado"
+                                                                    + "\n-Empuñadura Trasera Adhesivo Punteado")
+
+def pelington(update, context):
+    defineLogs().info(f"El usuario {update.effective_user['username']}, consulto por Pelington")
+    context.bot.send_message(chat_id=update.effective_chat.id, text="Pelington:\n"
+                                                                    + "\n-Silenciador Cubierto"
+                                                                    + "\n-Cañon Combate de Reconocimiento de 69 cm"
+                                                                    + "\n-Laser Mira Laser de SWAT 5mW"
+                                                                    + "\n-Municion Cargador Acelerado de 7 balas"
+                                                                    + "\n-Empuñadura Trasera Vendaje de Serpiente")
+
+def pkm(update, context):
+    defineLogs().info(f"El usuario {update.effective_user['username']}, consulto por PKM")
+    context.bot.send_message(chat_id=update.effective_chat.id, text="PKM:\n"
+                                                                    + "\n-Silenciador Monolitico"
+                                                                    + "\n-Cañon Compacto de 46.2 cm"
+                                                                    + "\n-Culata sin Culata"
+                                                                    + "\n-Acople Empuñadura Rapida"
+                                                                    + "\n-Municion Cinta de 200 balas")
+
+def ppshcw(update, context):
+    defineLogs().info(f"El usuario {update.effective_user['username']}, consulto por PPSHCW")
+    context.bot.send_message(chat_id=update.effective_chat.id, text="PPSH-41 (Coldwar):\n"
+                                                                    + "\n-Silenciador de Sonido"
+                                                                    + "\n-Cañon Fuerza Operativa de 39.9 cm"
+                                                                    + "\n-Acople Empuñadura Spetsnaz"
+                                                                    + "\n-Municion Tambor Spetsnaz de 55 balas"
+                                                                    + "\n-Empuñadura Trasera de Serpiente")
+
+def ppshvg(update, context):
+    defineLogs().info(f"El usuario {update.effective_user['username']}, consulto por PPSHVG")
+    context.bot.send_message(chat_id=update.effective_chat.id, text="PPSH-41 (Vanguard):\n"
+                                                                    + "\n-Amplificador de Retroceso"
+                                                                    + "\n-Cañon Kovalevskaya de 230 mm B03P"
+                                                                    + "\n-Mira Reflector Slate"
+                                                                    + "\n-Culata Armazon Kovalevskaya"
+                                                                    + "\n-Acople M1930 Guerrillero en Angulo"
+                                                                    + "\n-Cargadores de 8 mm Nambu con 71 Proyectiles"
+                                                                    + "\n-Municion Subsonica"
+                                                                    + "\n-Empuñadura Trasera con Cinta"
+                                                                    + "\n-Ventaja 1 Empuñadura Segura"
+                                                                    + "\n-Ventaja 2 Rapido")
+
+def qbz(update, context):
+    defineLogs().info(f"El usuario {update.effective_user['username']}, consulto por QBZ")
+    context.bot.send_message(chat_id=update.effective_chat.id, text="QBZ-83:\n"
+                                                                    + "\n-Silenciador Agency"
+                                                                    + "\n-Cañon Fuerza Operativa 40.6 cm"
+                                                                    + "\n-Mira Axial Arms x3"
+                                                                    + "\n-Acople Empuñadura de Agente de Campo"
+                                                                    + "\n-Municion Stanag de 60 balas")
 
 
 def demas(update, context):
@@ -1077,25 +1242,3 @@ def vanguard(update, context):
                                                                     + "\n-"
                                                                     + "\n-"
                                                                     + "\n-")
-
-
-
-
-
-
-
-def p1911cw(update, context):
-    defineLogs().info(f"El usuario {update.effective_user['username']}, consulto por P1911CW")
-    context.bot.send_message(chat_id=update.effective_chat.id, text="1911 (ColdWar):\n\n-Silenciador Agency\n-Cañon Fuerza Operativa de 16.6 cm\n-Laser Foco de Equipo de Tigre\n-Municion de 12 balas\n-Empuñadura Trasera de Serpiente\n\nAlternativa: Para 1911 de Modern Warfare preguntar por /1911MW Para 1911 de Vanguard preguntar por /1911VG")
-
-def p1911mw(update, context):
-    defineLogs().info(f"El usuario {update.effective_user['username']}, consulto por P1911MW")
-    context.bot.send_message(chat_id=update.effective_chat.id, text="1911 (Modern Warfare):\n\n-Cañon 1911 Acechador\n-Laser de 5 mW\n-Sistema de Gatillo Ligero\n-Municion de 15 balas\n-Ventaja Duales\n\nAlternativa: ara 1911 de ColdWar preguntar por /1911CW Para 1911 de Vanguard preguntar por /1911VG")
-
-def p1911vg(update, context):
-    defineLogs().info(f"El usuario {update.effective_user['username']}, consulto por P1911VG")
-    context.bot.send_message(chat_id=update.effective_chat.id, text="1911 (Vanguard):\n\n-Boca de Cañon Estabilizador F8\n-Cañon Cooper de 16.51 cm\n-Mira G16 x 2.5\n-Sistema del Gatillo Ligero\n-Cargadores de Calibre 45 ACP con 18 Proyectiles\n-Municion Incendiaria\n-Empuñadura con Brea de Pino\n-Ventaja 1 Duales\n-Ventaja 2 Totalmente Cargado\n\nAlternativa: Para 1911 de ColdWar preguntar por /1911CW Para 1911 de Modern Warfare preguntar por /1911MW")
-
-def p50gs(update, context):
-    defineLogs().info(f"El usuario {update.effective_user['username']}, consulto por P50GS")
-    context.bot.send_message(chat_id=update.effective_chat.id, text=".50 GS:\n\n-Cañon Forge TAC ampliado\n-Laser de 5 mW\n-Sistema de Gatillo Ligero\n-Municion de 13 balas\n-Ventaja Duales")

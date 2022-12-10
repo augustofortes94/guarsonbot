@@ -76,6 +76,9 @@ def armas(update, context):
                                                                     + '\n-/M13'
                                                                     + '\n-/M4A1'
                                                                     + '\n-/Nikita'
+                                                                    + '\n-/NZ41'
+                                                                    + '\n-/Oden'
+                                                                    + '\n-/QBZ'
                                                                     + '\n-/'
 
                                                                     + '\n\nSubfusiles:'
@@ -99,6 +102,11 @@ def armas(update, context):
                                                                     + '\n-/MP5CW'
                                                                     + '\n-/MP5MW'
                                                                     + '\n-/MP7'
+                                                                    + '\n-/OTS9'
+                                                                    + '\n-/Owen'
+                                                                    + '\n-/P90'
+                                                                    + '\n-/PPSHCW'
+                                                                    + '\n-/PPSHVG'
                                                                     + '\n-/'
 
                                                                     + '\n\nEscopetas:'
@@ -112,6 +120,7 @@ def armas(update, context):
                                                                     + '\n-/Ironhide'
                                                                     + '\n-/JAK12'
                                                                     + '\n-/Modelo'
+                                                                    + '\n-/Origin'
                                                                     + '\n-/'
 
                                                                     + '\n\nAmetralladoras Ligeras:'
@@ -126,6 +135,7 @@ def armas(update, context):
                                                                     + '\n-/MG34'
                                                                     + '\n-/MG42'
                                                                     + '\n-/MG82'
+                                                                    + '\n-/PKM'
                                                                     + '\n-/'
 
                                                                     + '\n\nFusiles Tacticos:'
@@ -141,7 +151,6 @@ def armas(update, context):
                                                                     + '\n-/M1916'
                                                                     + '\n-/M1Garand'
                                                                     + '\n-/'
-                                                                    + '\n-/'
 
                                                                     + '\n\nFusiles de Precision:'
                                                                     + '\n-/Antitanque'
@@ -150,6 +159,7 @@ def armas(update, context):
                                                                     + '\n-/HDR'
                                                                     + '\n-/Kar98VG'
                                                                     + '\n-/M82'
+                                                                    + '\n-/Pelington'
                                                                     + '\n-/'
 
                                                                     + '\n\nPistolas:'
@@ -164,7 +174,9 @@ def armas(update, context):
                                                                     + '\n-/M19'
                                                                     + '\n-/Magnum'
                                                                     + '\n-/Marshal'
-                                                                    + '\n-/')
+                                                                    + '\n-/P357'
+                                                                    + '\n-/'
+                                                                    )
 
 """
 def comandos(update, context):
