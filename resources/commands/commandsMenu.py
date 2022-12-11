@@ -81,6 +81,7 @@ def armas(update, context):
                                                                     + '\n-/QBZ'
                                                                     + '\n-/RAM'
                                                                     + '\n-/Scar'
+                                                                    + '\n-/STG'
                                                                     + '\n-/'
 
                                                                     + '\n\nSubfusiles:'
@@ -110,6 +111,9 @@ def armas(update, context):
                                                                     + '\n-/PPSHCW'
                                                                     + '\n-/PPSHVG'
                                                                     + '\n-/RA225'
+                                                                    + '\n-/Sten'
+                                                                    + '\n-/Striker'
+                                                                    + '\n-/TEC9'
                                                                     + '\n-/'
 
                                                                     + '\n\nEscopetas:'
@@ -125,6 +129,7 @@ def armas(update, context):
                                                                     + '\n-/Modelo'
                                                                     + '\n-/Origin'
                                                                     + '\n-/R9'
+                                                                    + '\n-/Street'
                                                                     + '\n-/'
 
                                                                     + '\n\nAmetralladoras Ligeras:'
@@ -143,6 +148,7 @@ def armas(update, context):
                                                                     + '\n-/RAAL'
                                                                     + '\n-/RPD'
                                                                     + '\n-/SA87'
+                                                                    + '\n-/Stoner'
                                                                     + '\n-/'
 
                                                                     + '\n\nFusiles Tacticos:'
@@ -159,6 +165,7 @@ def armas(update, context):
                                                                     + '\n-/M1Garand'
                                                                     + '\n-/R1'
                                                                     + '\n-/SKS'
+                                                                    + '\n-/SVT'
                                                                     + '\n-/'
 
                                                                     + '\n\nFusiles de Precision:'
@@ -170,6 +177,9 @@ def armas(update, context):
                                                                     + '\n-/M82'
                                                                     + '\n-/Pelington'
                                                                     + '\n-/Rytec'
+                                                                    + '\n-/SPR'
+                                                                    + '\n-/Swiss'
+                                                                    + '\n-/Treslineas'
                                                                     + '\n-/'
 
                                                                     + '\n\nPistolas:'
@@ -187,6 +197,8 @@ def armas(update, context):
                                                                     + '\n-/P357'
                                                                     + '\n-/RATT'
                                                                     + '\n-/Renetti'
+                                                                    + '\n-/Sykov'
+                                                                    + '\n-/Topbreak'
                                                                     + '\n-/'
                                                                     )
 

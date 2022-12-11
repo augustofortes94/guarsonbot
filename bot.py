@@ -403,5 +403,101 @@ dp.add_handler(CommandHandler("Scar", scar))
 
 dp.add_handler(CommandHandler("SKS", sks))
 
+dp.add_handler(CommandHandler("SPR", spr))
+
+dp.add_handler(CommandHandler("Sten", sten))
+
+dp.add_handler(CommandHandler("STG", stg))
+
+dp.add_handler(CommandHandler("Stoner", stoner))
+
+dp.add_handler(CommandHandler("Street", street))
+
+dp.add_handler(CommandHandler("Striker", striker))
+
+dp.add_handler(CommandHandler("SVT", svt))
+
+dp.add_handler(CommandHandler("Swiss", swiss))
+
+dp.add_handler(CommandHandler("Sykov", sykov))
+
+dp.add_handler(CommandHandler("TEC9", tec9))
+
+dp.add_handler(CommandHandler("Topbreak", topbreak))
+
+dp.add_handler(CommandHandler("Treslineas", treslineas))
+
+dp.add_handler(CommandHandler("", ))
+
+dp.add_handler(CommandHandler("", ))
+
+dp.add_handler(CommandHandler("", ))
+
+dp.add_handler(CommandHandler("", ))
+
+dp.add_handler(CommandHandler("", ))
+
+dp.add_handler(CommandHandler("", ))
+
+dp.add_handler(CommandHandler("", ))
+
+dp.add_handler(CommandHandler("", ))
+
+dp.add_handler(CommandHandler("", ))
+
+dp.add_handler(CommandHandler("", ))
+
+dp.add_handler(CommandHandler("", ))
+
+dp.add_handler(CommandHandler("", ))
+
+dp.add_handler(CommandHandler("", ))
+
+dp.add_handler(CommandHandler("", ))
+
+dp.add_handler(CommandHandler("", ))
+
+dp.add_handler(CommandHandler("", ))
+
+dp.add_handler(CommandHandler("", ))
+
+dp.add_handler(CommandHandler("", ))
+
+dp.add_handler(CommandHandler("", ))
+
+dp.add_handler(CommandHandler("", ))
+
+dp.add_handler(CommandHandler("", ))
+
+dp.add_handler(CommandHandler("", ))
+
+dp.add_handler(CommandHandler("", ))
+
+dp.add_handler(CommandHandler("", ))
+
+dp.add_handler(CommandHandler("", ))
+
+dp.add_handler(CommandHandler("", ))
+
+dp.add_handler(CommandHandler("", ))
+
+dp.add_handler(CommandHandler("", ))
+
+dp.add_handler(CommandHandler("", ))
+
+dp.add_handler(CommandHandler("", ))
+
+dp.add_handler(CommandHandler("", ))
+
+dp.add_handler(CommandHandler("", ))
+
+dp.add_handler(CommandHandler("", ))
+
+dp.add_handler(CommandHandler("", ))
+
+dp.add_handler(CommandHandler("", ))
+
+dp.add_handler(CommandHandler("", ))
+
 # RUN
 run(updater)
