@@ -82,7 +82,10 @@ def armas(update, context):
                                                                     + '\n-/RAM'
                                                                     + '\n-/Scar'
                                                                     + '\n-/STG'
-                                                                    + '\n-/'
+                                                                    + '\n-/Vargo52'
+                                                                    + '\n-/Vargos'
+                                                                    + '\n-/Volks'
+                                                                    + '\n-/XM4'
 
                                                                     + '\n\nSubfusiles:'
                                                                     + '\n-/AK74U'
@@ -114,7 +117,10 @@ def armas(update, context):
                                                                     + '\n-/Sten'
                                                                     + '\n-/Striker'
                                                                     + '\n-/TEC9'
-                                                                    + '\n-/'
+                                                                    + '\n-/Type100'
+                                                                    + '\n-/UGR'
+                                                                    + '\n-/Uzi'
+                                                                    + '\n-/Welgun'
 
                                                                     + '\n\nEscopetas:'
                                                                     + '\n-/Combate'
@@ -130,7 +136,7 @@ def armas(update, context):
                                                                     + '\n-/Origin'
                                                                     + '\n-/R9'
                                                                     + '\n-/Street'
-                                                                    + '\n-/'
+                                                                    + '\n-/VLK'
 
                                                                     + '\n\nAmetralladoras Ligeras:'
                                                                     + '\n-/Bren'
@@ -149,7 +155,9 @@ def armas(update, context):
                                                                     + '\n-/RPD'
                                                                     + '\n-/SA87'
                                                                     + '\n-/Stoner'
-                                                                    + '\n-/'
+                                                                    + '\n-/Type11'
+                                                                    + '\n-/UGM8'
+                                                                    + '\n-/Whitley'
 
                                                                     + '\n\nFusiles Tacticos:'
                                                                     + '\n-/AUGCW'
@@ -166,7 +174,7 @@ def armas(update, context):
                                                                     + '\n-/R1'
                                                                     + '\n-/SKS'
                                                                     + '\n-/SVT'
-                                                                    + '\n-/'
+                                                                    + '\n-/Type63'
 
                                                                     + '\n\nFusiles de Precision:'
                                                                     + '\n-/Antitanque'
@@ -180,7 +188,9 @@ def armas(update, context):
                                                                     + '\n-/SPR'
                                                                     + '\n-/Swiss'
                                                                     + '\n-/Treslineas'
-                                                                    + '\n-/'
+                                                                    + '\n-/Tundra'
+                                                                    + '\n-/Type99'
+                                                                    + '\n-/ZRG'
 
                                                                     + '\n\nPistolas:'
                                                                     + '\n-/1911CW'
@@ -199,7 +209,7 @@ def armas(update, context):
                                                                     + '\n-/Renetti'
                                                                     + '\n-/Sykov'
                                                                     + '\n-/Topbreak'
-                                                                    + '\n-/'
+                                                                    + '\n-/X16'
                                                                     )
 
 """

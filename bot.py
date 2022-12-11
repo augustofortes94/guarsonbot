@@ -427,77 +427,40 @@ dp.add_handler(CommandHandler("Topbreak", topbreak))
 
 dp.add_handler(CommandHandler("Treslineas", treslineas))
 
-dp.add_handler(CommandHandler("", ))
+dp.add_handler(CommandHandler("Tundra", tundra))
 
-dp.add_handler(CommandHandler("", ))
+dp.add_handler(CommandHandler("Type100", type100))
 
-dp.add_handler(CommandHandler("", ))
+dp.add_handler(CommandHandler("Type11", type11))
 
-dp.add_handler(CommandHandler("", ))
+dp.add_handler(CommandHandler("Type63", type63))
 
-dp.add_handler(CommandHandler("", ))
+dp.add_handler(CommandHandler("Type99", type99))
 
-dp.add_handler(CommandHandler("", ))
+dp.add_handler(CommandHandler("UGM8", ugm8))
 
-dp.add_handler(CommandHandler("", ))
+dp.add_handler(CommandHandler("UGR", ugr))
 
-dp.add_handler(CommandHandler("", ))
+dp.add_handler(CommandHandler("Uzi", uzi))
 
-dp.add_handler(CommandHandler("", ))
+dp.add_handler(CommandHandler("Vargo52", vargo52))
 
-dp.add_handler(CommandHandler("", ))
+dp.add_handler(CommandHandler("Vargos", vargos))
 
-dp.add_handler(CommandHandler("", ))
+dp.add_handler(CommandHandler("VLK", vlk))
 
-dp.add_handler(CommandHandler("", ))
+dp.add_handler(CommandHandler("Volks", volks))
 
-dp.add_handler(CommandHandler("", ))
+dp.add_handler(CommandHandler("Welgun", welgun))
 
-dp.add_handler(CommandHandler("", ))
+dp.add_handler(CommandHandler("Whitley", whitley))
 
-dp.add_handler(CommandHandler("", ))
+dp.add_handler(CommandHandler("X16", x16))
 
-dp.add_handler(CommandHandler("", ))
+dp.add_handler(CommandHandler("XM4", xm4))
 
-dp.add_handler(CommandHandler("", ))
+dp.add_handler(CommandHandler("ZRG", zrg))
 
-dp.add_handler(CommandHandler("", ))
-
-dp.add_handler(CommandHandler("", ))
-
-dp.add_handler(CommandHandler("", ))
-
-dp.add_handler(CommandHandler("", ))
-
-dp.add_handler(CommandHandler("", ))
-
-dp.add_handler(CommandHandler("", ))
-
-dp.add_handler(CommandHandler("", ))
-
-dp.add_handler(CommandHandler("", ))
-
-dp.add_handler(CommandHandler("", ))
-
-dp.add_handler(CommandHandler("", ))
-
-dp.add_handler(CommandHandler("", ))
-
-dp.add_handler(CommandHandler("", ))
-
-dp.add_handler(CommandHandler("", ))
-
-dp.add_handler(CommandHandler("", ))
-
-dp.add_handler(CommandHandler("", ))
-
-dp.add_handler(CommandHandler("", ))
-
-dp.add_handler(CommandHandler("", ))
-
-dp.add_handler(CommandHandler("", ))
-
-dp.add_handler(CommandHandler("", ))
 
 # RUN
 run(updater)

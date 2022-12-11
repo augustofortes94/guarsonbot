@@ -1471,26 +1471,198 @@ def treslineas(update, context):
                                                                     + "\n-Ventaja 1 Velo"
                                                                     + "\n-Ventaja 2 Totalmente Cargado")
 
+def tundra(update, context):
+    defineLogs().info(f"El usuario {update.effective_user['username']}, consulto por Tundra")
+    context.bot.send_message(chat_id=update.effective_chat.id, text="LW3 - Tundra:\n"
+                                                                    + "\n-Silenciador Cubierto"
+                                                                    + "\n-Cañon Combate de Reconocimiento de 73.9 cm"
+                                                                    + "\n-Laser Mira Laser de SWAT 5mW"
+                                                                    + "\n-Municion Cargador Acelerado de 7 balas"
+                                                                    + "\n-Empuñadura Trasera de Serpiente")
 
-def demas(update, context):
-    defineLogs().info(f"El usuario {update.effective_user['username']}, consulto por ")
-    context.bot.send_message(chat_id=update.effective_chat.id, text=":\n"
-                                                                    + "\n-"
-                                                                    + "\n-"
-                                                                    + "\n-"
-                                                                    + "\n-"
-                                                                    + "\n-")
+def type100(update, context):
+    defineLogs().info(f"El usuario {update.effective_user['username']}, consulto por Type100")
+    context.bot.send_message(chat_id=update.effective_chat.id, text="Type 100:\n"
+                                                                    + "\n-Amplificador de Retroceso"
+                                                                    + "\n-Cañon Warubachi de 134 mm Rapido"
+                                                                    + "\n-Mira Reflector Slate"
+                                                                    + "\n-Culata Empuñadura Plegable de Warubachi"
+                                                                    + "\n-Acople Armazon Mk. VI"
+                                                                    + "\n-Cargadores del Calibre .30 Russian Corto con 36 Proyectiles"
+                                                                    + "\n-Municion Subsonica"
+                                                                    + "\n-Empuñadura Trasera con Cinta"
+                                                                    + "\n-Ventaja 1 Vital"
+                                                                    + "\n-Ventaja 2 Rapido")
 
-def vanguard(update, context):
-    defineLogs().info(f"El usuario {update.effective_user['username']}, consulto por ")
-    context.bot.send_message(chat_id=update.effective_chat.id, text=":\n"
-                                                                    + "\n-"
-                                                                    + "\n-"
-                                                                    + "\n-"
-                                                                    + "\n-"
-                                                                    + "\n-"
-                                                                    + "\n-"
-                                                                    + "\n-"
-                                                                    + "\n-"
-                                                                    + "\n-"
-                                                                    + "\n-")
+def type11(update, context):
+    defineLogs().info(f"El usuario {update.effective_user['username']}, consulto por Type11")
+    context.bot.send_message(chat_id=update.effective_chat.id, text="Type 11:\n"
+                                                                    + "\n-Silenciador MX"
+                                                                    + "\n-Mira PU para SVT-40 (x3-6)"
+                                                                    + "\n-Culata Warubachi Tipo 33"
+                                                                    + "\n-Acople Tope de Mano para el M1941"
+                                                                    + "\n-Cargador Tambores de 6.5 mm Sakura con 90 Proyectiles"
+                                                                    + "\n-Municion Incendiaria"
+                                                                    + "\n-Empuñadura Trasera de Goma"
+                                                                    + "\n-Ventaja 1 Refuerzo"
+                                                                    + "\n-Ventaja 2 Totalmente Cargado")
+
+def type63(update, context):
+    defineLogs().info(f"El usuario {update.effective_user['username']}, consulto por Type63")
+    context.bot.send_message(chat_id=update.effective_chat.id, text="Type 63:\n"
+                                                                    + "\n-Silenciador GRU"
+                                                                    + "\n-Cañon Titanio de 41.7 cm"
+                                                                    + "\n-Mira Axial Arms x3"
+                                                                    + "\n-Acople Empuñadura Spetsnaz"
+                                                                    + "\n-Municion Cargador Baquelita de 40 balas")
+
+def type99(update, context):
+    defineLogs().info(f"El usuario {update.effective_user['username']}, consulto por Type99")
+    context.bot.send_message(chat_id=update.effective_chat.id, text="Type 99:\n"
+                                                                    + "\n-Silenciador Mercury"
+                                                                    + "\n-Cañon Shiraishi de 712 mm de Francotirador"
+                                                                    + "\n-Mira PU para SVT-40 (x3-6)"
+                                                                    + "\n-Culata Sakura CVR Personalizada"
+                                                                    + "\n-Acople Empuñadura Delantera Pesada"
+                                                                    + "\n-Cargadores de 8 mm Klauser con 5 Proyectiles"
+                                                                    + "\n-Municion Alargada"
+                                                                    + "\n-Empuñadura Trasera de Cuero"
+                                                                    + "\n-Ventaja 1 Observador"
+                                                                    + "\n-Ventaja 2 Totalmente Cargado")
+
+def ugm8(update, context):
+    defineLogs().info(f"El usuario {update.effective_user['username']}, consulto por UGM8")
+    context.bot.send_message(chat_id=update.effective_chat.id, text="UGM-8:\n"
+                                                                    + "\n-Silenciador MX"
+                                                                    + "\n-Cañon Bernard XL214 de 736 mm"
+                                                                    + "\n-Mira PU para SVT-40 (x3-6)"
+                                                                    + "\n-Culata Mercier WT Ancre"
+                                                                    + "\n-Acople Tope de Mano para el M1941"
+                                                                    + "\n-Cargador Caja de Calibre 6.5 mm Sakura con 125 Proyectiles"
+                                                                    + "\n-Municion Alargada"
+                                                                    + "\n-Empuñadura Trasera Sombreada"
+                                                                    + "\n-Ventaja 1 Empuñadura Segura"
+                                                                    + "\n-Ventaja 2 Totalmente Cargado"
+                                                                    + "\n\nAlternativa: reemplazar cañon por Romuald de 560 mm DA")
+
+def ugr(update, context):
+    defineLogs().info(f"El usuario {update.effective_user['username']}, consulto por UGR")
+    context.bot.send_message(chat_id=update.effective_chat.id, text="UGR:\n"
+                                                                    + "\n-Silenciador GRU"
+                                                                    + "\n-Cañon Fuerza Operativa de 27.2 cm"
+                                                                    + "\n-Acople Empuñadura Spetsnaz"
+                                                                    + "\n-Cargador Dardos Explosivos"
+                                                                    + "\n-Empuñadura Trasera Vendaje de Serpiente")
+
+def uzi(update, context):
+    defineLogs().info(f"El usuario {update.effective_user['username']}, consulto por Uzi")
+    context.bot.send_message(chat_id=update.effective_chat.id, text="Uzi:\n"
+                                                                    + "\n-Silenciador Monolitico"
+                                                                    + "\n-Cañon FSS de Carabina Pro"
+                                                                    + "\n-Culata Sin Culata"
+                                                                    + "\n-Acople Frontal de Mercenario"
+                                                                    + "\n-Municion de 50 balas")
+
+def vargo52(update, context):
+    defineLogs().info(f"El usuario {update.effective_user['username']}, consulto por Vargo52")
+    context.bot.send_message(chat_id=update.effective_chat.id, text="Vargo 52:\n"
+                                                                    + "\n-Silenciador GRU"
+                                                                    + "\n-Cañon 47.2 cm de Fuerza Operativa"
+                                                                    + "\n-Mira Axial x3"
+                                                                    + "\n-Acople Empuñadura Spetsnaz"
+                                                                    + "\n-Municion Spetsnaz de 60 Balas")
+
+def vargos(update, context):
+    defineLogs().info(f"El usuario {update.effective_user['username']}, consulto por Vargos")
+    context.bot.send_message(chat_id=update.effective_chat.id, text="Vargo-S:\n"
+                                                                    + "\n-Silenciador Mx"
+                                                                    + "\n-Cañon Mirzoyan de 414 mm Personalizado"
+                                                                    + "\n-Mira PU para SVT-40 (x3-6)"
+                                                                    + "\n-Culata Mirzoyan ANC"
+                                                                    + "\n-Acople M1930 Guerrillero en Angulo"
+                                                                    + "\n-Cargador Tambores de 7.62 x 54 mm R con 60 Proyectiles"
+                                                                    + "\n-Municion Incendiaria"
+                                                                    + "\n-Empuñadura Trasera Sombreada"
+                                                                    + "\n-Ventaja 1 Vital"
+                                                                    + "\n-Ventaja 2 Totalmente Cargado"
+                                                                    + "\n\nPara Vargo de Coldwar /Vargo52")
+
+def vlk(update, context):
+    defineLogs().info(f"El usuario {update.effective_user['username']}, consulto por VLK")
+    context.bot.send_message(chat_id=update.effective_chat.id, text="Rogue VLK:\n"
+                                                                    + "\n-Boca de Cañon Forge TAC Merodeador"
+                                                                    + "\n-Cañon Señor de la Guerra de 40.6 cm"
+                                                                    + "\n-Laser Tactico"
+                                                                    + "\n-Culata sin Culata"
+                                                                    + "\n-Municion Aliento de Dragon de 8 Cartuchos")
+
+def volks(update, context):
+    defineLogs().info(f"El usuario {update.effective_user['username']}, consulto por Volks")
+    context.bot.send_message(chat_id=update.effective_chat.id, text="Volkssturmgewehr:\n"
+                                                                    + "\n-Silenciador MX"
+                                                                    + "\n-Cañon Krausnick de 428 mm 05V"
+                                                                    + "\n-Mira PU para SVT-40 (x3-6)"
+                                                                    + "\n-Culata Krausnick S12V PS"
+                                                                    + "\n-Acople Tope de Mano para el M1941"
+                                                                    + "\n-Cargadores de Calibre 30 Russian Short con 45 Proyectiles"
+                                                                    + "\n-Municion Incendiaria"
+                                                                    + "\n-Empuñadura Trasera de Goma"
+                                                                    + "\n-Ventaja 1 Rapido"
+                                                                    + "\n-Ventaja 2 Totalmente Cargado")
+
+def welgun(update, context):
+    defineLogs().info(f"El usuario {update.effective_user['username']}, consulto por Welgun")
+    context.bot.send_message(chat_id=update.effective_chat.id, text="Welgun:\n"
+                                                                    + "\n-Amplificador de Retroceso"
+                                                                    + "\n-Cañon Gawain de 120 mm Corto"
+                                                                    + "\n-Mira Reflector Slate"
+                                                                    + "\n-Culata Eliminada"
+                                                                    + "\n-Acople Armazon Mk. VI"
+                                                                    + "\n-Cargadores 7.62 Gorenko con 40 Proyectiles"
+                                                                    + "\n-Municion Subsonica"
+                                                                    + "\n-Empuñadura Trasera con Cinta"
+                                                                    + "\n-Ventaja 1 Acrobatico"
+                                                                    + "\n-Ventaja 2 Rapido")
+
+def whitley(update, context):
+    defineLogs().info(f"El usuario {update.effective_user['username']}, consulto por Whitley")
+    context.bot.send_message(chat_id=update.effective_chat.id, text="Whitley:\n"
+                                                                    + "\n-Silenciador MX"
+                                                                    + "\n-Cañon Ragdoll RE2 de 50.8 cm"
+                                                                    + "\n-Mira PU para SVT-40 (x3-6)"
+                                                                    + "\n-Culata CGC R4"
+                                                                    + "\n-Acople Tope de Mano para el M1941"
+                                                                    + "\n-Cargador Calibre 30-06 con 120 Proyectiles"
+                                                                    + "\n-Municion Incendiaria"
+                                                                    + "\n-Empuñadura Trasera de Goma"
+                                                                    + "\n-Ventaja 1 Incansable"
+                                                                    + "\n-Ventaja 2 Totalmente Cargado")
+
+def x16(update, context):
+    defineLogs().info(f"El usuario {update.effective_user['username']}, consulto por X16")
+    context.bot.send_message(chat_id=update.effective_chat.id, text="X16:\n"
+                                                                    + "\n-Cañon Singuard Arms Ventaja"
+                                                                    + "\n-Laser de 5 mW"
+                                                                    + "\n-Sistema de Gatillo Ligero"
+                                                                    + "\n-Municion de 26 balas"
+                                                                    + "\n-Ventaja Duales")
+
+def xm4(update, context):
+    defineLogs().info(f"El usuario {update.effective_user['username']}, consulto por XM4")
+    context.bot.send_message(chat_id=update.effective_chat.id, text="XM4 (ColdWar):\n"
+                                                                    + "\n-Silenciador Agency"
+                                                                    + "\n-Cañon Fuerza Operativa de 34.3 cm"
+                                                                    + "\n-Mira Axial x3"
+                                                                    + "\n-Acople Empuñadura de Operador de Campo"
+                                                                    + "\n-Municion Stanag de 60 balas"
+                                                                    + "\n\nAlternativa Subfusil: reemplazar Silenciador Agency por Silenciador, mira por Mira LED Microflex o por Culata Almohadilla Raider y Municion de 45 balas"
+                                                                    + "\n\nPara M4 de Modern Warfare preguntar por /M4A1")
+
+def zrg(update, context):
+    defineLogs().info(f"El usuario {update.effective_user['username']}, consulto por ZRG")
+    context.bot.send_message(chat_id=update.effective_chat.id, text="ZRG 20 mm:\n"
+                                                                    + "\n-Silenciador Cubierto"
+                                                                    + "\n-Cañon Combate de Reconocimiento de 111.5 cm"
+                                                                    + "\n-Laser Mira Laser de SWAT 5mW"
+                                                                    + "\n-Cargador 5 Proyectiles"
+                                                                    + "\n-Empuñadura Trasera de la Jungla SASR")
