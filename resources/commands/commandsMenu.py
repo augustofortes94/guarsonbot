@@ -79,6 +79,8 @@ def armas(update, context):
                                                                     + '\n-/NZ41'
                                                                     + '\n-/Oden'
                                                                     + '\n-/QBZ'
+                                                                    + '\n-/RAM'
+                                                                    + '\n-/Scar'
                                                                     + '\n-/'
 
                                                                     + '\n\nSubfusiles:'
@@ -107,6 +109,7 @@ def armas(update, context):
                                                                     + '\n-/P90'
                                                                     + '\n-/PPSHCW'
                                                                     + '\n-/PPSHVG'
+                                                                    + '\n-/RA225'
                                                                     + '\n-/'
 
                                                                     + '\n\nEscopetas:'
@@ -121,6 +124,7 @@ def armas(update, context):
                                                                     + '\n-/JAK12'
                                                                     + '\n-/Modelo'
                                                                     + '\n-/Origin'
+                                                                    + '\n-/R9'
                                                                     + '\n-/'
 
                                                                     + '\n\nAmetralladoras Ligeras:'
@@ -136,6 +140,9 @@ def armas(update, context):
                                                                     + '\n-/MG42'
                                                                     + '\n-/MG82'
                                                                     + '\n-/PKM'
+                                                                    + '\n-/RAAL'
+                                                                    + '\n-/RPD'
+                                                                    + '\n-/SA87'
                                                                     + '\n-/'
 
                                                                     + '\n\nFusiles Tacticos:'
@@ -150,6 +157,8 @@ def armas(update, context):
                                                                     + '\n-/M16'
                                                                     + '\n-/M1916'
                                                                     + '\n-/M1Garand'
+                                                                    + '\n-/R1'
+                                                                    + '\n-/SKS'
                                                                     + '\n-/'
 
                                                                     + '\n\nFusiles de Precision:'
@@ -160,6 +169,7 @@ def armas(update, context):
                                                                     + '\n-/Kar98VG'
                                                                     + '\n-/M82'
                                                                     + '\n-/Pelington'
+                                                                    + '\n-/Rytec'
                                                                     + '\n-/'
 
                                                                     + '\n\nPistolas:'
@@ -175,6 +185,8 @@ def armas(update, context):
                                                                     + '\n-/Magnum'
                                                                     + '\n-/Marshal'
                                                                     + '\n-/P357'
+                                                                    + '\n-/RATT'
+                                                                    + '\n-/Renetti'
                                                                     + '\n-/'
                                                                     )
 

@@ -1219,6 +1219,123 @@ def qbz(update, context):
                                                                     + "\n-Acople Empuñadura de Agente de Campo"
                                                                     + "\n-Municion Stanag de 60 balas")
 
+def r1(update, context):
+    defineLogs().info(f"El usuario {update.effective_user['username']}, consulto por R1")
+    context.bot.send_message(chat_id=update.effective_chat.id, text="R1 Shadowhunter:\n"
+                                                                    + "\n-Fusiles Tacticos"
+                                                                    + "\n-Mira LED Microflex"
+                                                                    + "\n\nPara Ballesta de Modern Warfare preguntar por /Ballesta")
+
+def r9(update, context):
+    defineLogs().info(f"El usuario {update.effective_user['username']}, consulto por R9")
+    context.bot.send_message(chat_id=update.effective_chat.id, text="R9-0:\n"
+                                                                    + "\n-Silenciador Monolitico"
+                                                                    + "\n-Cañon Forge TAC Centinela"
+                                                                    + "\n-Laser de 5 mW"
+                                                                    + "\n-Acople Empuñadura Frontal de Mercenario"
+                                                                    + "\n-Municion de Aliento de Dragon")
+
+def ra225(update, context):
+    defineLogs().info(f"El usuario {update.effective_user['username']}, consulto por RA225")
+    context.bot.send_message(chat_id=update.effective_chat.id, text="RA 225:\n"
+                                                                    + "\n-Amplificador de Retroceso"
+                                                                    + "\n-Cañon Urban Rapido de 28 cm"
+                                                                    + "\n-Mira Reflector Slate"
+                                                                    + "\n-Culata Urbana Tactica"
+                                                                    + "\n-Acople Estabilizador para M1915"
+                                                                    + "\n-Cargador Tambores de 9 mm con 55 Proyectiles"
+                                                                    + "\n-Municion Punta Hueca"
+                                                                    + "\n-Empuñadura Trasera de Polimero"
+                                                                    + "\n-Ventaja 1 Empuñadura Segura"
+                                                                    + "\n-Ventaja 2 Rapido")
+
+def raal(update, context):
+    defineLogs().info(f"El usuario {update.effective_user['username']}, consulto por RAAL")
+    context.bot.send_message(chat_id=update.effective_chat.id, text="RAAL:\n"
+                                                                    + "\n-Boca de Cañon RAAL de Nucleo Monolitico"
+                                                                    + "\n-Cañon RAAL Linea de Ruptura de 81.3 cm"
+                                                                    + "\n-Mira x3 VLK"
+                                                                    + "\n-Acople FSS oblicuo"
+                                                                    + "\n-Municion Cintas de 50 balas")
+
+def ram(update, context):
+    defineLogs().info(f"El usuario {update.effective_user['username']}, consulto por RAM")
+    context.bot.send_message(chat_id=update.effective_chat.id, text="RAM-7:\n"
+                                                                    + "\n-Silenciador Monolitico"
+                                                                    + "\n-Cañon FSS Ranger"
+                                                                    + "\n-Mira x3 VLK"
+                                                                    + "\n-Acople Frontal de Comando"
+                                                                    + "\n-Municion de 50 balas"
+                                                                    + "\n\nAlternativa Subfusil: reemplazar cañon por Laser Tactico y mira por Mira Reflex IG Mini")
+
+def ratt(update, context):
+    defineLogs().info(f"El usuario {update.effective_user['username']}, consulto por RATT")
+    context.bot.send_message(chat_id=update.effective_chat.id, text="RATT:\n"
+                                                                    + "\n-Silenciador M1929"
+                                                                    + "\n-Cañon ZAC de 98 mm"
+                                                                    + "\n-Mira Reflector Slate"
+                                                                    + "\n-Sistema del Gatillo Accion Rapida"
+                                                                    + "\n-Cargadores de 9 mm con 20 Proyectiles"
+                                                                    + "\n-Municion Incendiaria"
+                                                                    + "\n-Empuñadura Trasera de Tela"
+                                                                    + "\n-Ventaja 1 Rapido"
+                                                                    + "\n-Ventaja 2 Rapido")
+
+def renetti(update, context):
+    defineLogs().info(f"El usuario {update.effective_user['username']}, consulto por Renetti")
+    context.bot.send_message(chat_id=update.effective_chat.id, text="Renetti:\n"
+                                                                    + "\n-Cañon MK1 Ampliado"
+                                                                    + "\n-Laser de 5 mW"
+                                                                    + "\n-Sistema de Gatillo Ligero"
+                                                                    + "\n-Municion de 27 balas"
+                                                                    + "\n-Ventaja Duales")
+
+def rpd(update, context):
+    defineLogs().info(f"El usuario {update.effective_user['username']}, consulto por RPD")
+    context.bot.send_message(chat_id=update.effective_chat.id, text="RPD:\n"
+                                                                    + "\n-Silenciador GRU"
+                                                                    + "\n-Cañon Fuerza Operativa de 51.5 cm"
+                                                                    + "\n-Mira Axial Arms x3"
+                                                                    + "\n-Culata de Armazon KGB"
+                                                                    + "\n-Acople Empuñadura Spetsnaz"
+                                                                    + "\n\nAlternativa: reemplazar culata por Cargador Acelerado de 120 balas")
+
+def rytec(update, context):
+    defineLogs().info(f"El usuario {update.effective_user['username']}, consulto por Rytec")
+    context.bot.send_message(chat_id=update.effective_chat.id, text="Rytec AMR:\n"
+                                                                    + "\n-Silenciador de Rytec AMR"
+                                                                    + "\n-Cañon FTAC Seven Straight"
+                                                                    + "\n-Laser Tactico"
+                                                                    + "\n-Municion Cargador de 25 x 59 mm de termita x5"
+                                                                    + "\n-Ventaja Claridad Mental")
+
+def sa87(update, context):
+    defineLogs().info(f"El usuario {update.effective_user['username']}, consulto por SA87")
+    context.bot.send_message(chat_id=update.effective_chat.id, text="SA87:\n"
+                                                                    + "\n-Silenciador Monolitico"
+                                                                    + "\n-Cañon SA87 de 64.5 cm Estandar"
+                                                                    + "\n-Mira x3 VLK"
+                                                                    + "\n-Acople Frontal de Comando"
+                                                                    + "\n-Municion Cargador de 60 balas")
+
+def scar(update, context):
+    defineLogs().info(f"El usuario {update.effective_user['username']}, consulto por SCAR")
+    context.bot.send_message(chat_id=update.effective_chat.id, text="FN Scar 17:\n"
+                                                                    + "\n-Silenciador Monolitico"
+                                                                    + "\n-Cañon Forge TAC de 50.8 cm"
+                                                                    + "\n-Mira x3 VLK"
+                                                                    + "\n-Acople Frontal de Comando"
+                                                                    + "\n-Municion de 30 balas")
+
+def sks(update, context):
+    defineLogs().info(f"El usuario {update.effective_user['username']}, consulto por SKS")
+    context.bot.send_message(chat_id=update.effective_chat.id, text="SKS:\n"
+                                                                    + "\n-Silenciador Monolitico"
+                                                                    + "\n-Cañon FSS M59/66 de 55.8 cm"
+                                                                    + "\n-Mira x3 VLK"
+                                                                    + "\n-Acople Frontal de Comando"
+                                                                    + "\n-Municion de 30 balas")
+
 
 def demas(update, context):
     defineLogs().info(f"El usuario {update.effective_user['username']}, consulto por ")

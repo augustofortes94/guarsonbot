@@ -379,6 +379,29 @@ dp.add_handler(CommandHandler("PPSHVG", ppshvg))
 
 dp.add_handler(CommandHandler("QBZ", qbz))
 
+dp.add_handler(CommandHandler("R1", r1))
+
+dp.add_handler(CommandHandler("R9", r9))
+
+dp.add_handler(CommandHandler("RA225", ra225))
+
+dp.add_handler(CommandHandler("RAAL", raal))
+
+dp.add_handler(CommandHandler("RAM", ram))
+
+dp.add_handler(CommandHandler("RATT", ratt))
+
+dp.add_handler(CommandHandler("Renetti", renetti))
+
+dp.add_handler(CommandHandler("RPD", rpd))
+
+dp.add_handler(CommandHandler("Rytec", rytec))
+
+dp.add_handler(CommandHandler("SA87", sa87))
+
+dp.add_handler(CommandHandler("Scar", scar))
+
+dp.add_handler(CommandHandler("SKS", sks))
 
 # RUN
 run(updater)
