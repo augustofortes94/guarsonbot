@@ -24,7 +24,7 @@ def commandRegex(update, context):
     defineLogs().info(f"El usuario {update.effective_user['username']}, consulto por " + update['message']['text'][1:])
     # Consulto para obtener la categoria del comando asi se que endpoint consultar para el contenido del comando (MEJORABLE)
     headers = {'Authorization': 'Bearer ' + getToken()}
-    data = requests.get(os.getenv('apiurl') + 'api/commands/?command=' + update['message']['text'][1:], headers=headers).json()
+    data = requests.get(os.getenv('apiurl') + 'api/commands/?command=' + update['message']['text'][1:] + '&warzone_version=' + os.getenv('warzone_version'), headers=headers).json()
     mssg = context.bot.send_message
     try:
         if data['command']['category'] == 'Lobbys':
