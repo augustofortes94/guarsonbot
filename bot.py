@@ -67,7 +67,7 @@ dp.add_handler(CommandHandler("AK47", ak47))
 
 dp.add_handler(CommandHandler("AUG", aug))
 
-dp.add_handler(CommandHandler("M1", m1garand))
+dp.add_handler(CommandHandler("M1", m1))
 
 dp.add_handler(CommandHandler("Kar", kar98))
 
@@ -145,12 +145,8 @@ dp.add_handler(CommandHandler("RapaxKD", rapaxkd))
 # dp.add_handler(CommandHandler("bot", botoneraAdapter))
 
 
-# CERTIFICADO
-dp.add_handler(CommandHandler("Certificado", certified))
-
-
 # COMANDOS DINAMICOS
-#dp.add_handler(MessageHandler(Filters.regex(r"^/\w+$"), commandRegex))
+dp.add_handler(MessageHandler(Filters.regex(r"^/\w+$"), commandRegex))
 
 
 # MANEJADOR DE MENSAJES SIN "/"
@@ -158,7 +154,7 @@ dp.add_handler(CommandHandler("Certificado", certified))
 
 
 # HARDCODE WEAPONS
-
+"""
 dp.add_handler(CommandHandler("AK47CW", ak47cw))
 
 dp.add_handler(CommandHandler("AK47MW", ak47mw))
@@ -460,7 +456,7 @@ dp.add_handler(CommandHandler("X16", x16))
 dp.add_handler(CommandHandler("XM4", xm4))
 
 dp.add_handler(CommandHandler("ZRG", zrg))
-
+"""
 
 # RUN
 run(updater)

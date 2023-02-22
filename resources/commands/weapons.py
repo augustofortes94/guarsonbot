@@ -55,7 +55,7 @@ def vargo(update, context):
 # HARDCODE WEAPONS
 
 
-
+"""
 def ak47cw(update, context):
     defineLogs().info(f"El usuario {update.effective_user['username']}, consulto por AK47CW")
     context.bot.send_message(chat_id=update.effective_chat.id, text="AK-47 (ColdWar):\n"
@@ -1666,3 +1666,4 @@ def zrg(update, context):
                                                                     + "\n-Laser Mira Laser de SWAT 5mW"
                                                                     + "\n-Cargador 5 Proyectiles"
                                                                     + "\n-Empuñadura Trasera de la Jungla SASR")
+"""

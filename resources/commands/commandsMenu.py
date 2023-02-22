@@ -1,5 +1,4 @@
 import logging
-import datetime
 import os
 import requests
 from ..api.guarsonapi import getListCommands, getListWeaponCommands, getWeaponFromApi, getToken
@@ -46,7 +45,8 @@ def commandRegex(update, context):
 # COMANDOS
 def armas(update, context):
     defineLogs().info(f"El usuario {update.effective_user['username']}, consulto por Comandos de Armas")
-    #context.bot.send_message(chat_id=update.effective_chat.id, text="/Comandos para armas:\n\n" + getListWeaponCommands())
+    context.bot.send_message(chat_id=update.effective_chat.id, text="/Comandos para armas:\n\n" + getListWeaponCommands())
+    """
     context.bot.send_message(chat_id=update.effective_chat.id, text="/Comandos para armas:\n\n"
                                                                     + '\nFusiles de Asalto:'
                                                                     + '\n-/AK47CW'
@@ -210,9 +210,8 @@ def armas(update, context):
                                                                     + '\n-/Sykov'
                                                                     + '\n-/Topbreak'
                                                                     + '\n-/X16'
-                                                                    )
+                                                                    )"""
 
-"""
 def comandos(update, context):
     defineLogs().info(f"El usuario {update.effective_user['username']}, consulto por Comandos")
     context.bot.send_message(chat_id=update.effective_chat.id, text=
@@ -227,23 +226,8 @@ def comandos(update, context):
                                                                     #+ getListStats()
                                                                     + "\n\n-----/Lobbys-----"
                                                                     + getListCommands('Lobbys')
-                                                                    )"""
-
-def comandos(update, context):
-    defineLogs().info(f"El usuario {update.effective_user['username']}, consulto por Comandos")
-    context.bot.send_message(chat_id=update.effective_chat.id, text=
-                                                                    "/Hola soy el /bot Guarson, hasta ahora los /Comandos disponibles son los siguientes:\n\n"
-                                                                    + "\n-----/Armas-----\n"
-                                                                    + armas()
-                                                                    + "\n\n-----/Streamers-----"
-                                                                    #+ getListCommands('Streamers')
-                                                                    + "\n"
-                                                                    #+ getListCommands('Bonus')
-                                                                    #+ "\n\n-----/Stats-----"
-                                                                    #+ getListStats()
-                                                                    + "\n\n-----/Lobbys-----"
-                                                                    #+ getListCommands('Lobbys')
                                                                     )
+
 
 def hola(update, context):
     defineLogs().info(f"El usuario {update.effective_user['username']}, consulto por Hola")
@@ -264,13 +248,6 @@ def streamers(update, context):
     defineLogs().info(f"El usuario {update.effective_user['username']}, consulto por Comandos de Streamers")
     context.bot.send_message(chat_id=update.effective_chat.id, text="/Comandos para streamers:\n\n" + getListCommands('Streamers'))
 
-
-# CERTIFICADO
-def certified(update, context):     # Devuelvo el vencimiento del certificado SSO
-    defineLogs().info(f"El usuario {update.effective_user['username']}, consulto por Certificado")
-    expire_date = int(os.getenv('SSO_EXPIRE'))
-    context.bot.send_message(chat_id=update.effective_chat.id, text="Vence el: " + str(datetime.datetime.fromtimestamp(expire_date/1000)))
-    
 
 def getListStats():     # Return a string with a list of stats commands
     return ("\n\nStats:"
